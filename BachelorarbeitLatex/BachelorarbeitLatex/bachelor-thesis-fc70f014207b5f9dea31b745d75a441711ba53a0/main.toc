@@ -1,0 +1,82 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {section}{\numberline {1.1}The Bachelor's Thesis Problem}{1}{}%
+\contentsline {section}{\numberline {1.2}Motivation}{2}{}%
+\contentsline {section}{\numberline {1.3}The Bachelor Thesis Goal}{2}{}%
+\contentsline {chapter}{\numberline {2}Fundamentals}{3}{}%
+\contentsline {section}{\numberline {2.1}Flutter and Dart}{3}{}%
+\contentsline {subsection}{\numberline {2.1.1}Programming Paradigm}{3}{}%
+\contentsline {subsection}{\numberline {2.1.2}SOLID Principals of Objectoriented Programming}{3}{}%
+\contentsline {subsection}{\numberline {2.1.3}Symptom and Disease APIs}{5}{}%
+\contentsline {subsubsection}{\nonumberline NHS Health A to Z API}{5}{}%
+\contentsline {subsubsection}{\nonumberline Healthwise API}{5}{}%
+\contentsline {subsubsection}{\nonumberline ApiMedic Symptom Checker API}{5}{}%
+\contentsline {chapter}{\numberline {3}Requirements Engineering}{6}{}%
+\contentsline {section}{\numberline {3.1}Stakeholder Analysis}{6}{}%
+\contentsline {subsection}{\numberline {3.1.1}Target Group and User Group}{6}{}%
+\contentsline {subsection}{\numberline {3.1.2}Internal Stakeholder}{6}{}%
+\contentsline {subsection}{\numberline {3.1.3}External Stakeholder}{7}{}%
+\contentsline {section}{\numberline {3.2}System Context Diagram}{7}{}%
+\contentsline {section}{\numberline {3.3}User Requirements Specification}{8}{}%
+\contentsline {subsection}{\numberline {3.3.1}Functional Requirements}{8}{}%
+\contentsline {subsection}{\numberline {3.3.2}Non-functional Requirements}{9}{}%
+\contentsline {subsection}{\numberline {3.3.3}Optional Requirements}{9}{}%
+\contentsline {section}{\numberline {3.4}Use Cases}{9}{}%
+\contentsline {subsection}{\numberline {3.4.1}Get Diagnosis}{10}{}%
+\contentsline {subsection}{\numberline {3.4.2}Review Received Diagnoses}{10}{}%
+\contentsline {subsection}{\numberline {3.4.3}Login}{11}{}%
+\contentsline {subsection}{\numberline {3.4.4}Add Data}{11}{}%
+\contentsline {subsection}{\numberline {3.4.5}Edit Data}{11}{}%
+\contentsline {subsection}{\numberline {3.4.6}Get Tips and Tricks for Symptoms and Diseases}{11}{}%
+\contentsline {section}{\numberline {3.5}Domain Model}{12}{}%
+\contentsline {chapter}{\numberline {4}The Database}{14}{}%
+\contentsline {section}{\numberline {4.1}Introduction to NoSQL Datbases}{14}{}%
+\contentsline {section}{\numberline {4.2}Firestore}{14}{}%
+\contentsline {section}{\numberline {4.3}Document Databases}{15}{}%
+\contentsline {section}{\numberline {4.4}Designing a Data Structure}{15}{}%
+\contentsline {subsection}{\numberline {4.4.1}Classes}{16}{}%
+\contentsline {subsubsection}{\nonumberline User}{16}{}%
+\contentsline {subsubsection}{\nonumberline Doctor}{16}{}%
+\contentsline {section}{\numberline {4.5}Constructing Data Contexts}{16}{}%
+\contentsline {section}{\numberline {4.6}Inserting the Data into the Database}{16}{}%
+\contentsline {section}{\numberline {4.7}Firebase Redundancy}{16}{}%
+\contentsline {section}{\numberline {4.8}Connecting the Database with the Flutter Project}{16}{}%
+\contentsline {chapter}{\numberline {5}Development}{17}{}%
+\contentsline {section}{\numberline {5.1}Architecture: The Domain model (Flutter, Layered Architecture}{17}{}%
+\contentsline {section}{\numberline {5.2}Graphical User Interface}{17}{}%
+\contentsline {subsection}{\numberline {5.2.1}Survey}{17}{}%
+\contentsline {subsection}{\numberline {5.2.2}Design of the Graphical User Interface}{17}{}%
+\contentsline {subsection}{\numberline {5.2.3}Development of the Graphical User Interface}{17}{}%
+\contentsline {section}{\numberline {5.3}State Management of the Application}{17}{}%
+\contentsline {section}{\numberline {5.4}Symptomanalysis}{17}{}%
+\contentsline {section}{\numberline {5.5}Generate Diagnose PDF}{17}{}%
+\contentsline {section}{\numberline {5.6}Store PDF Locally on Device}{17}{}%
+\contentsline {section}{\numberline {5.7}Design Tip and Trick View}{17}{}%
+\contentsline {section}{\numberline {5.8}Doctor Login}{17}{}%
+\contentsline {section}{\numberline {5.9}Doctor Add/Edit Illnesses}{17}{}%
+\contentsline {section}{\numberline {5.10}Doctor Add/Edit Tips and Tricks}{17}{}%
+\contentsline {chapter}{\numberline {6}Development of the Match Algorithms}{18}{}%
+\contentsline {section}{\numberline {6.1}The Symptom Graph}{18}{}%
+\contentsline {section}{\numberline {6.2}Weighting of the Symptoms within the Application}{18}{}%
+\contentsline {section}{\numberline {6.3}Development of the Algorithms}{18}{}%
+\contentsline {section}{\numberline {6.4}Evaluation of the Algorithms}{18}{}%
+\contentsline {subsection}{\numberline {6.4.1}Performance Evaluation}{18}{}%
+\contentsline {subsection}{\numberline {6.4.2}Scalability Comparison}{18}{}%
+\contentsline {chapter}{\numberline {7}General Overview of the Application}{19}{}%
+\contentsline {section}{\numberline {7.1}Testing the Application}{19}{}%
+\contentsline {section}{\numberline {7.2}Survey: Would Respondents use this Application and put their trust in it}{19}{}%
+\contentsline {chapter}{\numberline {8}Conclusion and Outlook}{20}{}%
+\contentsline {section}{\numberline {8.1}Symptom Detection Applications in the Future}{20}{}%
+\contentsline {section}{\numberline {8.2}Use of Flutter to Develop Applications}{20}{}%
+\contentsline {section}{\numberline {8.3}Outcomes of the Performance Comparisons}{20}{}%
+\contentsline {section}{\numberline {8.4}Overall Conclusion}{20}{}%
+\contentsline {chapter}{\numberline {9}Appendix}{21}{}%
+\contentsline {chapter}{\numberline {10}Bibliography}{24}{}%
+\contentsline {chapter}{\numberline {11}List of Abbreviations}{25}{}%
+\contentsline {chapter}{\numberline {12}List of Tables}{26}{}%
+\contentsline {chapter}{\numberline {13}List of Figures}{27}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

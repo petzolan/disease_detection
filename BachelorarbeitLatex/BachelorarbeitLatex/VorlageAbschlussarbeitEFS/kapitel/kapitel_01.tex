@@ -1,0 +1,75 @@
+
+\chapter{Allgemeines}
+
+\section{Situation und Motivation}
+% Einleitung 
+Das Interesse an Themen rund um die körperliche und geistige Gesundheit nimmt in der Bevölkerung zu. Ausschlaggebend dafür ist wahrscheinlich die in den letzten Jahren herrschende  COVID-19-Pandemie. \cite{.bahn-bonn}
+% Auswirkungen und Problem
+Neben den positiven Effekten, wie der, der zunehmenden Fürsorge für die Mitbürger \cite{.bahn-bonn}  und das gestiegene Gesundheitsbewusstsein, brachte dieses kontinuierlich wachsende Interesse an Gesundheitsthemen im Verlauf der Pandemie jedoch auch Probleme mit sich. Mit immer mehr ängstlichen und besorgten Patienten haben Arztpraxen und Hausärzte ihre Kapazitätsgrenzen längst überschritten und sind an ihrer Belastungsgrenze angelangt. \cite{.sok}
+Das merken auch die Patienten: Überfüllte Wartezimmer verbunden mit langen Wartezeiten und nervenraubenden Telefonschleifen werden zum typischen Merkmal von Arztbesuchen.
+ 
+
+\section{Problemstellung}
+% Rückblick
+Die Problemstellung dieser Bachelorarbeit lässt sich auf die obige Situation zurückführen. Vor allem als Folge der COVID-19-Pandemie ist die Bevölkerung verängstigt und Mediziner an ihre Grenzen gestoßen.
+% Probleme mit der Auslastung von Arztpraxen und von verängstigten Patienten
+Die Probleme, welche diese Resultate mit sich bringen, sind von großer Bedeutung. Hausarztpraxen werden dazu gezwungen Patientenstopps anzuordnen und Zutrittsverbote auszuschreiben. \cite{.sok} Dies bedeutet auch, dass Patienten, die dringend ärztlichen Rat benötigen, abgewiesen und die medizinische Versorgung verweigert werden kann. Neben den besorgten Patienten nahm auch die Anzahl der schwer (Covid-19-) erkrankten Menschen stetig zu: seit Anbeginn der Pandemie  kam es alleine in Deutschland zu rund 146.000 Todesfällen (Stand: 19. August 2022) \cite{.rki}. 
+% Resultat 
+% Folgende Problemstellung
+Die Frage ist nun, wie auf die Anliegen der Patienten eingegangen und gleichzeitig die Ärzte entlastet werden können.
+
+\section{Zielsetzung}
+% Lösungsansatz
+Einen Weg, dieses Problem zu lösen, bietet die Digitalisierung. In jüngster Zeit helfen Online-Sprechstunden und die internetbasierte Terminvereinbarung zur Entlastung von Arztpraxen. 
+% Zielsetzung Allgemein
+Insbesondere Smartphones werden ein immer größerer und ausschlaggebenderer Teil unseres täglichen Lebens. Das Ziel dieser Bachelorarbeit ist es, eine Methode bereitzustellen, um die oben genannten Probleme mithilfe einer mobilen Anwendung auf effiziente Weise zu minimieren. Durch eine solche Applikation kann einem besorgten Nutzer ein Rat gegeben und seine Sorgen gemindert werden. Es muss betont werden, dass das Ziel dieser Applikation nicht das Ersetzen eines Arztes ist.
+% Zielsetzung Applikation
+Das Ziel der Applikationsentwicklung soll eine optimal angelegte Datenbankstruktur in einer Datenbank, sowie ein korrekter und performanter Algorithmus zur Symptom- und Krankheitszuordnung sein.
+
+\section{Vorgehensweise}
+Die Programmiersprache in welcher diese Applikation entwickelt werden soll ist Dart, in Kombination mit dem Framework Flutter. Um die Zielsetzung dieser Bachelorarbeit zu spezifizieren, werden die folgenden vier Unterziele die Basis der Bearbeitungsweise darstellen.
+
+\begin{description}
+	% Begin: Anlegen der Datenbank
+	\item \textbf{Anlegen einer Datenbank in Firebase:}
+	Zu Beginn der Entwicklung soll eine Datenbank in Firebase erstellt werden. Hierzu ist es nötig, eine optimale Datenstruktur zu ermitteln und diese in Form der möglichen Symptom- und Krankheitsdaten umzusetzen. Nach dem erfolgreichen Aufsetzen der Datenbank wird diese in die Flutter Applikation eingebunden.
+	
+	% Entwickeln der grafischen Oberfläche
+	\item \textbf{Entwickeln der grafischen Oberfläche:}
+	Mit Hilfe der Datenbank kann nachfolgend die grafische Oberfläche der Applikation entwickelt werden. Der wichtigste Bestandteil dieser grafischen Oberfläche ist ein Fragebogen welcher es dem Nutzer ermöglicht seine Symptome auszuwählen und diese ebenfalls auf einer Skala zu bewerten.
+	
+	% Implementierung des Kernpunktes: Algorithmen
+	\item \textbf{Implementierung und Testen der Algorithmen:}
+	 Zur Auswertung der Krankheitserkennung werden drei Algorithmen zur Symptom-Gewichtung und der Zuordnung zu Erkrankungen entwickelt. Ausschlaggebend werden deren Skalierbarkeit sowie Performance verglichen und ihre Korrektheit ermittelt. Anhand eines Bewertungsverfahrens wird schlussendlich der am Besten abschneidende Algorithmus in die Applikation eingebaut.
+	 
+	 % Abschließende Nutzerumfrage: Würden Sie einer solchen Applikation vertrauen schenken und welche Kriterien tragen zur Antwort bei
+	 \item \textbf{Umfrage über die Vertrauenswürdigkeit der Applikation:}
+	 Abschließend soll eine Umfrage Auskunft darüber geben, ob die befragten Personen einer solchen Applikation ihr Vertrauen schenken würden. Zusätzlich werden hierbei Kriterien gesammelt welche die gestellte Frage positiv Beeinträchtigen können, wie beispielsweise eine professionelle grafische Oberfläche.
+\end{description}
+Während der Bearbeitung wird die Methodik der qualitativne Nutzwertanalyse zur Erkennung des geeignetsten Algorithmus sowie der optimalen Datenstruktur verwendet.
+\section{Forschungsfrage}
+Aus dem erörterten Kontext ergibt sich folgende Forschungsfrage:
+% Forschungsfrage
+	\begin{center}
+	\textbf{Wie lässt sich eine performante Symptom-Checker-Applikation, im Framework Flutter in Kombination mit der Programmiersprache Dart, entwickeln?}
+	\end{center}
+
+
+\section{Stand der Forschung}
+% Forschungsstand Flutter
+Bezüglich Symptom-Checker-Applikationen welche explizit im Framework Flutter entwickelt worden sind ist der Forschungsstand sehr mager gefüllt. Als Entwicklungs-Kit, das erst im Jahr 2018 veröffentlicht wurde \cite{.flutter}, ist Flutter noch relativ neu auf dem Open-Source-Markt. Im Folgenden wird der Forschungsstand zu Symptom-Checker-Anwendungen im Allgemeinen beschrieben werden.\\
+% Hypothese
+Eine anzunehmende Hypothese bei erfolgreicher Entwicklung ist, dass eine vertrauenswürdige Applikation mit einem korrektem Algorithmus die Besorgnis der Nutzer positiv (oder möglicherweise negativ) beeinflusst und ihren Nutzern somit einen Arztbesuch ersparen kann. \\
+% Autor Prof. Dr. Andres Sönnichsen: negativ
+Dr. Andreas Sönnichsen, Präsident des Evidence-Based Medicine Network, hat sich im September 2019 in seiner Arbeit ''Fluch oder Segen? Symptom Checker und Diagnostik-Apps'' sehr deutlich gegen den Einsatz solcher Anwendungen ausgesprochen. Er deckte mehrere Studien auf, die zeigten, dass solche Anwendungen einen geringen Grad an korrekter Diagnose zeigten.  Er betonte als Abschluss seiner Arbeit, dass er Symptom-Checker-Anwendungen nur "... als differentialdiagnostisches Tool in ärztlicher Hand, wenn man bei unklaren Beschwerden nicht weiterkommt, hinter denen möglicherweise eine seltene Erkrankung stecken könnte, auf die der Arzt aufgrund von Wissensdefiziten nicht kommt." \cite{.ebm} genutzt werden sollten.\\
+% Aktuelles
+Ein aktuelles Verbund-Projekt der Universität Tübingen namens "CHECK.APP" verfolgt derzeit das Ziel, "den Umgang mit einer Symptom-Checker-App mehrperspektivisch zu analysieren und Handlungsempfehlungen abzuleiten." \cite{.uni} Zum jetzigen Stand ist aus dieser Forschung noch kein offizieller Wissensgewinn gezogen worden.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,166 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{.ebm}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7780213df4043ea858547923ddcffd72}{%
+           family={Andreas},
+           familyi={A\bibinitperiod},
+           given={Prof.\bibnamedelimi Dr.\bibnamedelimi Sönnichsen},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7780213df4043ea858547923ddcffd72}
+      \strng{fullhash}{7780213df4043ea858547923ddcffd72}
+      \strng{bibnamehash}{7780213df4043ea858547923ddcffd72}
+      \strng{authorbibnamehash}{7780213df4043ea858547923ddcffd72}
+      \strng{authornamehash}{7780213df4043ea858547923ddcffd72}
+      \strng{authorfullhash}{7780213df4043ea858547923ddcffd72}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{als differentialdiagnostisches Tool in ärztlicher Hand, wenn man bei unklaren Beschwerden nicht weiter- kommt, hinter denen möglicherweise eine seltene Erkrankung stecken könnte, auf die der arzt aufgrund von Wissensdefiziten nicht kommt.}
+      \field{title}{Fluch oder Segen? Symptom Checker und Diagnostik-Apps}
+      \field{year}{09/2019}
+      \verb{urlraw}
+      \verb https://www.ebm-netzwerk.de/de/medien/pdf/ebm-kolumne-09_19.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ebm-netzwerk.de/de/medien/pdf/ebm-kolumne-09_19.pdf
+      \endverb
+    \endentry
+    \entry{.bahn-bonn}{misc}{}
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Corona macht rücksichtsvoller: Thema Gesundheit bei den Deutschen immer wichtiger}
+      \field{year}{8/4/2022}
+      \verb{urlraw}
+      \verb https://www.bah-bonn.de/presse/bah-gesundheitsmonitor/presse-detailseite/corona-macht-ruecksichtsvoller-thema-gesundheit-bei-den-deutschen-immer-wichtiger/
+      \endverb
+      \verb{url}
+      \verb https://www.bah-bonn.de/presse/bah-gesundheitsmonitor/presse-detailseite/corona-macht-ruecksichtsvoller-thema-gesundheit-bei-den-deutschen-immer-wichtiger/
+      \endverb
+      \warn{\item Entry '.bahn-bonn' (quellen.bib): Invalid format '20.08.2022' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{.flutter}{misc}{}
+      \name{editor}{1}{}{%
+        {{hash=c047b10eee763afb6164e077cf1cc268}{%
+           family={Flutter},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{fullhash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{bibnamehash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{editorbibnamehash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{editornamehash}{c047b10eee763afb6164e077cf1cc268}
+      \strng{editorfullhash}{c047b10eee763afb6164e077cf1cc268}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Frequently asked questions and answers about Flutter.}
+      \field{title}{FAQ: Should I build my next production app with Flutter?}
+      \field{year}{17.08.2022}
+      \verb{urlraw}
+      \verb https://docs.flutter.dev/resources/faq#what-is-flutter
+      \endverb
+      \verb{url}
+      \verb https://docs.flutter.dev/resources/faq#what-is-flutter
+      \endverb
+      \warn{\item Entry '.flutter' (quellen.bib): Invalid format '20.08.2022' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{.rki}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c396e13d68907b5c020c33362d149928}{%
+           family={{Rober Koch Institut}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=7bd6d5f70951f46f6c3aa915ab8246a1}{%
+           family={{Robert Koch Institut}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c396e13d68907b5c020c33362d149928}
+      \strng{fullhash}{c396e13d68907b5c020c33362d149928}
+      \strng{bibnamehash}{c396e13d68907b5c020c33362d149928}
+      \strng{authorbibnamehash}{c396e13d68907b5c020c33362d149928}
+      \strng{authornamehash}{c396e13d68907b5c020c33362d149928}
+      \strng{authorfullhash}{c396e13d68907b5c020c33362d149928}
+      \strng{editorbibnamehash}{7bd6d5f70951f46f6c3aa915ab8246a1}
+      \strng{editornamehash}{7bd6d5f70951f46f6c3aa915ab8246a1}
+      \strng{editorfullhash}{7bd6d5f70951f46f6c3aa915ab8246a1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Regionale Verteilung der COVID-19-Fälle weltweit}
+      \field{title}{COVID-19: Fallzahlen in Deutschland und weltwei: Fallzahlen in Deutschland}
+      \field{year}{19.08.2022}
+      \verb{urlraw}
+      \verb https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html
+      \endverb
+      \verb{url}
+      \verb https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html
+      \endverb
+      \keyw{China;Coronavirus;Hubei;Hygiene;nCoV;neuartiges Coronavirus;Risikogebiet;Wuhan}
+      \warn{\item Entry '.rki' (quellen.bib): Invalid format '20.08.2022' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{.sok}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5871c2366e4609e0a70ccef9d6bf35fc}{%
+           family={Senada},
+           familyi={S\bibinitperiod},
+           given={Sokollu},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5871c2366e4609e0a70ccef9d6bf35fc}
+      \strng{fullhash}{5871c2366e4609e0a70ccef9d6bf35fc}
+      \strng{bibnamehash}{5871c2366e4609e0a70ccef9d6bf35fc}
+      \strng{authorbibnamehash}{5871c2366e4609e0a70ccef9d6bf35fc}
+      \strng{authornamehash}{5871c2366e4609e0a70ccef9d6bf35fc}
+      \strng{authorfullhash}{5871c2366e4609e0a70ccef9d6bf35fc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Patientenstopp, Überbelastung, Zutrittsverbot: Immer wieder werden Patienten in der Pandemie~von Hausarztpraxen abgewiesen - zum Auskurieren ohne Behandlung.}
+      \field{journaltitle}{SWR Aktuell}
+      \field{title}{Überforderung der Arztpraxen: Corona-Überlastung: Patienten schildern Grenzsituationen bei Hausärzten}
+      \field{year}{5/1/2022}
+      \verb{file}
+      \verb Corona-Uberlastung Patienten schildern Grenzsituationen:Attachments/Corona-Uberlastung Patienten schildern Grenzsituationen.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.swr.de/swraktuell/baden-wuerttemberg/patienten-im-stich-gelassen-in-corona-zeiten-100.html
+      \endverb
+      \verb{url}
+      \verb https://www.swr.de/swraktuell/baden-wuerttemberg/patienten-im-stich-gelassen-in-corona-zeiten-100.html
+      \endverb
+      \warn{\item Entry '.sok' (quellen.bib): Invalid format '8/4/2022' of date field 'urldate' - ignoring}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
