@@ -1,59 +1,73 @@
 
-\newenvironment{usecaseenv}{
-	\def\arraystretch{2}
-	\begin{tabular}{lp{11cm}}\hline
-	}{
-		\hline\end{tabular}
-	\def\arraystretch{1}
-}
 
-\newcommand\addheading[1]{
-	\multicolumn{2}{c}{\textbf{\textit{#1}}}\\ \hline
-}
-\newcommand\addrow[2]{\textbf{#1}\begin{minipage}[t][][t]{8cm} \end{minipage}% 
-	&\begin{minipage}[t][][t]{8cm}
-		#2
-	\end{minipage}\\
-}
-
-% The actual command definition
-\let\oldFigureName\figurename %save the old definition of the caption's figure name
-\newcommand{\usecase}[8]{
-	\vspace*{0.1cm} % adds a bit of padding to make it look nicer11
-	\renewcommand{\figurename}{Use case} %call figure name "Use case" instead
-	\begin{figure}[htbp]
-		\begin{center}
-			\begin{usecaseenv}
-				\addrow{Description of use case:}{#2}
-				\addrow{Goal of use case:}{#3}
-				\addrow{Actor:}{#4}
-				\addrow{Trigger:}{#5}
-				\addrow{Preconditions:}{#6}
-				\addrow{Steps:}{#7}
-				\addrow{Expansion:}{#8}
-			\end{usecaseenv}
-		\end{center}
-		\caption{#1}
-		\label{#2}
-	\end{figure}
-	\renewcommand{\figurename}{\oldFigureName} %reset caption figure name
-}
 %% EINLEITUNG %% 
 \chapter{Fundamentals}
 \section{Flutter and Dart}
 The framework used to develop the disease-detection application will be Flutter, which is an open-source-UI-Kit developed by Google. Flutter uses the open-source programming language Dart, which at first was designed for building Google Chrome browser-applications and later on benefited greatly from various improvements since it was released back in 2011. The programming language consequently evolved from having a lot in common with JavaScript to sharing many features with C\# and Java.
-The Flutter and Dart ecosystem, which is brimming with open-source packages created by other developers from around the world, is one of the framework's best features. It enables programmers to create visually stunning applications in the shortest amount of time, by including packages from developers all over the world. Also, Dart is a client-optimized gneral-purpose programming language that supports cross-platform development. This implies that this application will be created with a single code base yet will run on both Android- and iOS-smartphones. Furthermore, the program may be launched as a web application and utilized on embedded devices. However, as part of the bachelor thesis, the development and testing process will be entirely focused on Android development. Dart is also a statically-typed language, which means that the type of each variable must be explicitly declared, making it easier to catch bugs and other issues early on in the development process. With null safety, Dart ensures that variables cannot be assigned a null value unless they are explicitly declared as nullable. This means that if a variable is expected to have a non-null value, it must be initialized with a non-null value, and any attempts to assign a null value to it will result in a compile-time error. This helps prevent null reference errors and makes it easier to write code that is safe and predictable.
 
- [QUELLE:DART/OVERVIEW]
+The Flutter and Dart ecosystem, which is brimming with open-source packages created by other developers from around the world, is one of the framework's best features. It enables programmers to create visually stunning applications in the shortest amount of time, by including packages from developers all over the world. Also, Dart is a client-optimized gneral-purpose programming language that supports cross-platform development. This implies that this application will be created with a single code base yet will run on both Android- and iOS-smartphones. Furthermore, the program may be launched as a web application and utilized on embedded devices. However, as part of the bachelor thesis, the development and testing process will be entirely focused on Android development. Dart is also a statically-typed language, which means that the type of each variable must be explicitly declared, making it easier to catch bugs and other issues early on in the development process. With null safety, Dart ensures that variables cannot be assigned a null value unless they are explicitly declared as nullable. This means that if a variable is expected to have a non-null value, it must be initialized with a non-null value, and any attempts to assign a null value to it will result in a compile-time error. This helps prevent null reference errors and makes it easier to write code that is safe and predictable. [QUELLE:DART/OVERVIEW]
 
+\subsection{Flutter: Everything is a Widget}
+When researching how Flutter functions, it's common to come across the phrase "In Flutter, everything is a widget." The difference between Flutter's widgets and those in other Frameworks' components is that Flutter's widgets can specify how the application's user interface should appear. Eric Windmill was able to divide the widgets into various groups in his book Flutter in Action [flutter in action, s 58]:
 
+\begin{itemize}
+	\item \textbf{Layout:} 
+	Widgets of this category are able to store children-widgets, an example for such a widget would be a row, column or even a stack.  
+	\item \textbf{Structures:} 
+	As their name implies, structures aid in organizing the application.
+	For instance, MenuDrawer produces a sidedrawer for the application, toasts display a message to the user, and buttons can respond to various click patterns. 
+	\item \textbf{Styles:} 
+	The developer can style widgets in almost any way using Flutter. With a tool like ButtonStyle, a button's background and foreground colors as well as its shape can all be changed.
+	\item \textbf{Animations:} 
+	Flutter enables its users to breathe life into their applications with a rich palette of animation options. For instance, Flutter developers can use well-known animation features like curves, which are also used in CSS. 
+	\item \textbf{Positioning and Alignment:} 
+	Widgets such as Padding and Center allow it to position its child widget. There are also additional widgets, such as Positioned and Alignment, that allow the developer to position elements in a Stack.
+\end{itemize}
+
+The categorization created by Eric Windmill provides a decent overview of the possibilities in Flutter. There are undoubtedly a lot more widgets and a lot more usage categories that might be defined. Widgets can be composed, which means nested inside of one another [Flutter in action, s61], so rather than simply returning the widget it describes, a widget's build method really returns a tree of widgets. The DOM in any web browser is comparable to this widget tree. A sample widget returned by a build method is shown in Listing 2.1. Figure 2.1 illustrates the generated widget tree in detail.
+\begin{lstlisting}[caption=Flutter example]
+import 'package:flutter/material.dart';
+
+void main() {
+	runApp(const TestApplication());
+}
+
+class TestApplication extends StatelessWidget {
+	const TestApplication({Key? key}) : super(key: key);
+	
+	@override
+	Widget build(BuildContext context) {
+		return Scaffold(
+		appBar: AppBar(
+		title: const Text('Example of the build method'),
+		),
+		body: const Center(
+		child: Text('Hello Reader'),
+		),
+		);
+	}
+}
+
+\end{lstlisting}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{widget_tree.png}
+	\caption[Widget Tree of Listing 2.1]{Widget Tree of Listing 2.1}
+\end{figure}
+\subsection{Flutter: Architectural Layers}
+Application architecture refers to how the various components of a mobile or web application are organized and how they interact with each other. A well-designed application architecture helps improve the systems performance, maintainability, scalability but also makes it more modular. [Buch: Software arhcitecture seite 28] Many different application architectural patterns can be used, including layered architecture of which Flutter makes use.  In the context of software development, layered architecture is a common design pattern in which the application is divided into different layers, each layer plays a specific role in the overall functionality of the application. No layer has privileged access to the layers below, and every part of the framework layer is designed to be optional and interchangeable. [Flutter.dev architectural layers] 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.45]{layered_architecture.png}
+	\caption[Layered Architecture in Flutter]{Layered Architecture in Flutter[based on Flutter page and TakingFluttertotheWeb page 50/]}
+\end{figure}
 %\subsection{Darts' Compiler}
 %The Dart Compiler parses written code and converts it to machine code. This means that there is no way to directly run written code. [https://www.javatpoint.com/flutter-dart-programming] It's worth mentioning that Dart's compiler technology allows two distinct ways of running written code. Apps built primarily for usage on mobile devices (and desktop devices) can be compiled using the Dart VM, which supports just-in-time compilation (JIT) and ahead-of-time compilation (AOT). The JIT compilation allows the developer, in connection with Flutter, to make use of the hot reload funcionality, which decreases the time comsumption of debugging code. Dart may compile for development or production reasons when it comes to web-based projects. Its web compiler converts Dart to JavaScript. [https://dart.dev/overviewRAUTEplatform]
 
 \subsection{Programming Paradigm}
 The programming paradigm of the Dart programming language is object-oriented programming (OOP). This means that it uses objects, classes, and inheritance to organize and structure code. Dart also incorporates some functional programming concepts, such as immutable data and first-class functions, which allow for more concise and elegant code. Additionally, Dart supports asynchronous programming, which enables developers to write code that can run concurrently and handle multiple tasks at the same time. Overall, Dart's combination of OOP and functional programming paradigms makes it a versatile and powerful language for building modern web and mobile applications.
 
-\subsection{SOLID Principals of Objectoriented Programming}
+%\subsection{SOLID Principals of Objectoriented Programming}
 The SOLID principles are a set of guidelines for designing object-oriented software. They were introduced by Robert C. Martin in his book "Agile Software Development, Principles, Patterns, and Practices" as a way to improve the maintainability, extensibility, and flexibility of object-oriented code and to develop software that is prone to fewer bugs and has cleaner source code. [https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/]
 \begin{itemize}
 	\item \textbf{Single Responsibility Principle (SRP):}
@@ -72,12 +86,103 @@ The SOLID principles are a set of guidelines for designing object-oriented softw
 	The key essence of the DIP is that a class should not depend on the specific implementation details of another class. Instead, it should depend on an abstract interface or a set of contracts that define how the two classes should interact.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.25]{solid.png}
+	\includegraphics[scale=0.2]{solid.png}
 	\caption[SOLID]{SOLID Principles}
 \end{figure}
-\subsection{Symptom and Disease APIs}
-\subsubsection{NHS Health A to Z API}
-\subsubsection{Healthwise API}
-\subsubsection{ApiMedic Symptom Checker API}
+\section{Symptom and Disease APIs}
+
+The aim of this work is to develop a functional disease detection application. In order to achieve this goal, the application must access a database that is filled with suitable data. The information from an existing API is used here because there are no medically trained project participants who could contribute their specialized expertise to the database. The final data structure of the database is also influenced by the API selection. For this purpose, the two most suitable APIs are considered and their suitability for the project is determined
+\subsection{NHS Health A to Z API}
+The NHS, or National Health Service, is the publicly funded healthcare system of the United Kingdom. It was established in 1948 and provides a wide range of medical services to the population of the UK, including general practitioners (GPs), hospitals, and community health services. The NHS websites provides many different APIs, free for use [NHS website]. The NHS Health A to Z API is the first API that will be considered to generate data for the database.
+The API offers medical information about various diseases, their symptoms, and available treatments. A user account that is provided with a subscription key must be created in order to receive data from this API. The next step is to make an HTTP call to https://api.nhs.uk/conditions. An example of a possible request in the programming language Python looks like this:
+\begin{lstlisting}[language=Python, caption={Example Python Request for the Health A to Z API}]
+urlDiseases = "https://api.nhs.uk/conditions/acne"
+header = {
+	"subscription-key" : "YOUR_SUBSCRIPTION_KEY"
+}
+responseDiseases = requests.request("GET", urlDiseases, headers=header)
+responseData = responseDiseases.json()
+\end{lstlisting}
+If the request was successfull and the response contains the data in JSON format. Listing 2.3 shows a sample abbreviated response from the API.
+\begin{lstlisting}[caption={Example Response for the Health A to Z API}]
+{
+	"@context":"http://schema.org",
+	"@type":"MedicalWebPage",
+	"name":"Acne",
+	"copyrightHolder":{...},
+	"license":"https://developer.api.nhs.uk/terms",
+	"author":{...},
+	"about":{...},
+	"description":"...",
+	"url":"https://api.nhs.uk/conditions/acne/",
+	"genre":[...],
+	"keywords":[...],
+	"lastReviewed":[...],
+	"breadcrumb":{...},
+	"dateModified":"2022-05-30T14:30:18+00:00",
+	"hasPart":[...],
+	"relatedLink":[...],
+	"contentSubTypes":[...],
+	"mainEntityOfPage":[...],
+	"alternativeHeadline":"Overview"
+}
+\end{lstlisting}
+An entire text document with the server's response to the request made in listing 2.2 can be viewed by scanning the QR code shown in the appendix x.x. A positive aspect of this API is that all data is described in great detail and a large amount of knowledge can be obtained in a single query. However, it must also be mentioned that the extent of the server response just mentioned entails the difficulty of storing the data accordingly in a separate database. For example, symptoms are supplied for a disease, but only in string format as a complete sentence. This means that a symptom is described in different ways in several diseases. In order to automatically scrape this data, one would have to recognize all variations in the description of a symptom. With the amount of data that the Health A to Z API brings with it, this is almost impossible. Another limitation is that a maximum of 6 requests can be made to the interface per minute, which proves to be a serious problem in terms of runtime.
+
+\subsection{ApiMedic Symptom Checker API}
+The ApiMedic API is the second interface to be considered. ApiMedic is powered by priaid, a company that focuses on bringing together medicine, IT and business administration. Thanks to their highly specialized team composition, they offer expertise in all of the areas mentioned. The API can be addressed in two different ways:
+\begin{itemize}
+	\item \textbf{Sandbox API Account:}
+	It is possible to get an unlimited amount of data via the sandbox account. However, the data supplied is only dummy data.
+	\item \textbf{Live Basic API Account:}
+	The live account allows to get the actual medical data of the API. However, there is a limitation with regard to the possible calls: ApiMedic only allows 100 calls per month to be made without charging money, further requests cost money.
+\end{itemize}
+Although the data that can be received from this API is not as detailed as that of the NHS API, using the data to create a data structure is simpler. It is possible to acquire diseases, bodily components, and symptoms as well as proposed symptoms and symptoms based on each body part. The following code example shows an request, made with the live account, to retrieve all diseases followed by the response of the API.
+\begin{lstlisting}[language=Python, caption={Example Python Request for the ApiMedic API (all issues)}]
+stringURLIssues = "https://healthservice.priaid.ch/issues?token=YOUR_TOKEN"
+responseIssues = requests.request("GET", stringURLIssues)
+dataIssues = responseIssues.json()
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, caption={Response for the ApiMedic API (all issues)}]
+[
+	{
+		"ID": 130,
+		"Name": "Abdominal hernia"	
+	},
+	{
+		"ID": 170,
+		"Name": "Abortion"	
+	},
+	{
+		"ID": 456,
+		"Name": "Abscess of the tonsils"	
+	},
+...
+\end{lstlisting}
+It is now possible to execute an API request that returns detailed information about each disease, using the provided IDs. Listing 2.7 shows a sample shortened response from the ApiMedic API.
+\begin{lstlisting}[language=Python, caption={Example Python Request for the ApiMedic API (single issue)}]
+	stringURLIssue = "https://healthservice.priaid.ch/issues/105/info?token=YOUR_TOKEN"
+	responseIssue = requests.request("GET", stringURLIssue)
+	dataIssue = responseIssue.json()
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, caption={Response for the ApiMedic API (single issue)}]
+{
+	"Description": "Measles is caused by a virus a...",
+	"DescriptionShort": "Measles, also known as morbilli, ...",
+	"MedicalCondition": "The infection begins with flu-like symptoms ( ...",
+	"Name": "Measles",
+	"PossibleSymptoms": "Burning eyes,Burning in the throat,Cough,...",
+	"ProfName": "Morbilli",
+	"Synonyms": "Red measles",
+	"TreatmentDescription": "To prevent measles, an effort to vaccinate ..."
+}
+\end{lstlisting}
+
+The value of the "PossibleSymptoms"-key returns an enumaration of all the symptoms of the disease. These symptoms are listed using the values of the "Name"-key for the respective symptom when querying all symptoms. This makes it easier to scrape the data accordingly and store it in a database.
+
+\subsection{API Solution}
+The question that now arises is which of the two interfaces to choose. Both APIs have advantages and disadvantages. While the NHS API provides very detailed results, it makes it difficult to use the data for the purposes intended in this work. NHS also provides data on the causes that various symptoms and conditions can have, which can be an important factor in making a diagnosis in the form of disease detection. ApiMedic, in turn, delivers the data in an optimal format to use, but far less comprehensive than NHS. One option that is available is to use the symptom data provided by ApiMedic as scrape material for the symptom list in the NHS. However, after an attempt to do so, it has been found that only a very small amount of symptom has been recognized. In the context of the bachelor thesis, the use of the ApiMedic API is preferred from the point of view of a clean database structure. For optimizations in the future, a combination of the two sets of data can be considered.
