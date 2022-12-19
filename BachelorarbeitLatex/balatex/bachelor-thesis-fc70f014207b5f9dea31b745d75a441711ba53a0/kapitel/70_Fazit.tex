@@ -1,0 +1,223 @@
+
+%% FAZIT %% 
+
+\chapter{Appendix}
+\begin{table}[H]
+	\begin{center}\scriptsize
+		\def\arraystretch{2}%
+		\begin{tabular}{ |c|c| } 
+			\hline
+			Name & Get Diagnosis \textbf{[FR6]}\\
+			\hline	
+			Description & The user wants to get a diagnosis, based on their symptoms \\ 
+			\hline
+			Result & The user receives a diagnosis \\ 
+			\hline
+			Actors & User, Doctor \\ 
+			\hline
+			Trigger & The user clicks on the new diagnosis button \\ 
+			\hline
+			Preconditions & None \\ 
+			\hline
+			Steps & \parbox{9cm}{\vspace{.5\baselineskip}
+				1. The user clicks on the new diagnosis button\\
+				2. The system displays the view to enter and specify symptoms\\
+				3. The user selects his symptoms and specifies them\\
+				4. The user indicates that he is finished\\
+				5. Diagnosis: the system determines possible diseases and presents them to the user and the use case ends}\\
+			\hline
+			Alternate flow & \parbox{9cm}{
+				AF1a. The user wants to cancel the diagnosis and presses the stop button \textbf{[FR10]}\\
+				AF1b. The system returns to the main page of the application\\\\
+				AF2a. The user wants to save the diagnosis \textbf{[FR7]}\\
+				AF2b. The user presses the save button\\
+				Af2c. The system saves the diagnosis
+			}\\ 
+			\hline
+		\end{tabular}\normalsize
+	\end{center}
+	\caption{Use case get diagnosis}
+\end{table}
+\begin{table}[H]
+	\begin{center}\scriptsize
+		\def\arraystretch{2}%
+		\begin{tabular}{ |c|c| } 
+			\hline
+			Name & Review received diagnosis \textbf{[FR8]}\\
+			\hline	
+			Description & The user wants to review a diagnosis one more time \\ 
+			\hline
+			Result & The system shows the selected diagnosis to the user\\ 
+			\hline
+			Actors & User, Doctor \\ 
+			\hline
+			Trigger & Click on the diagnosis \\ 
+			\hline
+			Preconditions & The user has previously saved the diagnosis \\ 
+			\hline
+			Steps & \parbox{9cm}{\vspace{.5\baselineskip}1. The user selects the diagnosis from a list of previously stored diagnoses\\2. The system shows the selected diagnosis to the user \\ 3. When finished the user clicks on the back button}\\
+			\hline
+			Alternate flow & \parbox{9cm}{\vspace{.5\baselineskip}
+				AF1a. The user wants to delete the diagnosis \textbf{[FR12]}\\
+				AF1b. The user clicks on the delete button\\
+				AF1c. The system deletes the diagnosis\\\\
+				AF2a. The user wants to download the diagnosis as PDF\\
+				AF2b. The user presses the download button}\\
+			\hline
+		\end{tabular}\normalsize
+	\end{center}
+	\caption{Use case review received diagnoses}
+\end{table}
+\begin{table}[H]
+	\begin{center}\scriptsize
+		\def\arraystretch{2}%
+		\begin{tabular}{ |c|c| } 
+			\hline
+			Name & Get Tips and Tricks for Symptoms and Diseases \textbf{[FR13]}\\
+			\hline	
+			Description & The user wants to see tips and tricks regarading their symptoms \\ 
+			\hline
+			Result & The system shows the tip-view to the user\\ 
+			\hline
+			Actors & User, Doctor \\ 
+			\hline
+			Trigger & Click on the tip tab\\ 
+			\hline
+			Preconditions & None \\ 
+			\hline
+			Steps & \parbox{9cm}{\vspace{.5\baselineskip}
+				1. The user selects the tip tab on the bottom navigation bar\\
+				2. The system displays the tip-dashboard\\
+				3. The user clicks on a tip to see the whole tip-description\\
+				4. The system displays the tip-detail-page and the use case ends}\\
+			\hline
+			Alternate flow & \parbox{9cm}{\vspace{.5\baselineskip} 
+				AF1a. The user wants to add a tip to his favorites \textbf{[OR2]}\\
+				AF1b. The user clicks on the favorite icon of the tip\\
+				AF1c. The system saves the tip to the users favorites }\\
+			\hline
+		\end{tabular}\normalsize
+	\end{center}
+	\caption{Use case get tups and tricks for sympstoms and diseases}
+\end{table}
+\begin{table}[H]
+	\begin{center}\scriptsize
+		\begin{tabular}{ |c|c| } 
+			\hline	
+			Name & Login \textbf{[FR3]}\\ 
+			\hline	
+			Description & The user, a doctor, wants to log into the application \\ 
+			\hline
+			Goal & The doctor successfully logged into the system \\ 
+			\hline
+			Actors & Doctor \\ 
+			\hline
+			Trigger & Click on the login button \\ 
+			\hline
+			Preconditions & User is verified as a doctor \textbf{[FR3]} \\ 
+			\hline
+			Steps & \parbox{9cm}{\vspace{.5\baselineskip}
+				1. The doctor clicks on the login button\\
+				2. The systems shows the login form\\
+				3. The doctor enters his personal details and presses the okay button\\
+				4. The system checks for the credentials in the database\\
+				5. The system displays the Add screen and the use case ends\\}\\
+			\hline
+			Alternate flow & \parbox{9cm}{\vspace{.5\baselineskip}
+				AF1a. The system could not find the given credentials in the database\\
+				AF1b. The user entered wrong credentials\\
+				AF1c. The system displays an error message\\
+				AF1d. The user retries\\\\
+				AF2a. The user is not verfied as doctor yet \textbf{[FR3]}\\
+				AF2b. The doctor enters his personal details and presses the okay button\\
+				AF2c. The system starts the verification method\\
+				AF2d. The doctor is verified as doctor\\
+				AF2e. The system displays the Add screen and the use case ends\\}\\ 
+			\hline
+			Alternate flow (failure) & \parbox{9cm}{\vspace{.5\baselineskip}
+				AFF1a. The user is no doctor\\
+				AFF1b. The user is not able to verify himself as doctor\\
+				AFF1c. The system shows an error}\\
+			\hline
+		\end{tabular}
+	\end{center}\normalsize
+	\caption{Use case login}
+\end{table}
+\begin{table}[H]
+	\begin{center}\scriptsize
+		\begin{tabular}{ |c|c| } 
+			\hline	
+			Name & Add data to the databas  \textbf{[FR4]} \\
+			\hline
+			Description & The actor wants to add new data to the database \\ 
+			\hline
+			Goal & The data is added to the database \\ 
+			\hline
+			Actors & Doctor, Developer \\ 
+			\hline
+			Trigger & Click on the addData button \\ 
+			\hline
+			Preconditions & Actor is logged in \\ 
+			\hline
+			Steps & \parbox{9cm}{\vspace{.5\baselineskip}
+				1. The actor clicks on the addData button\\
+				2. The system shows the add form\\
+				3. The actor enters the required data and presses the ok button\\
+				4. The system adds the disease, symptom, cause or tip to the database\\ } \\
+			\hline
+			Alternate flow & \parbox{9cm}{\vspace{.5\baselineskip}
+				AF1a. The actor missed to enter data\\
+				AF1b. The system displays an error message\\
+				AF1c. The actor retries\\\\
+				AF2a. The actor wants to cancel the process \textbf{[FR12]}\\
+				AF2b. The actor clicks on the cancel button\\
+				AF2c. The system closes the add form}\\ 
+			\hline
+		\end{tabular}
+	\end{center}\normalsize
+	\caption{Use case add data}
+\end{table}
+\begin{table}[H]
+	\begin{center}\scriptsize
+		\begin{tabular}{ |c|c| }
+			\hline
+			Name & Edit Data \textbf{[FR5]} \\ 
+			\hline	
+			Description & The actor wants to edit old data \\ 
+			\hline
+			Goal & The edited data is uploaded to the database \\ 
+			\hline
+			Actors & Doctor, Developer \\ 
+			\hline
+			Trigger & Click on the edit button \\ 
+			\hline
+			Preconditions & Actor is logged in \\ 
+			\hline
+			Steps & \parbox{9cm}{\vspace{.5\baselineskip}
+				1. The actor clicks on the edit button on the data he wants to edit\\
+				2. The system shows the edit form\\
+				3. The actor edits the data and presses the okay button\\
+				4. The system updates the data and the use case ends
+			}\\
+			\hline
+			Alternate flow & \parbox{9cm}{\vspace{.5\baselineskip}
+				AF1a. The actor wants to cancel the process \textbf{[FR12]}\\
+				AF1b. The actor clicks on the cancel button\\
+				AF1c. The system closes the edit form}\\ \\ 
+			\hline
+		\end{tabular}
+	\end{center}\normalsize
+	\caption{Use case edit data}
+\end{table}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.05]{My_PDF.png}
+	\caption[QR-Code for NHS API Response]{QR-Code for NHS API Response}
+\end{figure}
+\chapter{Bibliography}
+
+\chapter{List of Abbreviations}
+
+\chapter{List of Tables}
+
+\chapter{List of Figures}

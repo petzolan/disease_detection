@@ -1,0 +1,114 @@
+
+%% PLANUNG %% 
+
+\chapter{Conception and Design}
+This section deals with the conception of the graphical user interface and the implementation options of the application.
+\section{Graphical User Interface}
+First, a look is taken at whether the graphical user interface plays an important role in applications at all. For this purpose, a question on this topic was also included in the survey already mentioned. The answers on this question revealed that the graphical interface of an application, in fact, plays a role in terms of the trustworthiness of the application. Figure 6.1 shows the results of the survey-question.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{appUiImportant.png}
+	\caption[Survey Question]{Survey Question - Trustworthiness of the Application based on the UI}
+\end{figure}
+\noindent
+Respondents of the survey were also given the opportunity to choose between three different UIs. The graphical interface should be adapted to the choice made by the people interviewed.
+\subsection{Conceptual Design of the Graphical User Interface}
+The UI can be designed based on the requirements analysis of the application and the information obtained from it. As already defined there, the application should be designed to be as intuitive and easy to use as possible. The implementation of the design of the user interface, for the android version, is based on suggestions from the material.io website [material.io], an open-source design system developed by google. The integration of the design components into the Flutter application is simplified thanks to the pre-installed material.dart package. This package is based on the source mentioned and currently supports version 2 of material.io. Support for the current version 3 of Material Design is still being worked on.
+\noindent
+One goal of this application is to be designed to be intuitive. In his book "UI is COMMUNICATION", Everett N. McKay described an intuitive UI as follows: 
+\begin{quote}
+	\textit{"A UI is intuitive when target users understand its behavior and effect without use of reason, memorization, experimentation, assitance, or training."} - Everett N McKay [Quelle]
+\end{quote}
+In order to meet this definition, goals that the user interface should meet could be set before the graphic user interface is designed.\\
+\noindent
+On the one hand, the user should be able to recognize immediately that a component of the screen is a widget that he can operate. The system must then show the user that something has been triggered by his action. This can be done, for example, through feedback in the form of a loading circle if required data still needs to be loaded, or in the form of a new screen, pop-up or similar design components. [everett] Another step that can be taken to make the application more intuitive is the correct (short) labeling of the respective components. For example, a corresponding text, or even better imagery [ess mobile interac design cameron, seite 172], should be stored on a confirmation button. In addition, it should be ensured that surface components do not change their positions. This ensures that users can rely on their previous interactions and thus learn how to use the application. Minimalism is becoming a trend not only in the real world, but also in the digital world. This can also be seen looking at the most popular graphical interface of the survey, shown in Figure 6.2. The associated surfaces can be found in Appendix x.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{whichUI.png}
+	\caption[Survey Question]{Survey Question - Which UI}
+\end{figure}
+\noindent
+Designing the application as minimalistic as possible has the advantage that the graphical interface is not overloaded and thus the user is not overwhelmed by different widgets at all. This may make it easier for the user to better interpret the use of specific elements. Another factor that plays a role in user-friendliness is to use familiar design patterns. This ensures that users are already familiar with the handling of the app elements and that there is no confusion regarding the use. 
+\section{Implementation}
+This section presents the individual views that are made available to users. In addition, possible implementation ways for these in Flutter are considered.
+\subsection{Recieving the Firestore Data}
+\subsection{Converting the Firestore Data}
+\subsection{Description of the Views and Thoughts on the Implementation in Flutter}
+\subsubsection{\textbf{Home Screen}}
+The first view that a user will encounter when installing or opening the application is the home screen. There, he should be given the opportunity to switch between the different views that are necessary for his use: diagnosis creation, diagnosis overview and advice view. In addition, every user should be able to access the login screen for doctors, since they can verify themselves there as such. The navigation to create a diagnosis is implemented in the form of a button and labeled with a corresponding, clearly formulated text. To get to all other screens, a list view of all options is offered, in which there are various clickable fields that trigger navigation to the corresponding screen when clicked. In Flutter, this view can be achieved through several different components. The most important widgets can be used in the form of children in a column. In order to implement the clickable forwarding elements to other views, one should use a ListView. this allows you to simplify the integration of new categories at a later point in time by specifying a modifiable list as child elements. A screenshot of a possible home screen can be found in Appendix x.
+
+\subsubsection{\textbf{View for the diagnostic process}}
+The screen to start a diagnosis should be created as simply as possible. The widget \textit{Stepper} is a possible implementation option. It gives the developer the opportunity to easily implement a type of step-by-step tool. For this purpose, only all steps for generating a diagnosis are created and filled with the appropriate data. Listing 6.1 shows an example for the selection of a body part in this stepper.
+	\scriptsize
+	\begin{lstlisting}[caption=Stepper for Body Part Selection]
+		...
+		  List<String> selectedBodyParts = [];
+		...
+		Stepper(
+		type: stepperType,
+		physics: ScrollPhysics(),
+		currentStep: _currentStep,
+		onStepTapped: (step) => tapped(step),
+		steps: [
+			...,
+			Step(
+				title: const Text('Location of the Symptoms'),
+				subtitle: const Text(
+				"Please select the body Part ...",),
+				title: const Text("Body Parts"),
+				onTap: (values) {
+					setState(() {
+						selectedBodyParts = values;
+					});},),
+			isActive: _currentStep >= 0,
+			state:
+			_currentStep >= 0 ? StepState.complete : StepState.disabled,
+			),
+			...
+	\end{lstlisting}
+	\normalsize
+\subsubsection{\textbf{Login Screen (Doctor)}}
+The login screen is displayed to the user immediately after clicking on the navigation tool labeled "Doctor Panel". There he will be offered the option to log in or register. If the user has already created a user account in a previous session, has verified himself as a medical profressional and has then been logged in, he will be forwarded to the actual doctor panel without any further need to log in. An exception is given if he has previously logged out. With the help of the flutter\_login package, a developer can implement the login process in Dart very easily. Listing 6.2 demonstrate the user of the FlutterLogin-plugin. There are also options to customize the appeareance of the login-form.
+	\scriptsize
+\begin{lstlisting}[caption=Stepper for Body Part Selection]
+	...
+	FlutterLogin(
+		logo: const AssetImage('assets/images/login.png'),
+		title: 'Please login to continue',
+		onLogin: AuthService.instance.signIn,
+		onSignup: AuthService.instance.registration,
+		onConfirmRecover: AuthService.instance.resetPassword,
+		onSubmitAnimationCompleted: (() {
+			Navigator.of(context).pop();
+			AppNavigator.push(Routes.doctorPanel);
+		}),
+		onRecoverPassword: (_) => Future(() => null),
+	)
+	...
+\end{lstlisting}
+\normalsize
+\subsubsection{\textbf{Screen with all body parts, diseases, advices and symptoms (Doctor)}}
+The doctor panel should contain all the necessary data related to the records stored in the database. Here a doctor can switch between the different collections. A good implementation method for this would be the BottomNavigationBar. This contains various navigation elements which all change to their data view when you click on them. The data views show a list of the data stored in the associated Firestore collection. Care should be taken to ensure that it is recognizable that you can click on the list elements. When this is done, the system redirects to the edit view for the associated record. In order to be able to store new data quickly, a FloatingActionButton can also be integrated, which opens a small menu with a click. This lists the options for which data sets the doctor can add. Clicking on a listing item then opens the associated add view.
+\subsubsection{\textbf{View for adding and editing data (Doctor)}}
+In order to make the views as intuitive as possible, it is advisable to make the graphical interface as uncluttered as possible. Furthermore, here only text fields are included for the data records where possible. For the selection of related data for a data set (e.g. symptoms for an illness), a button is placed on the view which, when clicked, generates and displays a dialog with the content of all symptoms in the database. Ideally, this dialog should also contain a search bar so that the user is not forced to scroll through the large number of data records. Both, the edit view and the view to add new records, consist of a form widget. In this it is possible to transfer text fields as children, which can be modified by a user. The distinction here is only between the initial value of the text fields. While the data stored in the database for the associated data record is displayed in the edit view, when a new data tuple is created, only an empty text field with a note regarding the data field is specified.
+\subsubsection{\textbf{View with all saved diagnoses}}
+The diagnoses view is represented by a vertical list of all diagnoses. A ListView is used here. This ListView contains all diagnostic data that the user has previously saved on his device. Clicking on a diagnosis element in the list opens the detailed view of this diagnosis. It shows the date on which the diagnosis was made, which symptoms the user specified and which illnesses resulted from the calculation of the probability of diseases. This are represented in the form of a bar chart. At the end of the diagnosis, the diseases are listed again in list form, together with their description and treatment recommendations.
+
+\subsubsection{\textbf{View with all advices stored in the database (User) }}
+The recommendation screen is laid out similarly to the diagnosis screen. Here, too, the data from Firestore is displayed in the form of a vertical list and a click opens the detailed description of the advice. This detailed view simply consists of text fields which contain the data from the document fields.
+
+\subsection{Routing in the Application}
+\section{Algorithms for the Attribution of Symptoms to potential Diseases}
+\subsection{Solution based on the Naive Bayes Algorithm}
+\subsubsection{Weighting of the Symptoms within the Application}
+\subsection{K-nearest Neighbors Algorithm}
+\subsection{Beyesian Networks}
+\section{The Symptom Graph}
+\section{Evaluation of the Algorithms}
+\subsection{Performance Evaluation}
+\subsection{Scalability Comparison}
+\section{Diagnoses}
+\subsection{Generate Diagnose PDF}
+\subsection{Store PDF Locally on Device}
+
+

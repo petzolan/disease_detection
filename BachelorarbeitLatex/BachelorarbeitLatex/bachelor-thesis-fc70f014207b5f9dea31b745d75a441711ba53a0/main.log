@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.11.22)  9 DEC 2022 16:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.11.22)  17 DEC 2022 01:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1055,16 +1055,59 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \TX@cols=\count456
 \TX@ftn=\toks42
 )
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/arimo\arimo.sty
+Package: arimo 2022/09/28 (Bob Tennent) Supports Arimo fonts for all LaTeX engi
+nes.
+
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.st
+y
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+112.
+
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.s
+ty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+))
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+Arimo-TLF on input l
+ine 112.
+
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/arimo\t1arimo-tlf.f
+d
+File: T1Arimo-TLF.fd 2017/01/04 (autoinst) Font definitions for T1/Arimo-TLF.
+)
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 112.
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-144.
 
-(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
-File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 
 LaTeX Warning: Unused global option(s):
     [parskip,headings].
@@ -1075,31 +1118,31 @@ LaTeX Warning: Unused global option(s):
 (kapitel/50_fazit.aux) (kapitel/60_fazit.aux) (kapitel/70_fazit.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-Package scrbase Info: activating english \abstractname on input line 144.
-Package scrbase Info: activating english \partname on input line 144.
-Package scrbase Info: activating english \chaptername on input line 144.
-Package scrbase Info: activating english \appendixname on input line 144.
-Package scrbase Info: activating english \figurename on input line 144.
-Package scrbase Info: activating english \tablename on input line 144.
-Package scrbase Info: activating english \contentsname on input line 144.
-Package scrbase Info: activating english \listfigurename on input line 144.
-Package scrbase Info: activating english \listtablename on input line 144.
-Package scrbase Info: activating english \bibname on input line 144.
-Package scrbase Info: activating english \indexname on input line 144.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+Package scrbase Info: activating english \abstractname on input line 145.
+Package scrbase Info: activating english \partname on input line 145.
+Package scrbase Info: activating english \chaptername on input line 145.
+Package scrbase Info: activating english \appendixname on input line 145.
+Package scrbase Info: activating english \figurename on input line 145.
+Package scrbase Info: activating english \tablename on input line 145.
+Package scrbase Info: activating english \contentsname on input line 145.
+Package scrbase Info: activating english \listfigurename on input line 145.
+Package scrbase Info: activating english \listtablename on input line 145.
+Package scrbase Info: activating english \bibname on input line 145.
+Package scrbase Info: activating english \indexname on input line 145.
 
 (C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pd
 f.mkii
@@ -1119,31 +1162,43 @@ f.mkii
 (C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstop
 df-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvde
+finekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-s
 ys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count463
-LaTeX Info: Redefining \microtypecontext on input line 144.
-Package microtype Info: Applying patch `item' on input line 144.
-Package microtype Info: Applying patch `toc' on input line 144.
-Package microtype Info: Applying patch `eqnum' on input line 144.
-Package microtype Info: Applying patch `footnote' on input line 144.
+LaTeX Info: Redefining \microtypecontext on input line 145.
+Package microtype Info: Applying patch `item' on input line 145.
+Package microtype Info: Applying patch `toc' on input line 145.
+Package microtype Info: Applying patch `eqnum' on input line 145.
+Package microtype Info: Applying patch `footnote' on input line 145.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 144.
+LaTeX Info: Redefining \showhyphens on input line 145.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: OT1).
+(microtype)             `Arimo-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package biblatex Info: Trying to load language 'english'...
@@ -1184,14 +1239,30 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 144.
-Package biblatex Info: Reference segment=0 on input line 144.
+Package biblatex Info: Reference section=0 on input line 145.
+Package biblatex Info: Reference segment=0 on input line 145.
+\c@mv@tabular=\count464
+\c@mv@boldtabular=\count465
 <bilder//thi_logo_cropped.pdf, id=4, 165.87971pt x 73.25368pt>
 File: bilder//thi_logo_cropped.pdf Graphic file (type pdf)
 <use bilder//thi_logo_cropped.pdf>
-Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 147.
+Package pdftex.def Info: bilder//thi_logo_cropped.pdf  used on input line 148.
 (pdftex.def)             Requested size: 229.81075pt x 101.48807pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 147
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 148.
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/b/n' will be
+(Font)              scaled to size 20.74pt on input line 148.
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 148.
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 148.
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 148.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 148
 .
 
 (C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -1201,7 +1272,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 g
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 147
+LaTeX Font Info:    Trying to load font information for U+msb on input line 148
 .
  (C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1210,13 +1281,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 g
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 148.
+
 
 Class scrreprt Warning: non empty \uppertitleback ignored by \maketitle
-(scrreprt)              in `twoside=false' mode on input line 147.
+(scrreprt)              in `twoside=false' mode on input line 148.
 
 
 Class scrreprt Warning: non empty \lowertitleback ignored by \maketitle
-(scrreprt)              in `twoside=false' mode on input line 147.
+(scrreprt)              in `twoside=false' mode on input line 148.
 
 [1
 
@@ -1226,13 +1300,22 @@ Class scrreprt Warning: non empty \lowertitleback ignored by \maketitle
 //thi_logo_cropped.pdf>]
 \openout2 = `kapitel/00_abstract.aux'.
 
- (kapitel/00_abstract.tex [1
+ (kapitel/00_abstract.tex
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 9.
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/m/sl' in size <10.95> not availabl
+e
+(Font)              Font shape `T1/Arimo-TLF/m/it' tried instead on input line 
+17.
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 17.
+ [1
 
 
 
 ] [2] [3])
 Package tocbasic Info: character protrusion at toc deactivated on input line 15
-2.
+3.
  (main.toc
 [4
 \babel@aux{ngerman}{}
@@ -1244,7 +1327,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [5]
+ [5] [6]
 \openout2 = `kapitel/10_einleitung.aux'.
 
  (kapitel/10_einleitung.tex
@@ -1264,156 +1347,165 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
-<bilder//question1.png, id=32, 1129.21875pt x 557.83406pt>
-File: bilder//question1.png Graphic file (type png)
-<use bilder//question1.png>
-Package pdftex.def Info: bilder//question1.png  used on input line 11.
-(pdftex.def)             Requested size: 338.76823pt x 167.3515pt.
-<bilder//question2.png, id=34, 1129.21875pt x 568.37344pt>
-File: bilder//question2.png Graphic file (type png)
-<use bilder//question2.png>
-Package pdftex.def Info: bilder//question2.png  used on input line 18.
-(pdftex.def)             Requested size: 451.6795pt x 227.34535pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+<bilder//avoidingDoctorYesNo.png, id=35, 1129.21875pt x 316.18124pt>
+File: bilder//avoidingDoctorYesNo.png Graphic file (type png)
+<use bilder//avoidingDoctorYesNo.png>
+Package pdftex.def Info: bilder//avoidingDoctorYesNo.png  used on input line 12
+.
+(pdftex.def)             Requested size: 338.76823pt x 94.8551pt.
+<bilder//reasonsPuttingOf.png, id=37, 1129.21875pt x 464.4853pt>
+File: bilder//reasonsPuttingOf.png Graphic file (type png)
+<use bilder//reasonsPuttingOf.png>
+Package pdftex.def Info: bilder//reasonsPuttingOf.png  used on input line 20.
+(pdftex.def)             Requested size: 451.6795pt x 185.79083pt.
 [1
 
 
 
 
- <./bilder//question1.png>]) [2 <./bilder//question2.png>]
+ <./bilder//avoidingDoctorYesNo.png>] [2 <./bilder//reasonsPuttingOf.png>]
+chapter 2.
+[3
+
+]) [4]
 \openout2 = `kapitel/20_grundlagen.aux'.
 
+ (kapitel/20_grundlagen.tex
+chapter 3.
+LaTeX Font Info:    Trying to load font information for TS1+Arimo-TLF on input 
+line 13.
 
-(kapitel/20_grundlagen.tex
-chapter 2.
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-14.
-(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/arimo\ts1arimo-tlf.
+fd
+File: TS1Arimo-TLF.fd 2017/01/04 (autoinst) Font definitions for TS1/Arimo-TLF.
+
 )
+LaTeX Font Info:    Font shape `TS1/Arimo-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 13.
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TS1).
+(microtype)             `Arimo-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-[3
+ [5
 
 
 
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-28.
- (C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
-File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
+7.
+
+(C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: OT1).
+(microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<bilder//widget_tree.png, id=48, 695.59875pt x 364.36125pt>
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 28.
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 28.
+<bilder//widget_tree.png, id=56, 695.59875pt x 364.36125pt>
 File: bilder//widget_tree.png Graphic file (type png)
 <use bilder//widget_tree.png>
-Package pdftex.def Info: bilder//widget_tree.png  used on input line 54.
-(pdftex.def)             Requested size: 417.36247pt x 218.61842pt.
-<bilder//layered_architecture.png, id=49, 585.18625pt x 668.4975pt>
+Package pdftex.def Info: bilder//widget_tree.png  used on input line 41.
+(pdftex.def)             Requested size: 313.01654pt x 163.96104pt.
+<bilder//layered_architecture.png, id=57, 585.18625pt x 668.4975pt>
 File: bilder//layered_architecture.png Graphic file (type png)
 <use bilder//layered_architecture.png>
-Package pdftex.def Info: bilder//layered_architecture.png  used on input line 6
-1.
+Package pdftex.def Info: bilder//layered_architecture.png  used on input line 4
+8.
 (pdftex.def)             Requested size: 263.33138pt x 300.82109pt.
 
-[4 <./bilder//widget_tree.png>] [5 <./bilder//layered_architecture.png>]
-<bilder//solid.png, id=60, 1129.21875pt x 630.85687pt>
-File: bilder//solid.png Graphic file (type png)
-<use bilder//solid.png>
-Package pdftex.def Info: bilder//solid.png  used on input line 91.
-(pdftex.def)             Requested size: 225.83975pt x 126.16913pt.
-
-[6 <./bilder//solid.png>]
+[6 <./bilder//widget_tree.png>] [7 <./bilder//layered_architecture.png>]
+[8]
 (C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.s
 ty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [7] [8]) [9]
+) [9] [10]
+<bilder//nosql.jpg, id=77, 613.54219pt x 467.49657pt>
+File: bilder//nosql.jpg Graphic file (type jpg)
+<use bilder//nosql.jpg>
+Package pdftex.def Info: bilder//nosql.jpg  used on input line 181.
+(pdftex.def)             Requested size: 184.06407pt x 140.25005pt.
+ [11] [12 <./bilder//nosql.jpg>]) [13]
 \openout2 = `kapitel/30_requirements_engineering.aux'.
 
- (kapitel/30_requirements_engineering.tex
-chapter 3.
-[10
+
+(kapitel/30_requirements_engineering.tex
+chapter 4.
+
+Overfull \hbox (8.51634pt too wide) in paragraph at lines 9--11
+\T1/Arimo-TLF/m/n/10.95 (-20) up about 68 per-cent of the to-tal. [https://de.s
+tatista.com/statistik/daten/studie/459963/umfrage/anteil-
+ []
+
+[14
 
 
 
 
 ]
-<bilder//stakeholder_matrix.png, id=78, 476.0184pt x 430.4883pt>
+<bilder//stakeholder_matrix.png, id=91, 476.0184pt x 430.4883pt>
 File: bilder//stakeholder_matrix.png Graphic file (type png)
 <use bilder//stakeholder_matrix.png>
 Package pdftex.def Info: bilder//stakeholder_matrix.png  used on input line 22.
 
-(pdftex.def)             Requested size: 190.40398pt x 172.19226pt.
-<bilder//system_context.png, id=79, 548.0475pt x 283.0575pt>
+(pdftex.def)             Requested size: 238.0086pt x 215.24362pt.
+ [15 <./bilder//stakeholder_matrix.png>]
+<bilder//system_context.png, id=96, 426.59375pt x 239.89626pt>
 File: bilder//system_context.png Graphic file (type png)
 <use bilder//system_context.png>
 Package pdftex.def Info: bilder//system_context.png  used on input line 32.
-(pdftex.def)             Requested size: 219.2151pt x 113.22098pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[11 <./bilder//stakeholder_matrix.png>] [12 <./bilder//system_context.png>]
-<bilder//use_case_diagram.png, id=88, 754.82pt x 303.1325pt>
+(pdftex.def)             Requested size: 277.28264pt x 155.93071pt.
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 44.
+LaTeX Font Info:    Font shape `T1/Arimo-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 47.
+ [16 <./bilder//system_context.png>] [17]
+<bilder//use_case_diagram.png, id=104, 754.82pt x 303.1325pt>
 File: bilder//use_case_diagram.png Graphic file (type png)
 <use bilder//use_case_diagram.png>
-Package pdftex.def Info: bilder//use_case_diagram.png  used on input line 133.
+Package pdftex.def Info: bilder//use_case_diagram.png  used on input line 124.
 (pdftex.def)             Requested size: 452.89551pt x 181.8809pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13] [14 <./bilder//use_case_diagram.png>] [15]
-<bilder//domain_model2.png, id=100, 978.65625pt x 822.07124pt>
-File: bilder//domain_model2.png Graphic file (type png)
-<use bilder//domain_model2.png>
-Package pdftex.def Info: bilder//domain_model2.png  used on input line 181.
-(pdftex.def)             Requested size: 489.32693pt x 411.0346pt.
-
-Overfull \hbox (29.70543pt too wide) in paragraph at lines 181--182
- [][] 
- []
-
-[16]) [17 <./bilder//domain_model2.png>]
+ [18 <./bilder//use_case_diagram.png>] [19]
+<bilder//domain_model.png, id=113, 2115.905pt x 1739.49875pt>
+File: bilder//domain_model.png Graphic file (type png)
+<use bilder//domain_model.png>
+Package pdftex.def Info: bilder//domain_model.png  used on input line 171.
+(pdftex.def)             Requested size: 423.17351pt x 347.89359pt.
+ [20]) [21 <./bilder//domain_model.png>]
 \openout2 = `kapitel/30_datenbank.aux'.
 
  (kapitel/30_datenbank.tex
-chapter 4.
-<bilder//nosql.jpg, id=108, 613.54219pt x 467.49657pt>
-File: bilder//nosql.jpg Graphic file (type jpg)
-<use bilder//nosql.jpg>
-Package pdftex.def Info: bilder//nosql.jpg  used on input line 8.
-(pdftex.def)             Requested size: 184.06407pt x 140.25005pt.
-[18
-
-
-
-
- <./bilder//nosql.jpg>]) [19]
-\openout2 = `kapitel/30_planung.aux'.
-
- (kapitel/30_planung.tex
 chapter 5.
-) [20
+) [22
 
 
 
 
 ]
+\openout2 = `kapitel/30_planung.aux'.
+
+ (kapitel/30_planung.tex
+chapter 6.
+<bilder//appUiImportant.png, id=124, 1129.21875pt x 277.035pt>
+File: bilder//appUiImportant.png Graphic file (type png)
+<use bilder//appUiImportant.png>
+Package pdftex.def Info: bilder//appUiImportant.png  used on input line 8.
+(pdftex.def)             Requested size: 451.6795pt x 110.81203pt.
+) [23
+
+
+
+
+ <./bilder//appUiImportant.png>] [24]
 \openout2 = `kapitel/40_poc.aux'.
 
  (kapitel/40_poc.tex
-chapter 6.
-) [21
+chapter 7.
+) [25
 
 
 
@@ -1422,8 +1514,8 @@ chapter 6.
 \openout2 = `kapitel/50_fazit.aux'.
 
  (kapitel/50_fazit.tex
-chapter 7.
-) [22
+chapter 8.
+) [26
 
 
 
@@ -1432,8 +1524,8 @@ chapter 7.
 \openout2 = `kapitel/60_fazit.aux'.
 
  (kapitel/60_fazit.tex
-chapter 8.
-) [23
+chapter 9.
+) [27
 
 
 
@@ -1442,7 +1534,7 @@ chapter 8.
 \openout2 = `kapitel/70_fazit.aux'.
 
  (kapitel/70_fazit.tex
-chapter 9.
+chapter 10.
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--35
 
@@ -1468,7 +1560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--135
 
  []
 
-[24
+[28
 
 
 
@@ -1483,31 +1575,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--174
 
  []
 
-[25]
-<bilder//My_PDF.png, id=135, 3011.25pt x 3011.25pt>
+[29]
+<bilder//My_PDF.png, id=148, 3011.25pt x 3011.25pt>
 File: bilder//My_PDF.png Graphic file (type png)
 <use bilder//My_PDF.png>
 Package pdftex.def Info: bilder//My_PDF.png  used on input line 214.
 (pdftex.def)             Requested size: 150.57132pt x 150.57132pt.
- [26 <./bilder//My_PDF.png>]
-chapter 10.
-[27
-
-]
+ [30 <./bilder//My_PDF.png>]
 chapter 11.
-[28
+[31
 
 ]
 chapter 12.
-[29
+[32
 
 ]
 chapter 13.
-) [30
+[33
+
+]
+chapter 14.
+) [34
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 173.
+LaTeX Warning: Empty bibliography on input line 174.
 
 (main.aux (kapitel/00_abstract.aux) (kapitel/10_einleitung.aux)
 (kapitel/20_grundlagen.aux) (kapitel/30_requirements_engineering.aux)
@@ -1518,26 +1610,24 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24936 strings out of 477992
- 512525 string characters out of 2825577
- 1522714 words of memory out of 3000000
- 43052 multiletter control sequences out of 15000+600000
- 581728 words of font info for 196 fonts, out of 8000000 for 9000
+ 25613 strings out of 477992
+ 529375 string characters out of 2825577
+ 1525174 words of memory out of 3000000
+ 43616 multiletter control sequences out of 15000+600000
+ 570700 words of font info for 275 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,20n,106p,10601b,2584s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.
-enc}{C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.
-enc}{C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1
-.enc}<C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-ss10.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
-m/lmss12.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/lm/lmss8.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/lm/lmssbx10.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/lm/lmsso10.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (36 pages, 736409 bytes).
+{C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.en
+c}{C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/arimo/arm_c
+3z4r2.enc}{C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ari
+mo/arm_l3opzb.enc}<C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1
+/google/arimo/Arimo-Bold.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/
+fonts/type1/google/arimo/Arimo-Italic.pfb><C:/Users/Thomazzzz/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/google/arimo/Arimo.pfb><C:/Users/Thomazzzz/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
+Output written on main.pdf (41 pages, 710406 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
+ 191 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 50249 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 62537 words of extra memory for PDF output out of 74296 (max. 10000000)
 
