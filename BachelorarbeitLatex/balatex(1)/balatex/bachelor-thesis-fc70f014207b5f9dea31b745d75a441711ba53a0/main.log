@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.11.22)  19 DEC 2022 20:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.11.22)  20 DEC 2022 21:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1435,16 +1435,31 @@ Package pdftex.def Info: bilder//whichUI.png  used on input line 27.
 
 
 
- <./bilder//appUiImportant.png>] [27 <./bilder//whichUI.png>] [28] [29])
+ <./bilder//appUiImportant.png>] [27 <./bilder//whichUI.png>] [28] [29]
 [30]
+chapter 7.
+<bilder//api_flow.png, id=152, 2414.26968pt x 812.28468pt>
+File: bilder//api_flow.png Graphic file (type png)
+<use bilder//api_flow.png>
+Package pdftex.def Info: bilder//api_flow.png  used on input line 134.
+(pdftex.def)             Requested size: 482.84538pt x 162.45406pt.
+
+Overfull \hbox (23.22388pt too wide) in paragraph at lines 134--135
+ [][] 
+ []
+
+[31
+
+] [32 <./bilder//api_flow.png>]) [33]
 \openout2 = `kapitel/40_poc.aux'.
 
  (kapitel/40_poc.tex)
 \openout2 = `kapitel/50_fazit.aux'.
 
- (kapitel/50_fazit.tex
-chapter 7.
-) [31
+
+(kapitel/50_fazit.tex
+chapter 8.
+) [34
 
 
 
@@ -1456,8 +1471,8 @@ chapter 7.
 \openout2 = `kapitel/60_fazit.aux'.
 
  (kapitel/60_fazit.tex
-chapter 8.
-) [32
+chapter 9.
+) [35
 
 
 
@@ -1466,7 +1481,7 @@ chapter 8.
 \openout2 = `kapitel/70_fazit.aux'.
 
  (kapitel/70_fazit.tex
-chapter 9.
+chapter 10.
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--35
 
@@ -1492,7 +1507,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--135
 
  []
 
-[33
+[36
 
 
 
@@ -1507,27 +1522,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--174
 
  []
 
-[34]
-<bilder//My_PDF.png, id=165, 3011.25pt x 3011.25pt>
+[37]
+<bilder//My_PDF.png, id=177, 3011.25pt x 3011.25pt>
 File: bilder//My_PDF.png Graphic file (type png)
 <use bilder//My_PDF.png>
 Package pdftex.def Info: bilder//My_PDF.png  used on input line 214.
 (pdftex.def)             Requested size: 150.57132pt x 150.57132pt.
- [35 <./bilder//My_PDF.png>]
-chapter 10.
-[36
+ [38 <./bilder//My_PDF.png>] [39]
+Package tocbasic Info: character protrusion at lof deactivated on input line 28
+5.
+ (main.lof)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ [40
 
 ]
-chapter 11.
-[37
+Package tocbasic Info: character protrusion at lot deactivated on input line 28
+6.
+ (main.lot)
+\tf@lot=\write7
+\openout7 = `main.lot'.
 
-]
-chapter 12.
-[38
-
-]
-chapter 13.
-) [39
+) [41
 
 ]
 
@@ -1542,25 +1559,26 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25369 strings out of 477992
- 520577 string characters out of 2825577
- 1555958 words of memory out of 3000000
- 43435 multiletter control sequences out of 15000+600000
+ 25469 strings out of 477992
+ 522350 string characters out of 2825577
+ 1729982 words of memory out of 3000000
+ 43528 multiletter control sequences out of 15000+600000
  603847 words of font info for 219 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,20n,106p,10601b,2584s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.en
 c}{C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.e
-nc}<C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss
-10.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
-lmss12.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/lm/lmss8.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/lm/lmssbx10.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/lm/lmsso10.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/font
-s/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (45 pages, 802614 bytes).
+nc}<C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmss10.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmss12.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/lm/lmss8.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmssbx10.pfb><C:/Users/Thomazzzz/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmsso10.pfb><C:/Users/Thomazzzz/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
+Output written on main.pdf (47 pages, 954289 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
+ 227 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 65102 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 65107 words of extra memory for PDF output out of 74296 (max. 10000000)
 

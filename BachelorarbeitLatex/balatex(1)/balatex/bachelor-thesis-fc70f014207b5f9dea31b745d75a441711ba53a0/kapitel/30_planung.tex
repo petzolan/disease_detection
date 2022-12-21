@@ -29,11 +29,9 @@ On the one hand, the user should be able to recognize immediately that a compone
 \end{figure}
 \noindent
 Designing the application as minimalistic as possible has the advantage that the graphical interface is not overloaded and thus the user is not overwhelmed by different widgets at all. This may make it easier for the user to better interpret the use of specific elements. Another factor that plays a role in user-friendliness is to use familiar design patterns. This ensures that users are already familiar with the handling of the app elements and that there is no confusion regarding the use. 
-\section{Implementation}
-This section presents the individual views that are made available to users. In addition, possible implementation ways for these in Flutter are considered.
-\subsection{Recieving the Firestore Data}
-\subsection{Converting the Firestore Data}
+
 \subsection{Description of the Views and Thoughts on the Implementation in Flutter}
+This section presents the individual views that are made available to users. In addition, first thoughts on possible implementation ways for those views, working with Flutter, are considered.
 \subsubsection{\textbf{Home Screen}}
 The first view that a user will encounter when installing or opening the application is the home screen. There, he should be given the opportunity to switch between the different views that are necessary for his use: diagnosis creation, diagnosis overview and advice view. In addition, every user should be able to access the login screen for doctors, since they can verify themselves there as such. The navigation to create a diagnosis is implemented in the form of a button and labeled with a corresponding, clearly formulated text. To get to all other screens, a list view of all options is offered, in which there are various clickable fields that trigger navigation to the corresponding screen when clicked. In Flutter, this view can be achieved through several different components. The most important widgets can be used in the form of children in a column. In order to implement the clickable forwarding elements to other views, one should use a ListView. this allows you to simplify the integration of new categories at a later point in time by specifying a modifiable list as child elements. A screenshot of a possible home screen can be found in Appendix x.
 
@@ -96,19 +94,83 @@ The diagnoses view is represented by a vertical list of all diagnoses. A ListVie
 
 \subsubsection{\textbf{View with all advices stored in the database (User) }}
 The recommendation screen is laid out similarly to the diagnosis screen. Here, too, the data from Firestore is displayed in the form of a vertical list and a click opens the detailed description of the advice. This detailed view simply consists of text fields which contain the data from the document fields.
+\subsection{Mock-ups and second Survey}
+With the description of the screens and the first development approaches, mock-ups could already be created with the help of Canva. These can be found in Appendix x. As parat of a survey, it was founrd out whether the basic idea of the graphic design would speak for trustworthiness and whether the participants woudl have inutitively known how to interact with the interface. The results are presented below.
 
+%\section{The Symptom Graph}
+%\subsection{Performance Evaluation}
+%\subsection{Scalability Comparison}
+
+
+\chapter{Implementation}
+Based on the specifications from the previous chapter, it is now possible to open the app to implement. This chapter describes the technologies used for the development of this application. The project structure is also examined in more detail.
+\section{Project Structure}
+When developing software systems in the client-server, it is advised to make sure that the project and class structures are divided into three different layers.
+\begin{itemize}
+	\item \textbf{Data Layer}
+	\newline
+	The data layer takes care of retrieving the (raw) data from the database. For this purpose, a class named DatabaseService is generated as part of the Flutter application, which can be instantiated.
+	\scriptsize
+		\begin{lstlisting}[caption=Stepper for Body Part Selection]
+		class DatabaseService {
+			/* CREATE AN INSTANCE OF THE DATABASE */
+			DatabaseService._();
+			static DatabaseService _instance = DatabaseService._();
+			static DatabaseService get instance => _instance;
+		}
+		\end{lstlisting}
+	\normalsize
+	Using DatabaseService.instance.\_methodName, each method of the service can now be called globally from anywhere in the project.
+	\item \textbf{Business Logic Layer}
+	\newline
+	With the help of the business layer, the data that is now received from the database service can be converted into models with which the system can work accordingly. For this purpose, a ConvertService can be created similar to Listing 7.1, which can be instantiated in the same way. This now queries the data using the DatabaseService.instance and converts the data which is supplied by the Firestore API in the form of DocumentSnapshots, Streams or QuerySnapshots. The data models for this are presented in the Data Models section.
+	\item \textbf{Presentation Layer}
+	\newline
+	This layer takes care of mapping the data to the graphical interface. To do this, it queries the model data of the ConvertService and creates the widgets that are to be displayed accordingly.
+\end{itemize}
+In project development, it is increasingly interesting how applications receive their data. As part of this work, this will happen through API queries to the Firestore database. The whole procedure is also known as the client-server model. An example of the communication process, together with the services that just got described, is shown in Figure 7.1. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{api_flow.png}
+	\caption[Client-Server Request Flow]{Client-Server Request Flow}
+\end{figure}
+\noindent
 \subsection{Routing in the Application}
+Another step that can be taken to keep the project structure as clean as possible is to lay out the navigation in an extra class. In this work, a class that is named AppNavigator is created for this purpose. This navigator can then be called globally using a defined method AppNavigator.push(Route pRoute). The route parameter is an element of an enumeration which refers to different views of the application. All AppNavigator code can be found in Appendix x.
+\section{Data Models}
+The data model into which the ConvertService converts the raw data of the DataService is based on the document structure stored in the database. When scraping the data of the JSON responses, the data is converted as follows: String$\,\to\,$String, Array$\,\to\,$List, Map<key, value>$\,\to\,$Map<String, dynamic>, Number$\,\to\,$num. Listing 7.2 shows the resulting model for symptoms. All other Models can be found in the appendix x.
+\scriptsize
+\begin{lstlisting}[caption=Model for Symptoms]
+class Symptom {
+	final String? id;
+	String name;
+	List<String> symptoms;
+	
+	Symptom({this.id, required this.name, required this.symptoms});
+	
+	Map<String, dynamic> toMap() {
+		return {
+			'name': name,
+			'proposed_symptoms': List<String>.from(
+			symptoms.map((x) => x),
+			),};}
+	
+	Symptom.fromDocumentSnapshot(DocumentSnapshot<Map<String, dynamic>> doc)
+		: id = doc.id,
+		name = doc.data()!["name"],
+		symptoms = List<String>.from(
+		doc.data()!["proposed_symptoms"].toList(),);	
+}
+\end{lstlisting}
+\normalsize
+
+
 \section{Algorithms for the Attribution of Symptoms to potential Diseases}
 \subsection{Solution based on the Naive Bayes Algorithm}
 \subsubsection{Weighting of the Symptoms within the Application}
 \subsection{K-nearest Neighbors Algorithm}
 \subsection{Beyesian Networks}
-\section{The Symptom Graph}
 \section{Evaluation of the Algorithms}
-\subsection{Performance Evaluation}
-\subsection{Scalability Comparison}
 \section{Diagnoses}
 \subsection{Generate Diagnose PDF}
 \subsection{Store PDF Locally on Device}
-
-

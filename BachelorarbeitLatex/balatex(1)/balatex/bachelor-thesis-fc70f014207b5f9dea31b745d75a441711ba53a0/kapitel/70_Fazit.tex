@@ -213,11 +213,82 @@
 	\centering
 	\includegraphics[scale=0.05]{My_PDF.png}
 	\caption[QR-Code for NHS API Response]{QR-Code for NHS API Response}
+
 \end{figure}
-\chapter{Bibliography}
+	\newpage
+\scriptsize
+\begin{lstlisting}[caption=AppNavigator Class]
+import 'package:flutter/material.dart';
 
-\chapter{List of Abbreviations}
+enum Routes { survey, home, advices, doctorPanel, detailScreen, diagnosesList }
 
-\chapter{List of Tables}
+class _Paths {
+	static const String survey = '/';
+	static const String home = '/home';
+	static const String advices = '/home/advices';
+	static const String doctorPanel = '/home/doctorPanel';
+	static const String detailScreen = '/home/detailScreen';
+	static const String diagnosesList = '/home/items';
+	
+	static const Map<Routes, String> _pathMap = {
+		Routes.home: _Paths.home,
+		Routes.survey: _Paths.survey,
+		Routes.advices: _Paths.advices,
+		Routes.doctorPanel: _Paths.doctorPanel,
+		Routes.detailScreen: _Paths.detailScreen,
+		Routes.diagnosesList: _Paths.diagnosesList
+	};
+	
+	static String of(Routes route) => _pathMap[route] ?? survey;
+}
 
-\chapter{List of Figures}
+class AppNavigator {
+	static GlobalKey<NavigatorState> navigatorKey = GlobalKey();
+	static Route onGenerateRoute(RouteSettings settings) {
+		switch (settings.name) {
+			case _Paths.survey:
+				return FadeRoute(page: SurveyScreenFlutter());
+			case _Paths.advices:
+				return FadeRoute(page: AdviceScreen());
+			case _Paths.doctorPanel:
+				return FadeRoute(
+					page: FirebaseAuth.instance.currentUser != null
+							? DoctorPanelScreen(title: "DoctorPanel")
+							: LoginScreen(),
+				);
+			case _Paths.detailScreen:
+				return FadeRoute(page: DetailScreen(null));
+			case _Paths.diagnosesList:
+				return FadeRoute(page: DiagnosesScreen());
+			case _Paths.home:
+			default:
+				return FadeRoute(page: HomeScreen());
+		}
+	}
+	
+	static Future? push<T>(Routes route, [T? arguments]) =>
+	state?.pushNamed(_Paths.of(route), arguments: arguments);
+	static Future? replaceWith<T>(Routes route, [T? arguments]) =>
+	state?.pushReplacementNamed(_Paths.of(route), arguments: arguments);
+	static void pop() => state?.pop();
+	static NavigatorState? get state => navigatorKey.currentState;
+}
+
+\end{lstlisting}
+\normalsize
+\addcontentsline{toc}{chapter}{Literature}
+\addcontentsline{toc}{chapter}{\listfigurename}
+\addcontentsline{toc}{chapter}{\listtablename}
+
+\begingroup
+\pagestyle{plain}
+\listoffigures
+\listoftables
+\endgroup
+
+
+
+
+
+
+
