@@ -33,40 +33,41 @@ Designing the application as minimalistic as possible has the advantage that the
 \subsection{Description of the Views and Thoughts on the Implementation in Flutter}
 This section presents the individual views that are made available to users. In addition, first thoughts on possible implementation ways for those views, working with Flutter, are considered.
 \subsubsection{\textbf{Home Screen}}
-The first view that a user will encounter when installing or opening the application is the home screen. There, he should be given the opportunity to switch between the different views that are necessary for his use: diagnosis creation, diagnosis overview and advice view. In addition, every user should be able to access the login screen for doctors, since they can verify themselves there as such. The navigation to create a diagnosis is implemented in the form of a button and labeled with a corresponding, clearly formulated text. To get to all other screens, a list view of all options is offered, in which there are various clickable fields that trigger navigation to the corresponding screen when clicked. In Flutter, this view can be achieved through several different components. The most important widgets can be used in the form of children in a column. In order to implement the clickable forwarding elements to other views, one should use a ListView. this allows you to simplify the integration of new categories at a later point in time by specifying a modifiable list as child elements. A screenshot of a possible home screen can be found in Appendix x.
+The first view that a user will encounter when installing or opening the application is the home screen. There, he should be given the opportunity to switch between the different views that are necessary for his use: diagnosis creation, diagnosis overview and advice view. In addition, every user should be able to access the login screen for doctors, since they can verify themselves there as such. The navigation to create a diagnosis is implemented in the form of a button and labeled with a corresponding, clearly formulated text. To get to all other screens, a list view of all options is offered, in which there are various clickable fields that trigger navigation to the corresponding screen when clicked. In Flutter, this view can be achieved through several different components. The most important widgets can be used in the form of children in a column. In order to implement the clickable forwarding elements to other views, one should use a ListView, storing children of the widget GestureDetector, which allows any widget to be clickable. The childrens can be stored in an external modifiable list, this allows you to simplify the integration of new categories at a later point in time. A mock-up of a possible home screen can be found in Appendix x.
 
 \subsubsection{\textbf{View for the diagnostic process}}
-The screen to start a diagnosis should be created as simply as possible. The widget \textit{Stepper} is a possible implementation option. It gives the developer the opportunity to easily implement a type of step-by-step tool. For this purpose, only all steps for generating a diagnosis are created and filled with the appropriate data. Listing 6.1 shows an example for the selection of a body part in this stepper.
-	\scriptsize
-	\begin{lstlisting}[caption=Stepper for Body Part Selection]
-		...
-		  List<String> selectedBodyParts = [];
-		...
-		Stepper(
-		type: stepperType,
-		physics: ScrollPhysics(),
-		currentStep: _currentStep,
-		onStepTapped: (step) => tapped(step),
-		steps: [
-			...,
-			Step(
-				title: const Text('Location of the Symptoms'),
-				subtitle: const Text(
-				"Please select the body Part ...",),
-				title: const Text("Body Parts"),
-				onTap: (values) {
-					setState(() {
-						selectedBodyParts = values;
-					});},),
-			isActive: _currentStep >= 0,
-			state:
-			_currentStep >= 0 ? StepState.complete : StepState.disabled,
-			),
-			...
-	\end{lstlisting}
-	\normalsize
+The screen to start a diagnosis should be designed as simple as possible. Users can adress on which body part they are feeling their symptoms. Based on their selection the application shows all symptoms associated with the body part, which then can be selected and afterwards specified by the user. The widget \textit{Stepper} is a possible implementation option. It gives the developer the opportunity to easily implement a type of step-by-step tool. For this purpose, only all steps for generating a diagnosis are created and filled with the appropriate data. The full code for an example Stepper-widget can be found in the appendix x.
+
+%	\scriptsize
+%	\begin{lstlisting}[caption=Stepper for Body Part Selection]
+%		...
+%		  List<String> selectedBodyParts = [];
+%		...
+%		Stepper(
+%		type: stepperType,
+%		physics: ScrollPhysics(),
+%		currentStep: _currentStep,
+%		onStepTapped: (step) => tapped(step),
+%		steps: [
+%			...,
+%			Step(
+%				title: const Text('Location of the Symptoms'),
+%				subtitle: const Text(
+%				"Please select the body Part ...",),
+%				title: const Text("Body Parts"),
+%				onTap: (values) {
+%					setState(() {
+%						selectedBodyParts = values;
+%					});},),
+%			isActive: _currentStep >= 0,
+%			state:
+%			_currentStep >= 0 ? StepState.complete : StepState.disabled,
+%			),
+%			...
+%	\end{lstlisting}
+%	\normalsize
 \subsubsection{\textbf{Login Screen (Doctor)}}
-The login screen is displayed to the user immediately after clicking on the navigation tool labeled "Doctor Panel". There he will be offered the option to log in or register. If the user has already created a user account in a previous session, has verified himself as a medical profressional and has then been logged in, he will be forwarded to the actual doctor panel without any further need to log in. An exception is given if he has previously logged out. With the help of the flutter\_login package, a developer can implement the login process in Dart very easily. Listing 6.2 demonstrate the user of the FlutterLogin-plugin. There are also options to customize the appeareance of the login-form.
+The login screen is displayed to the user immediately after clicking on the navigation tool labeled "Doctor Panel". There he will be offered the option to log in or register. This is achieved by simply adding editable textfields for the needed user input: email, password and confirmation password. If the user has already created a user account in a previous session, has verified himself as a medical profressional and has then been logged in, he will be forwarded to the actual doctor panel without any further need to log in. An exception is given if he has previously logged out. With the help of the flutter\_login package, a developer can implement the login process in Dart very easily. Listing 6.2 demonstrate the use of the FlutterLogin-plugin. There are also options to customize the appeareance of the login-form.
 	\scriptsize
 \begin{lstlisting}[caption=Stepper for Body Part Selection]
 	...
@@ -78,15 +79,13 @@ The login screen is displayed to the user immediately after clicking on the navi
 		onConfirmRecover: AuthService.instance.resetPassword,
 		onSubmitAnimationCompleted: (() {
 			Navigator.of(context).pop();
-			AppNavigator.push(Routes.doctorPanel);
-		}),
-		onRecoverPassword: (_) => Future(() => null),
-	)
+			AppNavigator.push(Routes.doctorPanel);}),
+		onRecoverPassword: (_) => Future(() => null),)
 	...
 \end{lstlisting}
 \normalsize
 \subsubsection{\textbf{Screen with all body parts, diseases, advices and symptoms (Doctor)}}
-The doctor panel should contain all the necessary data related to the records stored in the database. Here a doctor can switch between the different collections. A good implementation method for this would be the BottomNavigationBar. This contains various navigation elements which all change to their data view when you click on them. The data views show a list of the data stored in the associated Firestore collection. Care should be taken to ensure that it is recognizable that you can click on the list elements. When this is done, the system redirects to the edit view for the associated record. In order to be able to store new data quickly, a FloatingActionButton can also be integrated, which opens a small menu with a click. This lists the options for which data sets the doctor can add. Clicking on a listing item then opens the associated add view.
+The doctor panel should contain all the necessary data related to the records stored in the database. Here, a doctor can switch between the different collections. A good implementation method for this would be the BottomNavigationBar. It contains various navigation elements, which all change to their data view when you click on them. The data views show a list of the data stored in the associated Firestore collection. Care should be taken to ensure that it is recognizable that you can click on the list elements. When the user clicks on such an element, the system redirects to the edit view for the associated record. In order to be able to store new data quickly, a FloatingActionButton can also be integrated, which opens a small menu by clicking on it, where all the data add options for the doctor are listed. Clicking on a listing item then opens the associated add view.
 \subsubsection{\textbf{View for adding and editing data (Doctor)}}
 In order to make the views as intuitive as possible, it is advisable to make the graphical interface as uncluttered as possible. Furthermore, here only text fields are included for the data records where possible. For the selection of related data for a data set (e.g. symptoms for an illness), a button is placed on the view which, when clicked, generates and displays a dialog with the content of all symptoms in the database. Ideally, this dialog should also contain a search bar so that the user is not forced to scroll through the large number of data records. Both, the edit view and the view to add new records, consist of a form widget. In this it is possible to transfer text fields as children, which can be modified by a user. The distinction here is only between the initial value of the text fields. While the data stored in the database for the associated data record is displayed in the edit view, when a new data tuple is created, only an empty text field with a note regarding the data field is specified.
 \subsubsection{\textbf{View with all saved diagnoses}}
@@ -94,7 +93,7 @@ The diagnoses view is represented by a vertical list of all diagnoses. A ListVie
 
 \subsubsection{\textbf{View with all advices stored in the database (User) }}
 The recommendation screen is laid out similarly to the diagnosis screen. Here, too, the data from Firestore is displayed in the form of a vertical list and a click opens the detailed description of the advice. This detailed view simply consists of text fields which contain the data from the document fields.
-\subsection{Mock-ups and second Survey}
+\subsection{Mock-ups and Survey regarding the Trustworthiness of Mock-up Designs}
 With the description of the screens and the first development approaches, mock-ups could already be created with the help of Canva. These can be found in Appendix x. As parat of a survey, it was founrd out whether the basic idea of the graphic design would speak for trustworthiness and whether the participants woudl have inutitively known how to interact with the interface. The results are presented below.
 
 %\section{The Symptom Graph}

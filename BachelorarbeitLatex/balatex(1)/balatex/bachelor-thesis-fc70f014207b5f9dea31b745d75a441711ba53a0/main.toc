@@ -26,7 +26,6 @@
 \contentsline {subsection}{\numberline {3.3.1}Introduction to NoSQL Databases}{11}{}%
 \contentsline {subsection}{\numberline {3.3.2}Firestore}{12}{}%
 \contentsline {subsection}{\numberline {3.3.3}Document Databases}{13}{}%
-\contentsline {section}{\numberline {3.4}Jupyter Notebook}{13}{}%
 \contentsline {chapter}{\numberline {4}Requirements Engineering}{14}{}%
 \contentsline {section}{\numberline {4.1}Stakeholder Analysis}{14}{}%
 \contentsline {subsection}{\numberline {4.1.1}Target Group and User Group}{14}{}%
@@ -62,34 +61,34 @@
 \contentsline {subsubsection}{\nonumberline \textbf {Home Screen}}{27}{}%
 \contentsline {subsubsection}{\nonumberline \textbf {View for the diagnostic process}}{28}{}%
 \contentsline {subsubsection}{\nonumberline \textbf {Login Screen (Doctor)}}{28}{}%
-\contentsline {subsubsection}{\nonumberline \textbf {Screen with all body parts, diseases, advices and symptoms (Doctor)}}{29}{}%
+\contentsline {subsubsection}{\nonumberline \textbf {Screen with all body parts, diseases, advices and symptoms (Doctor)}}{28}{}%
 \contentsline {subsubsection}{\nonumberline \textbf {View for adding and editing data (Doctor)}}{29}{}%
 \contentsline {subsubsection}{\nonumberline \textbf {View with all saved diagnoses}}{29}{}%
 \contentsline {subsubsection}{\nonumberline \textbf {View with all advices stored in the database (User) }}{29}{}%
-\contentsline {subsection}{\numberline {6.1.3}Mock-ups and second Survey}{30}{}%
-\contentsline {chapter}{\numberline {7}Implementation}{31}{}%
-\contentsline {section}{\numberline {7.1}Project Structure}{31}{}%
-\contentsline {subsection}{\numberline {7.1.1}Routing in the Application}{32}{}%
-\contentsline {section}{\numberline {7.2}Data Models}{32}{}%
-\contentsline {section}{\numberline {7.3}Algorithms for the Attribution of Symptoms to potential Diseases}{33}{}%
-\contentsline {subsection}{\numberline {7.3.1}Solution based on the Naive Bayes Algorithm}{33}{}%
-\contentsline {subsubsection}{\nonumberline Weighting of the Symptoms within the Application}{33}{}%
-\contentsline {subsection}{\numberline {7.3.2}K-nearest Neighbors Algorithm}{33}{}%
-\contentsline {subsection}{\numberline {7.3.3}Beyesian Networks}{33}{}%
-\contentsline {section}{\numberline {7.4}Evaluation of the Algorithms}{33}{}%
-\contentsline {section}{\numberline {7.5}Diagnoses}{33}{}%
-\contentsline {subsection}{\numberline {7.5.1}Generate Diagnose PDF}{33}{}%
-\contentsline {subsection}{\numberline {7.5.2}Store PDF Locally on Device}{33}{}%
-\contentsline {chapter}{\numberline {8}General Overview of the Application}{34}{}%
-\contentsline {section}{\numberline {8.1}Testing the Application}{34}{}%
-\contentsline {section}{\numberline {8.2}Survey: Would Respondents use this Application and put their trust in it}{34}{}%
-\contentsline {chapter}{\numberline {9}Conclusion and Outlook}{35}{}%
-\contentsline {section}{\numberline {9.1}Symptom Detection Applications in the Future}{35}{}%
-\contentsline {section}{\numberline {9.2}Use of Flutter to Develop Applications}{35}{}%
-\contentsline {section}{\numberline {9.3}Outcomes of the Performance Comparisons}{35}{}%
-\contentsline {section}{\numberline {9.4}Overall Conclusion}{35}{}%
-\contentsline {chapter}{\numberline {10}Appendix}{36}{}%
-\contentsline {chapter}{Literature}{39}{}%
-\contentsline {chapter}{List of Figures}{39}{}%
-\contentsline {chapter}{List of Tables}{39}{}%
+\contentsline {subsection}{\numberline {6.1.3}Mock-ups and Survey regarding the Trustworthiness of Mock-up Designs}{29}{}%
+\contentsline {chapter}{\numberline {7}Implementation}{30}{}%
+\contentsline {section}{\numberline {7.1}Project Structure}{30}{}%
+\contentsline {subsection}{\numberline {7.1.1}Routing in the Application}{31}{}%
+\contentsline {section}{\numberline {7.2}Data Models}{31}{}%
+\contentsline {section}{\numberline {7.3}Algorithms for the Attribution of Symptoms to potential Diseases}{32}{}%
+\contentsline {subsection}{\numberline {7.3.1}Solution based on the Naive Bayes Algorithm}{32}{}%
+\contentsline {subsubsection}{\nonumberline Weighting of the Symptoms within the Application}{32}{}%
+\contentsline {subsection}{\numberline {7.3.2}K-nearest Neighbors Algorithm}{32}{}%
+\contentsline {subsection}{\numberline {7.3.3}Beyesian Networks}{32}{}%
+\contentsline {section}{\numberline {7.4}Evaluation of the Algorithms}{32}{}%
+\contentsline {section}{\numberline {7.5}Diagnoses}{32}{}%
+\contentsline {subsection}{\numberline {7.5.1}Generate Diagnose PDF}{32}{}%
+\contentsline {subsection}{\numberline {7.5.2}Store PDF Locally on Device}{32}{}%
+\contentsline {chapter}{\numberline {8}General Overview of the Application}{33}{}%
+\contentsline {section}{\numberline {8.1}Testing the Application}{33}{}%
+\contentsline {section}{\numberline {8.2}Survey: Would Respondents use this Application and put their trust in it}{33}{}%
+\contentsline {chapter}{\numberline {9}Conclusion and Outlook}{34}{}%
+\contentsline {section}{\numberline {9.1}Symptom Detection Applications in the Future}{34}{}%
+\contentsline {section}{\numberline {9.2}Use of Flutter to Develop Applications}{34}{}%
+\contentsline {section}{\numberline {9.3}Outcomes of the Performance Comparisons}{34}{}%
+\contentsline {section}{\numberline {9.4}Overall Conclusion}{34}{}%
+\contentsline {chapter}{\numberline {10}Appendix}{35}{}%
+\contentsline {chapter}{Literature}{38}{}%
+\contentsline {chapter}{List of Figures}{38}{}%
+\contentsline {chapter}{List of Tables}{38}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
