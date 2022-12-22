@@ -72,6 +72,7 @@
 \contentsline {section}{\numberline {7.2}Data Models}{31}{}%
 \contentsline {section}{\numberline {7.3}Algorithms for the Attribution of Symptoms to potential Diseases}{32}{}%
 \contentsline {subsection}{\numberline {7.3.1}Solution based on the Naive Bayes Algorithm}{32}{}%
+\contentsline {subsubsection}{\nonumberline Naive Bayes (Classifier)}{32}{}%
 \contentsline {subsubsection}{\nonumberline Weighting of the Symptoms within the Application}{32}{}%
 \contentsline {subsection}{\numberline {7.3.2}K-nearest Neighbors Algorithm}{32}{}%
 \contentsline {subsection}{\numberline {7.3.3}Beyesian Networks}{32}{}%
