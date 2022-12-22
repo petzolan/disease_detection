@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "325219924400",
+    "project_id": "symptomchecker-bachelorthesis",
+    "storage_bucket": "symptomchecker-bachelorthesis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325219924400:android:2326b24fdafeab5eb53e75",
+        "android_client_info": {
+          "package_name": "com.example.disease_application_bachelor_thesis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325219924400-3gvu8cdss0f1i8l1gvcd36dfp86796st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2xb6L09NdfwoMAyYwEZ9GvqmucOTG6qc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325219924400-3gvu8cdss0f1i8l1gvcd36dfp86796st.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "325219924400-tpsvtki09pt3etpnhdps284h7d2rkrgh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.symptomAdminBoard"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325219924400:android:f09222530b53e75fb53e75",
+        "android_client_info": {
+          "package_name": "com.example.symptom_admin_board"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325219924400-3gvu8cdss0f1i8l1gvcd36dfp86796st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2xb6L09NdfwoMAyYwEZ9GvqmucOTG6qc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325219924400-3gvu8cdss0f1i8l1gvcd36dfp86796st.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "325219924400-tpsvtki09pt3etpnhdps284h7d2rkrgh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.symptomAdminBoard"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

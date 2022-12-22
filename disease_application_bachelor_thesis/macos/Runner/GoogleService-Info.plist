@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>325219924400-33ur23c5om9p7v6djngl5rf6jmc5phkq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.325219924400-33ur23c5om9p7v6djngl5rf6jmc5phkq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB4OQNwth2nd1Qwkw1PtBsvtng5sf_yaOM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>325219924400</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.diseaseApplicationBachelorThesis</string>
+	<key>PROJECT_ID</key>
+	<string>symptomchecker-bachelorthesis</string>
+	<key>STORAGE_BUCKET</key>
+	<string>symptomchecker-bachelorthesis.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:325219924400:ios:54608effb0ec4ef6b53e75</string>
+</dict>
+</plist>
