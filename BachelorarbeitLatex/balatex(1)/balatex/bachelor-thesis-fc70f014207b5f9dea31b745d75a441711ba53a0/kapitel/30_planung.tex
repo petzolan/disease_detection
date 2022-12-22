@@ -67,23 +67,23 @@ The screen to start a diagnosis should be designed as simple as possible. Users 
 %	\end{lstlisting}
 %	\normalsize
 \subsubsection{\textbf{Login Screen (Doctor)}}
-The login screen is displayed to the user immediately after clicking on the navigation tool labeled "Doctor Panel". There he will be offered the option to log in or register. This is achieved by simply adding editable textfields for the needed user input: email, password and confirmation password. If the user has already created a user account in a previous session, has verified himself as a medical profressional and has then been logged in, he will be forwarded to the actual doctor panel without any further need to log in. An exception is given if he has previously logged out. With the help of the flutter\_login package, a developer can implement the login process in Dart very easily. Listing 6.2 demonstrate the use of the FlutterLogin-plugin. There are also options to customize the appeareance of the login-form.
-	\scriptsize
-\begin{lstlisting}[caption=Stepper for Body Part Selection]
-	...
-	FlutterLogin(
-		logo: const AssetImage('assets/images/login.png'),
-		title: 'Please login to continue',
-		onLogin: AuthService.instance.signIn,
-		onSignup: AuthService.instance.registration,
-		onConfirmRecover: AuthService.instance.resetPassword,
-		onSubmitAnimationCompleted: (() {
-			Navigator.of(context).pop();
-			AppNavigator.push(Routes.doctorPanel);}),
-		onRecoverPassword: (_) => Future(() => null),)
-	...
-\end{lstlisting}
-\normalsize
+The login screen is displayed to the user immediately after clicking on the navigation tool labeled "Doctor Panel". There he will be offered the option to log in or register. This is achieved by simply adding editable textfields for the needed user input: email, password and confirmation password. If the user has already created a user account in a previous session, has verified himself as a medical profressional and has then been logged in, he will be forwarded to the actual doctor panel without any further need to log in. An exception is given if he has previously logged out. With the help of the flutter\_login package, a developer can implement the login process in Dart very easily. Appendix x demonstrates the use of the FlutterLogin-plugin. There are also options to customize the appeareance of the login-form.
+%\scriptsize
+%\begin{lstlisting}[caption=Stepper for Body Part Selection]
+%	...
+%	FlutterLogin(
+%		logo: const AssetImage('assets/images/login.png'),
+%		title: 'Please login to continue',
+%		onLogin: AuthService.instance.signIn,
+%		onSignup: AuthService.instance.registration,
+%		onConfirmRecover: AuthService.instance.resetPassword,
+%		onSubmitAnimationCompleted: (() {
+%			Navigator.of(context).pop();
+%			AppNavigator.push(Routes.doctorPanel);}),
+%		onRecoverPassword: (_) => Future(() => null),)
+%	...
+%\end{lstlisting}
+%\normalsize
 \subsubsection{\textbf{Screen with all body parts, diseases, advices and symptoms (Doctor)}}
 The doctor panel should contain all the necessary data related to the records stored in the database. Here, a doctor can switch between the different collections. A good implementation method for this would be the BottomNavigationBar. It contains various navigation elements, which all change to their data view when you click on them. The data views show a list of the data stored in the associated Firestore collection. Care should be taken to ensure that it is recognizable that you can click on the list elements. When the user clicks on such an element, the system redirects to the edit view for the associated record. In order to be able to store new data quickly, a FloatingActionButton can also be integrated, which opens a small menu by clicking on it, where all the data add options for the doctor are listed. Clicking on a listing item then opens the associated add view.
 \subsubsection{\textbf{View for adding and editing data (Doctor)}}
@@ -99,7 +99,6 @@ With the description of the screens and the first development approaches, mock-u
 %\section{The Symptom Graph}
 %\subsection{Performance Evaluation}
 %\subsection{Scalability Comparison}
-
 
 \chapter{Implementation}
 Based on the specifications from the previous chapter, it is now possible to open the app to implement. This chapter describes the technologies used for the development of this application. The project structure is also examined in more detail.

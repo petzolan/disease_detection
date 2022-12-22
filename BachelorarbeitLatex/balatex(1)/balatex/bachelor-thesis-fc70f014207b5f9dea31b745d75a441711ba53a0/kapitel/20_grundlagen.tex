@@ -162,7 +162,7 @@ It is now possible to execute an API request that returns detailed information a
 \noindent 
 The value of the "PossibleSymptoms"-key returns an enumaration of all the symptoms of the disease. These symptoms are listed using the values of the "Name"-key for the respective symptom when querying all symptoms. This makes it easier to scrape the data accordingly and store it in a database.
 
-\subsection{API Solution}
+\subsection{Conclusion}
 The question that now arises is which of the two interfaces to choose. Both APIs have advantages and disadvantages. While the NHS API provides very detailed results, it makes it difficult to use the data for the purposes intended in this work. NHS also provides data on the causes that various symptoms and conditions can have, which can be an important factor in making a diagnosis in the form of disease detection. ApiMedic delivers the data in an optimal format to use, but far less detailed than NHS. One option that is available is, to use the symptom data provided by ApiMedic as scrape material for the symptom list in the NHS. However, after an attempt to do so, only a very small amount of symptom has been recognized. This is because the same symptom is named differently in both APIs. Generating more appropriate scrape material would require full inspection of all NHS API data, to ensure getting a decent amount of data. This is not possible within the scope of this work, but should be considered for future optimizations of the system.  In the context of the bachelor thesis, the use of the ApiMedic API is preferred from the point of view of a clean database structure.
 
 \section{NoSQL Databases}
