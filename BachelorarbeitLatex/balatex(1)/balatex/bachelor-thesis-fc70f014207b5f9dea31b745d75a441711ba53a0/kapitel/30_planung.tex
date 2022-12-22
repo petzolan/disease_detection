@@ -166,6 +166,9 @@ class Symptom {
 
 \section{Algorithms for the Attribution of Symptoms to potential Diseases}
 \subsection{Solution based on the Naive Bayes Algorithm}
+Zunächst wird eine im conference paper "towards a ranking of likely diseases in terms of precision and recall" erörterte Symptomzuordnung ermittelt. Das Dokument wurde zwar schon im Jahr 2012 veröffentlicht, basiert aber zum Großteil auf dem Naive Bayes Algorithmus und beschreibt die Verwendung von diesem im Symptom- und Krankheitskontext. Die Informationen welche aus dem Paper erhalten werden können bieten auch heute noch eine gute Grundlage für eine algorithmische Lösung der Krankheitsermittlung.
+\subsubsection{Naive Bayes (Classifier)}
+Ein Klassifikator macht es möglich, Eingabedaten einer bestimmten Klasse zuzordnen. Sie werden besonders oft im Machine Learning bereich eingesetzt, beispielsweise für die Erkennung vom Spammails. Im Rahmen der Symptomanalyse wird einem hier ermöglicht, Eingabedaten in Form von Symptomen auf bestimmte Krankheitsklassifikationen abzubilden. [quelle unicamp.br] Das Gesamtergebnis der Berechnung ergibt dann die bedingte Wahrscheinlichkeit des Symptoms basierend auf den Eintrittswahrscheinlichkeit der Symptome zu den Krankheiten. 
 \subsubsection{Weighting of the Symptoms within the Application}
 \subsection{K-nearest Neighbors Algorithm}
 \subsection{Beyesian Networks}
