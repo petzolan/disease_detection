@@ -67,23 +67,23 @@ The screen to start a diagnosis should be designed as simple as possible. Users 
 %	\end{lstlisting}
 %	\normalsize
 \subsubsection{\textbf{Login Screen (Doctor)}}
-The login screen is displayed to the user immediately after clicking on the navigation tool labeled "Doctor Panel". There he will be offered the option to log in or register. This is achieved by simply adding editable textfields for the needed user input: email, password and confirmation password. If the user has already created a user account in a previous session, has verified himself as a medical profressional and has then been logged in, he will be forwarded to the actual doctor panel without any further need to log in. An exception is given if he has previously logged out. With the help of the flutter\_login package, a developer can implement the login process in Dart very easily. Listing 6.2 demonstrate the use of the FlutterLogin-plugin. There are also options to customize the appeareance of the login-form.
-	\scriptsize
-\begin{lstlisting}[caption=Stepper for Body Part Selection]
-	...
-	FlutterLogin(
-		logo: const AssetImage('assets/images/login.png'),
-		title: 'Please login to continue',
-		onLogin: AuthService.instance.signIn,
-		onSignup: AuthService.instance.registration,
-		onConfirmRecover: AuthService.instance.resetPassword,
-		onSubmitAnimationCompleted: (() {
-			Navigator.of(context).pop();
-			AppNavigator.push(Routes.doctorPanel);}),
-		onRecoverPassword: (_) => Future(() => null),)
-	...
-\end{lstlisting}
-\normalsize
+The login screen is displayed to the user immediately after clicking on the navigation tool labeled "Doctor Panel". There he will be offered the option to log in or register. This is achieved by simply adding editable textfields for the needed user input: email, password and confirmation password. If the user has already created a user account in a previous session, has verified himself as a medical profressional and has then been logged in, he will be forwarded to the actual doctor panel without any further need to log in. An exception is given if he has previously logged out. With the help of the flutter\_login package, a developer can implement the login process in Dart very easily. Appendix x demonstrate the use of the FlutterLogin-plugin. There are also options to customize the appeareance of the login-form.
+%	\scriptsize
+%\begin{lstlisting}[caption=Stepper for Body Part Selection]
+%	...
+%	FlutterLogin(
+%		logo: const AssetImage('assets/images/login.png'),
+%		title: 'Please login to continue',
+%		onLogin: AuthService.instance.signIn,
+%		onSignup: AuthService.instance.registration,
+%		onConfirmRecover: AuthService.instance.resetPassword,
+%		onSubmitAnimationCompleted: (() {
+%			Navigator.of(context).pop();
+%			AppNavigator.push(Routes.doctorPanel);}),
+%		onRecoverPassword: (_) => Future(() => null),)
+%	...
+%\end{lstlisting}
+%\normalsize
 \subsubsection{\textbf{Screen with all body parts, diseases, advices and symptoms (Doctor)}}
 The doctor panel should contain all the necessary data related to the records stored in the database. Here, a doctor can switch between the different collections. A good implementation method for this would be the BottomNavigationBar. It contains various navigation elements, which all change to their data view when you click on them. The data views show a list of the data stored in the associated Firestore collection. Care should be taken to ensure that it is recognizable that you can click on the list elements. When the user clicks on such an element, the system redirects to the edit view for the associated record. In order to be able to store new data quickly, a FloatingActionButton can also be integrated, which opens a small menu by clicking on it, where all the data add options for the doctor are listed. Clicking on a listing item then opens the associated add view.
 \subsubsection{\textbf{View for adding and editing data (Doctor)}}
@@ -165,13 +165,72 @@ class Symptom {
 
 
 \section{Algorithms for the Attribution of Symptoms to potential Diseases}
-\subsection{Solution based on the Naive Bayes Algorithm}
-Zunächst wird eine im conference paper "towards a ranking of likely diseases in terms of precision and recall" erörterte Symptomzuordnung ermittelt. Das Dokument wurde zwar schon im Jahr 2012 veröffentlicht, basiert aber zum Großteil auf dem Naive Bayes Algorithmus und beschreibt die Verwendung von diesem im Symptom- und Krankheitskontext. Die Informationen welche aus dem Paper erhalten werden können bieten auch heute noch eine gute Grundlage für eine algorithmische Lösung der Krankheitsermittlung.
+\subsection{List Matching}
+Dieser Vorgehen ist die einfachste Methode um zu erkennen ob ein Symptom 
+\subsection{Algorithmische Lösung mit Gewichtungen}
+Zunächst wird die im conference paper "towards a ranking of likely diseases in terms of precision and recall" beschriebene Symptomzuordnung untersucht. Das Dokument wurde zwar schon im Jahr 2012 veröffentlicht, geht aber auf Problematiken ein, welche auch heute noch bei bestimmten Krankheitszuordnungsverfahren vorhanden sind und eine, mit Medizinern erarbeitete, Lösung, wie diese Verfahren sauber ersetzt werden können. Die Informationen welche aus dem Paper entnommen werden können bieten auch heute noch eine gute Grundlage für eine algorithmische Lösung der Krankheitsermittlung.
+
+\subsubsection{Die Einflussfaktoren der Diagnosestellung}
+Zunächst werden die Einflussfaktoren betrachtet und im Rahmen der Applikation zugeordnet.
+\begin{itemize}
+	\item \textbf{Einteilung der Symptome}
+	\newline
+	Nachdem der Nutzer in der Applikation seine Symptome angegeben hat können, basierend auf den Angaben, zugehörige Krankheiten aus der Datenbank gefiltert werden. Dadurch werden alle möglichen Symptome der Krankheiten geliefert und es können zwei Mengen gebildet werden: vorhandene und abwesende Symptome. Mit Hilfe dieser Informationen wird im späteren Verlauf die Wahrscheinlichkeit einer Krankheit basierend auf den Patientensymptomen ermittelt.
+
+	\item \textbf{Wahrscheinlichkeit des Eintretens einer bestimmten Krankheit}
+	\newline
+	Für die Wahrscheinlichkeit des Eintretens einer Krankheit werden im Rahmen dieser Arbeit Dummy-Daten verwendet. Das Vorgehen um diese Daten in der Datenbank zu hinterlegen wird im JupyterNotebook durchgeführt, welches wie schon beschrieben im Anhang x zu finden ist. 
+	
+	Zusätzlich zu dieser Information wird die Wahrscheinlichkeit benötigt, wie schwerwiegend ein Symptom tatsächlich ist. Im Paper wird dieser Wert als default importance beschrieben. Der Faktor wird ebenfalls in Form von Dummydaten hinterlegt.
+	
+	\item \textbf{Patientenspezifische Faktoren}
+	\newline
+	Zu den Patientenspezifischen Faktoren gehören Eigenschaften wie das Alter, Geschlecht oder ob der Patient raucht oder nicht. Eine Abfrage dieser Faktoren kann während der Symptomangabe erfolgen. Im Rahmen der Implementierung des Algorithmus bei dieser Arbeit werden diese Faktoren jedoch außen vor gelassen.
+	
+	Zusätzlich zu diesen Faktoren müssen auch der Auftrittszeitpunkt eines Symptoms und die Intensität mit welcher ein Patient dieses Symptom empfindet eingebunden werden. Diese Informationen werden im Rahmen der Symptomangabe vom Nutzer mitangegeben und temporär, in Form eines user specified symptoms, gespeichert. Die Faktoren der Itensität und Neuartigkeit sind mittels enumerationen im Programmcode hinterlegt. 
+	
+	\item \textbf{Relation of Diseases and Symptoms}
+	\newline
+	Zur Berechnung der relatedness wird zum einen die Berechnung der bedingten Wahrscheinlichkeit P(s|d) eines Symptomes und einer Krankheit benötigt und zum Anderen der Faktor, ob es sich beim Symptom um ein leitendes Symptom der Krankheit handelt. 
+	
+	\item \textbf{Symptom spezific factors}
+	\newline
+	Zur Berechnung der relatedness wird zum einen die Berechnung der bedingten Wahrscheinlichkeit P(s|d) eines Symptomes und einer Krankheit benötigt und zum Anderen der Faktor, ob es sich beim Symptom um ein leitendes Symptom der Krankheit handelt. Die Implementierung in dieser Arbeit ermittelt den Faktor, ob es sich um ein leitendes Symptom handelt ebenfalls, basierend auf dummydaten.
+\end{itemize}
+\noindent
+Mittels der beschriebenen Faktoren können folgend die Werte precision und recall ermittelt werden. [quelle, seite 9]. Mit Hilfe dieser wiederum kann in einem weiteren Schritt bestimmt werden, in welchem Grad die Symptome des Patienten auf die Krankheitssymptome abgebildet werden können. Final lässt sich das Ranking der Krankheiten wie folgt berechnen:
+\begin{equation}
+	  \begin{aligned}
+		r(d) := F(d) + \lambda + P_p(d)\\
+	 \end{aligned}\qquad\text{aus []}
+\end{equation}
+Der Lambawert dient zur verminderung des Krankheitswahrscheinlichkeitwertes, da dieser laut den Autoren als weniger wichtig angesehen wird. 
+\newline
+\noindent
+Das Paper geht unter anderem auf Problematiken welche bayesian networks mit sich bringen ein: viele wichtige Faktoren welche für die korrekte Berechnung der Symptomwahrscheinlichkeiten nötig sind, sind quasi unzugänglich und unbekannt. 
+
+\subsection{Machine Learning}
+%[13]. Since Bayes-nets are
+%theoretically best suited for diagnosis they are successfully implemented in some
+%of the mentioned expert-systems. However statistical approaches like Bayes-nets
+%require knowledge, which isn't broadly available: e.g. the a-priori probabilities for
+%signs and symptoms P(s) are mostly not known. Thus we are not able to compute
+%the conditional probability for a disease, given the symptom P(djs) = P(sjd)P(d)
+%P(s)
+%with the help of Bayes-Theorem. Note that P(sj:d) is normally not known as
+%well. It is not dicult to see that even though we cannot calculate P(d1js) and
+%P(d2js) for two diseases d1 and d2, we are able to compare them by computing
+%P(d1js)=P(d2js). Thus, without knowing P(s), ranking diseases is possible.
+%Similar to our approach is the work described in [14], where a quality measure
+%for diagnosis is dened. However the factors inuencing the ranking are dierent
+%(e.g. they assume to have knowledge about the probability of a nding being
+%caused by a certain disease). Further they do not allow the clinicians to interact
+%with the system and change e.g. symptom weights. In [15] a model similar to
+%ours represents the disease-symptom relations using fuzzy labels, however the
+%symptoms itself are not weighted. They also chose an IR approach to rank likely
+%diseases.
 \subsubsection{Naive Bayes (Classifier)}
 Ein Klassifikator macht es möglich, Eingabedaten einer bestimmten Klasse zuzordnen. Sie werden besonders oft im Machine Learning bereich eingesetzt, beispielsweise für die Erkennung vom Spammails. Im Rahmen der Symptomanalyse wird einem hier ermöglicht, Eingabedaten in Form von Symptomen auf bestimmte Krankheitsklassifikationen abzubilden. [quelle unicamp.br] Das Gesamtergebnis der Berechnung ergibt dann die bedingte Wahrscheinlichkeit des Symptoms basierend auf den Eintrittswahrscheinlichkeit der Symptome zu den Krankheiten. 
-\subsubsection{Weighting of the Symptoms within the Application}
-\subsection{K-nearest Neighbors Algorithm}
-\subsection{Beyesian Networks}
 \section{Evaluation of the Algorithms}
 \section{Diagnoses}
 \subsection{Generate Diagnose PDF}
