@@ -56,10 +56,11 @@
 \usepackage{sansmath}
 \sansmath 
 \usepackage{microtype}
-
+\usepackage{acronym}
 % Literatur einbinden
 \usepackage{csquotes}	% Steuerung der Anführungszeichen
 \usepackage[
+  sorting=none,
   backend=bibtex,		% Sortier-Compiler
   style=numeric-comp,	% Zitationsstil
   ]{biblatex}
@@ -69,7 +70,7 @@
 
 % Trennung
 \hyphenation{Crash-zo-ne}                    
-\addbibresource{ref/ref.bib} %Citavi Reference Datei
+\addbibresource{quellen.bib} %Citavi Reference Datei
 
 % Kopf- und Fußzeile
 \usepackage[
@@ -150,7 +151,22 @@ Technische Hochschule Ingolstadt
   \include{kapitel/00_abstract}
   
   \tableofcontents
+  \chapter*{Acronyms}
+  \addcontentsline{toc}{chapter}{Acronyms}
   
+  \begin{acronym}
+  	\acro{BÄK}{Bundesärztekammer; German Medical Association}
+  	\acro{AI}{Artifical Intelligence}
+  	\acro{API}{Application Programming Interface}
+  	\acro{SDK}{Software Development Kit}
+  	\acro{OOP}{Object Orientated Programming}
+  	\acro{SRP}{Single Responsibility Principle}
+  	\acro{OCP}{Open-Closed Principle}
+  	\acro{LSP}{Liskov Substitution Principle}
+  	\acro{ISP}{Interface Segregation Principle}
+  	\acro{DIP}{Dependeny Inversion Principle}
+  	\acro{BaaS}{Backend as a Service}
+  \end{acronym}
   \mainmatter
   
   \include{kapitel/10_einleitung}
@@ -170,6 +186,7 @@ Technische Hochschule Ingolstadt
   \include{kapitel/60_fazit}
   
   \include{kapitel/70_fazit}
+  \scriptsize 
   \printbibliography %Citavi 5
-  
+  \normalsize
 \end{document}

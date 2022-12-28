@@ -166,7 +166,12 @@ class Symptom {
 
 \section{Algorithms for the Attribution of Symptoms to potential Diseases}
 \subsection{List Matching}
-Dieser Vorgehen ist die einfachste Methode um zu erkennen ob ein Symptom 
+Die erste Methodik welche betrachtet werden soll basiert auf rein theoretischen Aspekten. Durch Angabe der vom Patienten angegebenen Symptome setzt die Applikation eine Liste von diesen zusammen. Währenddessen konnte man bei dem Befüllen der Datenbank mit den nötigen Datensätzen feststellen, dass für jede Krankheit ebenfalls eine Liste an Symptomen hinterlegt wird. Eine intuitive Idee wäre, diese beiden Listen miteinander zu vergleichen entsprechend dazu einen Matching-algorithmus zu entwickeln, welcher die prozentuale Übereinstimmung der Listen kalkuliert. Das sogenannte Word-Matching wird in Quelle [] beschrieben. Bei diesem vorgehen sollte jedoch beachtet werden, dass keinerlei medizinische Daten bei der Berechnung mit einfließen. Dementsprechend sinkt die Wahrscheinlichkeit der Korrektheit der Diagnosestellung. Im Sinne dessen soll eine weitere, genauere Methode betrachtet werden.
+
+\subsection{Bayesian Networks}
+Entsprechend der fehlenden Genauigkeit der eben definierten Methode wird nun ein genaueres Verfahren betrachtet. Ein sogenanntes Bayesian Network stellt einen Wahrscheinlichkeitsmodel in Form eines directed acyclic graphs (DAG) auf. \cite{.bahn-bonn}
+\subsubsection{Directed Acyclic Graphs}
+
 \subsection{Algorithmische Lösung mit Gewichtungen}
 Zunächst wird die im conference paper "towards a ranking of likely diseases in terms of precision and recall" beschriebene Symptomzuordnung untersucht. Das Dokument wurde zwar schon im Jahr 2012 veröffentlicht, geht aber auf Problematiken ein, welche auch heute noch bei bestimmten Krankheitszuordnungsverfahren vorhanden sind und eine, mit Medizinern erarbeitete, Lösung, wie diese Verfahren sauber ersetzt werden können. Die Informationen welche aus dem Paper entnommen werden können bieten auch heute noch eine gute Grundlage für eine algorithmische Lösung der Krankheitsermittlung.
 

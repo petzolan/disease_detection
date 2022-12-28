@@ -41,7 +41,7 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
       <file>main.aux</file>
@@ -65,7 +65,7 @@
       <file>ngerman.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>bibtex</generic>
     <cmdline>
       <binary>bibtex</binary>
@@ -86,7 +86,7 @@
       <file>main-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>ref/ref.bib</file>
+      <file>quellen.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

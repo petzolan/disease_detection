@@ -3,6 +3,7 @@
 \babel@toc {english}{}\relax 
 \babel@toc {ngerman}{}\relax 
 \babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{Acronyms}{vi}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {1.1}The Bachelor's Thesis Problem}{1}{}%
 \contentsline {section}{\numberline {1.2}Motivation}{2}{}%
@@ -10,7 +11,7 @@
 \contentsline {chapter}{\numberline {2}Related Works}{3}{}%
 \contentsline {section}{\numberline {2.1}Mobile Applications}{3}{}%
 \contentsline {subsubsection}{\nonumberline ADA}{3}{}%
-\contentsline {subsubsection}{\nonumberline Diagnosis App}{3}{}%
+\contentsline {subsubsection}{\nonumberline Symptom Checker}{3}{}%
 \contentsline {subsubsection}{\nonumberline Other Solutions}{3}{}%
 \contentsline {section}{\numberline {2.2}Differentiation from other Systems}{4}{}%
 \contentsline {chapter}{\numberline {3}Fundamentals}{5}{}%
@@ -19,13 +20,13 @@
 \contentsline {subsection}{\numberline {3.1.2}Flutter: Architectural Layers}{6}{}%
 \contentsline {subsection}{\numberline {3.1.3}Programming Paradigm}{7}{}%
 \contentsline {section}{\numberline {3.2}Application Programming Interfaces}{8}{}%
-\contentsline {subsection}{\numberline {3.2.1}NHS Health A to Z API}{9}{}%
-\contentsline {subsection}{\numberline {3.2.2}ApiMedic Symptom Checker API}{10}{}%
+\contentsline {subsection}{\numberline {3.2.1}NHS Health A to Z API}{8}{}%
+\contentsline {subsection}{\numberline {3.2.2}ApiMedic Symptom Checker API}{9}{}%
 \contentsline {subsection}{\numberline {3.2.3}API Solution}{11}{}%
 \contentsline {section}{\numberline {3.3}NoSQL Databases}{11}{}%
 \contentsline {subsection}{\numberline {3.3.1}Introduction to NoSQL Databases}{11}{}%
 \contentsline {subsection}{\numberline {3.3.2}Firestore}{12}{}%
-\contentsline {subsection}{\numberline {3.3.3}Document Databases}{13}{}%
+\contentsline {subsection}{\numberline {3.3.3}Document Databases}{12}{}%
 \contentsline {chapter}{\numberline {4}Requirements Engineering}{14}{}%
 \contentsline {section}{\numberline {4.1}Stakeholder Analysis}{14}{}%
 \contentsline {subsection}{\numberline {4.1.1}Target Group and User Group}{14}{}%
@@ -72,24 +73,26 @@
 \contentsline {section}{\numberline {7.2}Data Models}{31}{}%
 \contentsline {section}{\numberline {7.3}Algorithms for the Attribution of Symptoms to potential Diseases}{32}{}%
 \contentsline {subsection}{\numberline {7.3.1}List Matching}{32}{}%
-\contentsline {subsection}{\numberline {7.3.2}Algorithmische Lösung mit Gewichtungen}{32}{}%
+\contentsline {subsection}{\numberline {7.3.2}Bayesian Networks}{32}{}%
+\contentsline {subsubsection}{\nonumberline Directed Acyclic Graphs}{32}{}%
+\contentsline {subsection}{\numberline {7.3.3}Algorithmische Lösung mit Gewichtungen}{32}{}%
 \contentsline {subsubsection}{\nonumberline Die Einflussfaktoren der Diagnosestellung}{32}{}%
-\contentsline {subsection}{\numberline {7.3.3}Machine Learning}{33}{}%
+\contentsline {subsection}{\numberline {7.3.4}Machine Learning}{33}{}%
 \contentsline {subsubsection}{\nonumberline Naive Bayes (Classifier)}{33}{}%
-\contentsline {section}{\numberline {7.4}Evaluation of the Algorithms}{33}{}%
-\contentsline {section}{\numberline {7.5}Diagnoses}{33}{}%
-\contentsline {subsection}{\numberline {7.5.1}Generate Diagnose PDF}{33}{}%
-\contentsline {subsection}{\numberline {7.5.2}Store PDF Locally on Device}{33}{}%
-\contentsline {chapter}{\numberline {8}General Overview of the Application}{34}{}%
-\contentsline {section}{\numberline {8.1}Testing the Application}{34}{}%
-\contentsline {section}{\numberline {8.2}Survey: Would Respondents use this Application and put their trust in it}{34}{}%
-\contentsline {chapter}{\numberline {9}Conclusion and Outlook}{35}{}%
-\contentsline {section}{\numberline {9.1}Symptom Detection Applications in the Future}{35}{}%
-\contentsline {section}{\numberline {9.2}Use of Flutter to Develop Applications}{35}{}%
-\contentsline {section}{\numberline {9.3}Outcomes of the Performance Comparisons}{35}{}%
-\contentsline {section}{\numberline {9.4}Overall Conclusion}{35}{}%
-\contentsline {chapter}{\numberline {10}Appendix}{36}{}%
-\contentsline {chapter}{Literature}{39}{}%
-\contentsline {chapter}{List of Figures}{39}{}%
-\contentsline {chapter}{List of Tables}{39}{}%
+\contentsline {section}{\numberline {7.4}Evaluation of the Algorithms}{34}{}%
+\contentsline {section}{\numberline {7.5}Diagnoses}{34}{}%
+\contentsline {subsection}{\numberline {7.5.1}Generate Diagnose PDF}{34}{}%
+\contentsline {subsection}{\numberline {7.5.2}Store PDF Locally on Device}{34}{}%
+\contentsline {chapter}{\numberline {8}General Overview of the Application}{35}{}%
+\contentsline {section}{\numberline {8.1}Testing the Application}{35}{}%
+\contentsline {section}{\numberline {8.2}Survey: Would Respondents use this Application and put their trust in it}{35}{}%
+\contentsline {chapter}{\numberline {9}Conclusion and Outlook}{36}{}%
+\contentsline {section}{\numberline {9.1}Symptom Detection Applications in the Future}{36}{}%
+\contentsline {section}{\numberline {9.2}Use of Flutter to Develop Applications}{36}{}%
+\contentsline {section}{\numberline {9.3}Outcomes of the Performance Comparisons}{36}{}%
+\contentsline {section}{\numberline {9.4}Overall Conclusion}{36}{}%
+\contentsline {chapter}{\numberline {10}Appendix}{37}{}%
+\contentsline {chapter}{Literature}{40}{}%
+\contentsline {chapter}{List of Figures}{40}{}%
+\contentsline {chapter}{List of Tables}{40}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
