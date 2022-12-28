@@ -1,6 +1,50 @@
 
 \chapter{The Database}
-The following chapter is devoted to creating the Firestore database for the application. For this purpose, the JSON data records provided by the ApiMedic API are examined more closely in order to be able to design a database structure. After the successful data conception, the data sets are integrated into Firestore via a Python script. This procedure is also documented using a notebook (Jupyter Notebook) and is described there in more detail.
+The following chapter is devoted to creating the Firestore database for the application. After the successful data conception based on API responses, the data sets are integrated into Firestore via a Python script. This procedure is also documented using a notebook (Jupyter Notebook) and is described there in more detail.
+
+\section{Options for adding Datasets using APIs}
+The aim of this work is the conception and implementation of the described system. In order to achieve this goal, the application must access a database filled with relevant data. The information from an existing API is used here since no medically trained project participants could contribute their specialized expertise to the database. The API selection also influences the database's final data structure. For this purpose, the two most fitting APIs are considered, and their suitability for the project is determined.
+
+\subsection{NHS Health A to Z API}
+The NHS, or National Health Service, is the publicly funded healthcare system of the United Kingdom. It was established in 1948 and provides a wide range of medical services to the population of the UK, including general practitioners, hospitals, and community health services. The NHS website provides many different APIs, free for use [NHS website]. The NHS Health A to Z API is the first API that will be considered to generate data for the database.
+\newline
+The API offers medical information about various diseases, their symptoms, and available treatments. A user account that is provided with a subscription key must be created in order to receive data from this API. The next step is to make an HTTP call to https://api.nhs.uk/conditions. An example of a possible request in the programming language Python looks like this:
+\begin{lstlisting}[language=Python, caption={Example Python Request for the Health A to Z API}]
+	urlDiseases = "https://api.nhs.uk/conditions/acne"
+	header = {
+		"subscription-key" : "YOUR_SUBSCRIPTION_KEY"
+	}
+	responseDiseases = requests.request("GET", urlDiseases, headers=header)
+	responseData = responseDiseases.json()
+\end{lstlisting}
+If the request was successful and the response contains the data in JSON format. Appendix C.1 shows an abbreviated sample response from the API. A positive aspect of this API is that all data is described in great detail, and a large amount of knowledge can be obtained in a single query. However, it must also be mentioned that the extent of the server response just mentioned entails the difficulty of storing the data accordingly in a separate database. For example, symptoms are supplied for a disease, but only in string format as a complete sentence. This means that a symptom is described in different ways in several diseases. In order to automatically scrape this data, one would have to recognize all variations in the description of a symptom. With the amount of data that the Health A to Z API brings, this is almost impossible. Another limitation is that a maximum of 6 requests can be made to the interface per minute, which proves to be a severe problem in terms of runtime.
+
+\subsection{ApiMedic Symptom Checker API}
+The ApiMedic API is the second interface to be considered. ApiMedic is powered by priaid, a company that combines medicine, IT, and business administration. Thanks to their highly specialized team composition, they offer expertise in all areas mentioned. The API can be addressed in two different ways:
+\begin{itemize}
+	\item \textbf{Sandbox API Account:}
+	It is possible to get unlimited data via the sandbox account. However, the data supplied is only dummy data.
+	\item \textbf{Live Basic API Account:}
+	The live account allows one to get the actual medical data of the API. However, there is a limitation concerning the possible calls: ApiMedic only allows 100 calls per month to be made without charge, and further requests cost money.
+\end{itemize}
+Although the data that can be received from this API is less detailed than that of the NHS API, using the data to create a data structure is more straightforward. It is possible to acquire diseases, bodily components, and symptoms as well as proposed symptoms and symptoms based on each body part. The following code example shows a request made with the live account to retrieve all diseases, the response of the API can be found in appendix C.2.
+\begin{lstlisting}[language=Python, caption={Example Python Request for the ApiMedic API (all issues)}]
+	stringURLIssues = "https://healthservice.priaid.ch/issues?token=YOUR_TOKEN"
+	responseIssues = requests.request("GET", stringURLIssues)
+	dataIssues = responseIssues.json()
+\end{lstlisting}
+\noindent
+It is now possible to execute an API request that returns detailed information about each disease using the provided IDs. Appendix C.3 shows a sample response from the ApiMedic API.
+\begin{lstlisting}[language=Python, caption={Example Python Request for the ApiMedic API (single issue)}]
+	stringURLIssue = "https://healthservice.priaid.ch/issues/105/info?token=YOUR_TOKEN"
+	responseIssue = requests.request("GET", stringURLIssue)
+	dataIssue = responseIssue.json()
+\end{lstlisting}
+\noindent 
+The value of the "PossibleSymptoms"-key returns an enumeration of all the disease symptoms. These symptoms are listed using the values of the "Name"-key for the respective symptom when querying all symptoms. This makes it easier to scrape the data accordingly and store it in a database.
+
+\subsection{API Solution}
+The question that now arises is which of the two interfaces to choose. Both APIs have advantages and disadvantages. While the NHS API provides very detailed results, it is not easy to use the data for the purposes intended in this work. NHS also provides data on the causes of various symptoms and conditions, which can be an essential factor in making a diagnosis in the form of disease detection. ApiMedic delivers the data in an optimal format but far less detailed than NHS. One available option is to use the symptom data provided by ApiMedic as scrape material for the symptom list in the NHS. However, after an attempt to do so, only a minimal amount of symptoms has been recognized. This is because the same symptom is named differently in both APIs. Generating more appropriate scrape material would require a full inspection of all NHS API data to ensure getting a decent amount of data. This is not possible within the scope of this work but should be considered for future system optimizations. In the context of the bachelor thesis, the ApiMedic API is preferred from the point of view of a clean database structure.
 
 \section{Data Structure}
 The data structure of the database is based on the decision that the ApiMedic API will be the main supplier of the data. The basic data structure can already be guessed from the domain model, which is shown in Figure 4.4. Firestore supports the following datatypes: String, Number, Boolean, Map, Array, Null, Timestamp, Geopoint and Reference. With a closer look at the API's JSON responses, the data structures can be formed.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.18)  28 DEC 2022 01:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.18)  28 DEC 2022 10:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1306,92 +1306,90 @@ Package pdftex.def Info: bilder//layered_architecture.png  used on input line 5
 2.
 (pdftex.def)             Requested size: 263.33138pt x 300.82109pt.
  [6 <./bilder//widget_tree.png>] [7 <./bilder//layered_architecture.png>]
-(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [8]
-[9] [10]
-<bilder//nosql.jpg, id=80, 613.54219pt x 467.49657pt>
+<bilder//nosql.jpg, id=71, 613.54219pt x 467.49657pt>
 File: bilder//nosql.jpg Graphic file (type jpg)
 <use bilder//nosql.jpg>
-Package pdftex.def Info: bilder//nosql.jpg  used on input line 177.
+Package pdftex.def Info: bilder//nosql.jpg  used on input line 83.
 (pdftex.def)             Requested size: 153.38516pt x 116.87386pt.
- [11 <./bilder//nosql.jpg>]) [12] [13]
+ [8]
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) [9 <./bilder//nosql.jpg>]) [10]
 \openout2 = `kapitel/30_requirements_engineering.aux'.
 
-
-(./kapitel/30_requirements_engineering.tex
+ (./kapitel/30_requirements_engineering.tex
 chapter 4.
-[14
+[11
 
 
 
 
 ]
-<bilder//stakeholder_matrix.png, id=94, 476.0184pt x 430.4883pt>
+<bilder//stakeholder_matrix.png, id=84, 476.0184pt x 430.4883pt>
 File: bilder//stakeholder_matrix.png Graphic file (type png)
 <use bilder//stakeholder_matrix.png>
 Package pdftex.def Info: bilder//stakeholder_matrix.png  used on input line 22.
 
 (pdftex.def)             Requested size: 238.0086pt x 215.24362pt.
- [15 <./bilder//stakeholder_matrix.png>]
-<bilder//system_context.png, id=99, 375.4025pt x 251.94125pt>
+ [12 <./bilder//stakeholder_matrix.png>]
+<bilder//system_context.png, id=90, 375.4025pt x 251.94125pt>
 File: bilder//system_context.png Graphic file (type png)
 <use bilder//system_context.png>
 Package pdftex.def Info: bilder//system_context.png  used on input line 32.
 (pdftex.def)             Requested size: 244.00873pt x 163.75986pt.
- [16 <./bilder//system_context.png>] [17]
-<bilder//use_case_diagram.png, id=107, 754.82pt x 303.1325pt>
+ [13 <./bilder//system_context.png>] [14]
+<bilder//use_case_diagram.png, id=98, 754.82pt x 303.1325pt>
 File: bilder//use_case_diagram.png Graphic file (type png)
 <use bilder//use_case_diagram.png>
 Package pdftex.def Info: bilder//use_case_diagram.png  used on input line 124.
 (pdftex.def)             Requested size: 452.89551pt x 181.8809pt.
- [18 <./bilder//use_case_diagram.png>] [19]
-<bilder//domain_model.png, id=116, 2115.905pt x 1739.49875pt>
+ [15 <./bilder//use_case_diagram.png>] [16]
+<bilder//domain_model.png, id=106, 2115.905pt x 1739.49875pt>
 File: bilder//domain_model.png Graphic file (type png)
 <use bilder//domain_model.png>
 Package pdftex.def Info: bilder//domain_model.png  used on input line 171.
 (pdftex.def)             Requested size: 423.17351pt x 347.89359pt.
- [20]) [21 <./bilder//domain_model.png>]
+ [17]) [18 <./bilder//domain_model.png>]
 \openout2 = `kapitel/30_datenbank.aux'.
 
  (./kapitel/30_datenbank.tex
 chapter 5.
-[22
+[19
 
 
 
 
-]
-Overfull \hbox (17.25371pt too wide) in paragraph at lines 42--45
+] [20]
+Overfull \hbox (17.25371pt too wide) in paragraph at lines 86--89
 []\T1/lmss/bx/n/10.95 (-20) Get all Body Parts: /body/lo-ca-tions/{body_region_
 id}/{gender_id}?token={your_token} 
  []
 
-[23] [24]) [25]
+[21] [22] [23]) [24]
 \openout2 = `kapitel/30_planung.aux'.
 
  (./kapitel/30_planung.tex
 chapter 6.
-<bilder//appUiImportant.png, id=137, 1129.21875pt x 277.035pt>
+<bilder//appUiImportant.png, id=134, 1129.21875pt x 277.035pt>
 File: bilder//appUiImportant.png Graphic file (type png)
 <use bilder//appUiImportant.png>
 Package pdftex.def Info: bilder//appUiImportant.png  used on input line 10.
 (pdftex.def)             Requested size: 451.6795pt x 110.81203pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 20.
-<bilder//whichUI.png, id=138, 919.93687pt x 355.3275pt>
+<bilder//whichUI.png, id=135, 919.93687pt x 355.3275pt>
 File: bilder//whichUI.png Graphic file (type png)
 <use bilder//whichUI.png>
 Package pdftex.def Info: bilder//whichUI.png  used on input line 27.
 (pdftex.def)             Requested size: 367.96823pt x 142.12846pt.
-[26
+[25
 
 
 
 
- <./bilder//appUiImportant.png>] [27 <./bilder//whichUI.png>] [28] [29]
+ <./bilder//appUiImportant.png>] [26 <./bilder//whichUI.png>] [27] [28]
 chapter 7.
-<bilder//api_flow.png, id=153, 2414.26968pt x 812.28468pt>
+<bilder//api_flow.png, id=150, 2414.26968pt x 812.28468pt>
 File: bilder//api_flow.png Graphic file (type png)
 <use bilder//api_flow.png>
 Package pdftex.def Info: bilder//api_flow.png  used on input line 133.
@@ -1401,9 +1399,9 @@ Overfull \hbox (23.22388pt too wide) in paragraph at lines 133--134
  [][] 
  []
 
-[30
+[29
 
-] [31 <./bilder//api_flow.png>] [32]) [33] [34]
+] [30 <./bilder//api_flow.png>] [31]) [32] [33]
 \openout2 = `kapitel/40_poc.aux'.
 
  (./kapitel/40_poc.tex)
@@ -1412,7 +1410,7 @@ Overfull \hbox (23.22388pt too wide) in paragraph at lines 133--134
 
 (./kapitel/50_fazit.tex
 chapter 8.
-) [35
+) [34
 
 
 
@@ -1425,7 +1423,7 @@ chapter 8.
 
  (./kapitel/60_fazit.tex
 chapter 9.
-) [36
+) [35
 
 
 
@@ -1460,7 +1458,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--135
 
  []
 
-[37
+[36
 
 
 
@@ -1475,20 +1473,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--174
 
  []
 
-[38]
-<bilder//My_PDF.png, id=188, 3011.25pt x 3011.25pt>
+[37]
+<bilder//My_PDF.png, id=185, 3011.25pt x 3011.25pt>
 File: bilder//My_PDF.png Graphic file (type png)
 <use bilder//My_PDF.png>
 Package pdftex.def Info: bilder//My_PDF.png  used on input line 214.
 (pdftex.def)             Requested size: 150.57132pt x 150.57132pt.
- [39 <./bilder//My_PDF.png>] [40]
+ [38 <./bilder//My_PDF.png>] [39]
 Package tocbasic Info: character protrusion at lof deactivated on input line 28
 5.
  (./main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [41
+ [40
 
 ]
 Package tocbasic Info: character protrusion at lot deactivated on input line 28
@@ -1497,7 +1495,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 28
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
-) [42
+) [41
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 19
@@ -1541,7 +1539,7 @@ Overfull \hbox (206.77493pt too wide) in paragraph at lines 191--191
   [].
  []
 
-[43
+[42
 
 
 
@@ -1562,10 +1560,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26195 strings out of 478268
- 524347 string characters out of 5846346
- 1721063 words of memory out of 5000000
- 43668 multiletter control sequences out of 15000+600000
+ 26162 strings out of 478268
+ 523924 string characters out of 5846346
+ 1720062 words of memory out of 5000000
+ 43635 multiletter control sequences out of 15000+600000
  610242 words of font info for 229 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,20n,106p,10599b,2584s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1582,10 +1580,10 @@ l/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive
 /2022/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2022/texm
 f-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2022/texmf-dist/fon
 ts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (50 pages, 1022767 bytes).
+Output written on main.pdf (49 pages, 1018070 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
- 162 compressed objects within 2 object streams
+ 264 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  67155 words of extra memory for PDF output out of 74296 (max. 10000000)
 
