@@ -20,8 +20,8 @@
 \contentsline {subsection}{\numberline {3.1.3}Programming Paradigm}{7}{}%
 \contentsline {section}{\numberline {3.2}NoSQL Databases}{8}{}%
 \contentsline {subsection}{\numberline {3.2.1}Introduction to NoSQL Databases}{8}{}%
-\contentsline {subsection}{\numberline {3.2.2}Firestore}{9}{}%
-\contentsline {subsection}{\numberline {3.2.3}Document Databases}{10}{}%
+\contentsline {subsection}{\numberline {3.2.2}Cloud Firestore}{9}{}%
+\contentsline {subsection}{\numberline {3.2.3}Document Databases}{9}{}%
 \contentsline {chapter}{\numberline {4}Requirements Engineering}{11}{}%
 \contentsline {section}{\numberline {4.1}Target Group and User Group}{11}{}%
 \contentsline {section}{\numberline {4.2}Stakeholder Analysis}{11}{}%
