@@ -261,6 +261,15 @@
     \field{year}{2019}
   \endentry
 
+  \entry{whatisdart}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Everything You Need to Know About Flutter App Development}
+    \verb{url}
+    \verb https://www.cometchat.com/blog/flutter-app-development
+    \endverb
+    \field{year}{12/28/2022}
+  \endentry
+
   \entry{.javadart}{article}{}
     \name{author}{1}{}{%
       {{hash=HA}{%
@@ -317,6 +326,28 @@
     \field{year}{2020}
   \endentry
 
+  \entry{.softwarearchi}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LC}{%
+         family={Lilienthal},
+         familyi={L\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LC1}
+    \strng{fullhash}{LC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9783960888970}
+    \field{title}{Langlebige Software-Architekturen: Technische Schulden
+  analysieren, begrenzen und abbauen}
+    \verb{url}
+    \verb https://books.google.de/books?id=2TrCDwAAQBAJ%7D, year={2019}, publis
+    \verb her={dpunkt.verlag}
+    \endverb
+  \endentry
+
   \entry{.flutterarchitecture}{misc}{}
     \field{labeltitlesource}{title}
     \field{abstract}{%
@@ -356,6 +387,219 @@
     \verb https://books.google.de/books?id=0HYhAQAAIAAJ
     \endverb
     \field{year}{2003}
+  \endentry
+
+  \entry{principles}{book}{}
+    \name{author}{2}{}{%
+      {{hash=OA}{%
+         family={Ostrowski},
+         familyi={O\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Gaczkowski},
+         familyi={G\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt Publishing}%
+    }
+    \strng{namehash}{OAGP1}
+    \strng{fullhash}{OAGP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9781789612462}
+    \field{title}{Software Architecture with C++: Design modern systems using
+  effective architecture concepts, design patterns, and techniques with C++20}
+    \verb{url}
+    \verb https://books.google.de/books?id=GrAmEAAAQBAJ
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{stackify}{article}{}
+    \name{author}{1}{}{%
+      {{hash=JT}{%
+         family={Janssen},
+         familyi={J\bibinitperiod},
+         given={Thorben},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{a-Retrace;Java}
+    \strng{namehash}{JT1}
+    \strng{fullhash}{JT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    All 5 SOLID design principles are broadly~used, If you don't know them by
+  name, you will quickly recognize that they describe the rules and principles
+  for writing good code. In this article, you'll learn about the Liskov
+  Substitution Principle.%
+    }
+    \field{title}{SOLID Design Principles Explained: The Liskov Substitution
+  Principle with Code Examples}
+    \verb{url}
+    \verb https://stackify.com/solid-design-liskov-substitution-principle/
+    \endverb
+    \field{journaltitle}{Stackify}
+    \field{year}{11/4/2018}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.crud}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AK}{%
+         family={AMANDEEP},
+         familyi={A\bibinitperiod},
+         given={KAUR},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={{KANWALVIR SINGH}},
+         familyi={K\bibinitperiod},
+         given={DHINDSA},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AKKD1}
+    \strng{fullhash}{AKKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.26634/jcc.3.2.8164
+    \endverb
+    \field{issn}{2349-6835}
+    \field{number}{2}
+    \field{pages}{1}
+    \field{title}{PERFORMANCE EVALUATION FOR CRUD OPERATIONS IN NoSQL
+  DATABASES}
+    \field{volume}{3}
+    \field{journaltitle}{i-manager's Journal on Cloud Computing}
+    \field{year}{2016}
+  \endentry
+
+  \entry{.baasfirebase}{book}{}
+    \name{author}{2}{}{%
+      {{hash=AS}{%
+         family={Alessandria},
+         familyi={A\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kayfitz},
+         familyi={K\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt Publishing}%
+    }
+    \strng{namehash}{ASKB1}
+    \strng{fullhash}{ASKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9781838827373}
+    \field{title}{Flutter Cookbook: Over 100 proven techniques and solutions
+  for app development with Flutter 2.2 and Dart}
+    \verb{url}
+    \verb https://books.google.de/books?id=zDE0EAAAQBAJ
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{.baasokta}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Backend as a service (BaaS) is a cloud-computing model where you outsource
+  computing activities, such as hosting or data storage. Learn more about BaaS
+  here.%
+    }
+    \field{title}{What Is BaaS (Backend as a Service)? Definition and Usage |
+  Okta Australia}
+    \verb{url}
+    \verb https://www.okta.com/au/identity-101/baas-backend-as-a-service/
+    \endverb
+    \field{year}{12/28/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.firestore}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={Firebase},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Use our flexible, scalable NoSQL cloud database to store and sync data for
+  client- and server-side development.%
+    }
+    \field{title}{Firestore {\&}nbsp;|{\&}nbsp; Firebase}
+    \verb{url}
+    \verb https://firebase.google.com/docs/firestore
+    \endverb
+    \field{year}{12/15/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.smartphonenutzer}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={Statista},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Rund 94,2 Prozent der 14- bis 19-j{\"a}hrigen Personen in Deutschland
+  besitzen im Jahr 2021 ein Smartphone.%
+    }
+    \field{title}{Smartphones - Penetrationsrate in Deutschland nach
+  Altersgruppe 2021 | Statista}
+    \verb{url}
+    \verb https://de.statista.com/statistik/daten/studie/459963/umfrage/anteil-
+    \verb der-smartphone-nutzer-in-deutschland-nach-altersgruppe/
+    \endverb
+    \field{year}{12/28/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.stakeholder}{book}{}
+    \name{author}{1}{}{%
+      {{hash=PM}{%
+         family={Pirozzi},
+         familyi={P\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CRC Press}%
+    }
+    \strng{namehash}{PM1}
+    \strng{fullhash}{PM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9780429591754}
+    \field{title}{The Stakeholder Perspective: Relationship Management to
+  Increase Value and Success Rates of Projects}
+    \verb{url}
+    \verb https://books.google.de/books?id=87G2DwAAQBAJ
+    \endverb
+    \field{year}{2019}
   \endentry
 \enddatalist
 \endinput
