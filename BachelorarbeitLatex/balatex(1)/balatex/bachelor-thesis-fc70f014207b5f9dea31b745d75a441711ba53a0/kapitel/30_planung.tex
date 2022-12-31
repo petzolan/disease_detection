@@ -13,30 +13,30 @@ First, a look is taken at whether the graphical user interface plays an importan
 \noindent
 Respondents of the survey were also given the opportunity to choose between three different UIs. The graphical interface should be adapted to the choice made by the people interviewed.
 \subsection{Conceptual Design of the Graphical User Interface}
-The UI can be designed based on the requirements analysis of the application and the information obtained from it. As already defined there, the application should be designed to be as intuitive and easy to use as possible. The implementation of the design of the user interface, for the android version, is based on suggestions from the material.io website [material.io], an open-source design system developed by google. The integration of the design components into the Flutter application is simplified thanks to the pre-installed material.dart package. This package is based on the source mentioned and currently supports version 2 of material.io. Support for the current version 3 of Material Design is still being worked on.
+The UI can be designed based on the requirements analysis of the application and the information obtained from it. As already defined there, the application should be designed to be as intuitive and easy to use as possible. The implementation of the design of the user interface, for the android version, is based on suggestions from the material.io website \cite{.materialio}, an open-source design system developed by google. The integration of the design components into the Flutter application is simplified thanks to the pre-installed material.dart package. This package is based on the source mentioned and currently supports version 2 of material.io. Support for the current version 3 of Material Design is still being worked on.
 \noindent
-One goal of this application is to be designed to be intuitive. In his book "UI is COMMUNICATION", Everett N. McKay described an intuitive UI as follows: 
+One goal of this application is to be designed to be intuitive. In his book "UI is COMMUNICATION", Everett N. McKay described an intuitive UI as follows \cite{.mckay}: 
 \begin{quote}
-	\textit{"A UI is intuitive when target users understand its behavior and effect without use of reason, memorization, experimentation, assitance, or training."} - Everett N McKay [Quelle]
+	\textit{"A UI is intuitive when target users understand its behavior and effect without use of reason, memorization, experimentation, assitance, or training."} - Everett N McKay \cite[p. 22]{.mckay}
 \end{quote}
 In order to meet this definition, goals that the user interface should meet could be set before the graphic user interface is designed.\\
 \noindent
-On the one hand, the user should be able to recognize immediately that a component of the screen is a widget that he can operate. The system must then show the user that something has been triggered by his action. This can be done, for example, through feedback in the form of a loading circle if required data still needs to be loaded, or in the form of a new screen, pop-up or similar design components. [everett] Another step that can be taken to make the application more intuitive is the correct (short) labeling of the respective components. For example, a corresponding text, or even better imagery [ess mobile interac design cameron, seite 172], should be stored on a confirmation button. In addition, it should be ensured that surface components do not change their positions. This ensures that users can rely on their previous interactions and thus learn how to use the application. Minimalism is becoming a trend not only in the real world, but also in the digital world. This can also be seen looking at the most popular graphical interface of the survey, shown in Figure 6.2. The associated surfaces can be found in Appendix x.
+On the one hand, the user should be able to recognize immediately that a component of the screen is a widget that he can operate. The system must then show the user that his action has triggered something. This can be done, for example, through feedback in the form of a loading circle if required data still needs to be loaded or in the form of a new screen, pop-up, or similar design components. \cite{.mckay} Another step that can be taken to make the application more intuitive is the correct (short) labeling of the respective components. For example, a corresponding text, or even better imagery \cite[p. 172]{.essui}, should be stored on a confirmation button. In addition, it should be ensured that surface components do not change their positions. This ensures that users can rely on their previous interactions and thus learn how to use the application. Minimalism is becoming a trend not only in the real world but also in the digital world. This can also be recognized by looking at the graphical development of various icons and web interfaces of large companies. This can also be seen by looking at the most popular graphical interface of the survey, shown in Figure 6.2. The associated surfaces can be found in Appendix x.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{whichUI.png}
-	\caption[Survey Question]{Survey Question - Which UI}
+	\caption[Survey Question]{Survey Question - Which UI would respondents like the most}
 \end{figure}
 \noindent
-Designing the application as minimalistic as possible has the advantage that the graphical interface is not overloaded and thus the user is not overwhelmed by different widgets at all. This may make it easier for the user to better interpret the use of specific elements. Another factor that plays a role in user-friendliness is to use familiar design patterns. This ensures that users are already familiar with the handling of the app elements and that there is no confusion regarding the use. 
+Designing the application as minimalistic as possible has the advantage that the graphical interface is not overloaded; thus, the user is not overwhelmed by different widgets. This may make it easier for the user to interpret specific elements better. Another factor that plays a role in user-friendliness is to use of familiar design patterns. This ensures that users are already familiar with handling the app elements and that everything is clear regarding the use. 
 
 \subsection{Description of the Views and Thoughts on the Implementation in Flutter}
 This section presents the individual views that are made available to users. In addition, first thoughts on possible implementation ways for those views, working with Flutter, are considered.
 \subsubsection{\textbf{Home Screen}}
-The first view that a user will encounter when installing or opening the application is the home screen. There, he should be given the opportunity to switch between the different views that are necessary for his use: diagnosis creation, diagnosis overview and advice view. In addition, every user should be able to access the login screen for doctors, since they can verify themselves there as such. The navigation to create a diagnosis is implemented in the form of a button and labeled with a corresponding, clearly formulated text. To get to all other screens, a list view of all options is offered, in which there are various clickable fields that trigger navigation to the corresponding screen when clicked. In Flutter, this view can be achieved through several different components. The most important widgets can be used in the form of children in a column. In order to implement the clickable forwarding elements to other views, one should use a ListView, storing children of the widget GestureDetector, which allows any widget to be clickable. The childrens can be stored in an external modifiable list, this allows you to simplify the integration of new categories at a later point in time. A mock-up of a possible home screen can be found in Appendix x.
+The home screen is the first view a user will encounter when installing or opening the application. There, he should be allowed to switch between the different views necessary for his use: diagnosis creation, diagnosis overview, and advice view. In addition, every user should be able to access the login screen for doctors since they can verify themselves there. The navigation to create a diagnosis is implemented as a button and labeled with a corresponding, clearly formulated text. To get to all other screens, a list view of all options is offered, in which various clickable fields trigger navigation to the corresponding screen when clicked. In Flutter, this view can be achieved through several different components. Essential widgets can be used as children in a column. In order to implement the clickable forwarding elements to other views, one should use a ListView, storing children of the widget GestureDetector, which allows any widget to be clickable. The children can be stored in an external modifiable list, which simplifies the integration of new categories at a later point in time. A mock-up of a possible home screen can be found in Appendix x.
 
 \subsubsection{\textbf{View for the diagnostic process}}
-The screen to start a diagnosis should be designed as simple as possible. Users can adress on which body part they are feeling their symptoms. Based on their selection the application shows all symptoms associated with the body part, which then can be selected and afterwards specified by the user. The widget \textit{Stepper} is a possible implementation option. It gives the developer the opportunity to easily implement a type of step-by-step tool. For this purpose, only all steps for generating a diagnosis are created and filled with the appropriate data. The full code for an example Stepper-widget can be found in the appendix x.
+The screen to start a diagnosis should be designed as simply as possible. Users can address on which body part they are experiencing their symptoms. Based on their selection, the application shows all symptoms associated with the body part, which can be selected and afterward specified by the user. The widget \textit{Stepper} is a possible implementation option. It allows the developer to implement a type of step-by-step tool quickly. For this purpose, only all steps for generating a diagnosis are created and filled with the appropriate data. The complete code for an example Stepper widget can be found in appendix x.
 
 %	\scriptsize
 %	\begin{lstlisting}[caption=Stepper for Body Part Selection]
@@ -67,7 +67,7 @@ The screen to start a diagnosis should be designed as simple as possible. Users 
 %	\end{lstlisting}
 %	\normalsize
 \subsubsection{\textbf{Login Screen (Doctor)}}
-The login screen is displayed to the user immediately after clicking on the navigation tool labeled "Doctor Panel". There he will be offered the option to log in or register. This is achieved by simply adding editable textfields for the needed user input: email, password and confirmation password. If the user has already created a user account in a previous session, has verified himself as a medical profressional and has then been logged in, he will be forwarded to the actual doctor panel without any further need to log in. An exception is given if he has previously logged out. With the help of the flutter\_login package, a developer can implement the login process in Dart very easily. Appendix x demonstrate the use of the FlutterLogin-plugin. There are also options to customize the appeareance of the login-form.
+The login screen is displayed to the user immediately after clicking on the navigation tool labeled "Doctor Panel". There he will be offered the option to log in or register. This is achieved by adding editable text fields for the needed user input: email, password, and confirmation password. If the user has already created a user account in a previous session, has verified himself as a medical professional, and has then been logged in, he will be forwarded to the actual doctor panel without needing to log in. An exception is given if he has previously logged out. With the help of the flutter\_login package, a developer can easily implement the login process in Dart. Appendix x demonstrates the use of the FlutterLogin-plugin. There are also options to customize the appearance of the login form.
 %	\scriptsize
 %\begin{lstlisting}[caption=Stepper for Body Part Selection]
 %	...
@@ -84,23 +84,47 @@ The login screen is displayed to the user immediately after clicking on the navi
 %	...
 %\end{lstlisting}
 %\normalsize
+
 \subsubsection{\textbf{Screen with all body parts, diseases, advices and symptoms (Doctor)}}
-The doctor panel should contain all the necessary data related to the records stored in the database. Here, a doctor can switch between the different collections. A good implementation method for this would be the BottomNavigationBar. It contains various navigation elements, which all change to their data view when you click on them. The data views show a list of the data stored in the associated Firestore collection. Care should be taken to ensure that it is recognizable that you can click on the list elements. When the user clicks on such an element, the system redirects to the edit view for the associated record. In order to be able to store new data quickly, a FloatingActionButton can also be integrated, which opens a small menu by clicking on it, where all the data add options for the doctor are listed. Clicking on a listing item then opens the associated add view.
+The doctor panel should contain all the necessary data related to the records stored in the database. Here, a doctor can switch between the different collections. A suitable implementation method for this would be the BottomNavigationBar. It contains various navigation elements, which all change their data view when clicking on them. The data views show a list of stored data in the associated Firestore collection. Care should be taken to ensure that it is recognizable that one can click on the list elements. When the user clicks on such an element, the system redirects to the edit view for the associated record. In order to be able to store new data quickly, a FloatingActionButton can also be integrated, which opens a small menu by clicking on it, where all the data add options for the doctor are listed. Clicking on a listing item then opens the associated add view.
+
 \subsubsection{\textbf{View for adding and editing data (Doctor)}}
-In order to make the views as intuitive as possible, it is advisable to make the graphical interface as uncluttered as possible. Furthermore, here only text fields are included for the data records where possible. For the selection of related data for a data set (e.g. symptoms for an illness), a button is placed on the view which, when clicked, generates and displays a dialog with the content of all symptoms in the database. Ideally, this dialog should also contain a search bar so that the user is not forced to scroll through the large number of data records. Both, the edit view and the view to add new records, consist of a form widget. In this it is possible to transfer text fields as children, which can be modified by a user. The distinction here is only between the initial value of the text fields. While the data stored in the database for the associated data record is displayed in the edit view, when a new data tuple is created, only an empty text field with a note regarding the data field is specified.
+In order to make the views as intuitive as possible, it is advisable to make the graphical interface as uncluttered as possible. Because of this, only text fields are included for the data records where possible. For the selection of related data for a data set (e.g., symptoms for an illness), a button is placed on the view, which, when clicked, generates and displays a dialog with the content of all symptoms in the database. Ideally, this dialog should also contain a search bar so that the user is not forced to scroll through many data records. Both the edit view and the view to add new records consist of a form widget. There, it is possible to add text fields as children, which users can modify. The distinction here is only between the initial value of the text fields. While the data stored in the database for the associated data record is displayed in the edit view, only an empty text field with a hint regarding the data field is specified when a new data tuple is created.
+
 \subsubsection{\textbf{View with all saved diagnoses}}
-The diagnoses view is represented by a vertical list of all diagnoses. A ListView is used here. This ListView contains all diagnostic data that the user has previously saved on his device. Clicking on a diagnosis element in the list opens the detailed view of this diagnosis. It shows the date on which the diagnosis was made, which symptoms the user specified and which illnesses resulted from the calculation of the probability of diseases. This are represented in the form of a bar chart. At the end of the diagnosis, the diseases are listed again in list form, together with their description and treatment recommendations.
+A vertical list of all diagnoses represents the diagnoses view. A ListView is used here. This ListView contains all diagnostic data that the user has previously saved on his device. Clicking on a diagnosis element in the list opens a detailed view of this diagnosis. It shows the date on which the diagnosis was made, which symptoms the user specified, and which illnesses resulted from calculating the probability of diseases. This is represented in the form of a bar chart. At the end of the diagnosis, the diseases are again listed in list form, with their description and treatment recommendations.
 
 \subsubsection{\textbf{View with all advices stored in the database (User) }}
-The recommendation screen is laid out similarly to the diagnosis screen. Here, too, the data from Firestore is displayed in the form of a vertical list and a click opens the detailed description of the advice. This detailed view simply consists of text fields which contain the data from the document fields.
+The advice screen can be designed similarly to the diagnosis screen. Here, too, the data from Firestore is displayed in the form of a vertical list, and a click opens the detailed description of the advice. This detailed view consists of text fields containing the document fields' data.
+
 \subsection{Mock-ups and Survey regarding the Trustworthiness of Mock-up Designs}
-With the description of the screens and the first development approaches, mock-ups could already be created with the help of Canva. These can be found in Appendix x. As parat of a survey, it was founrd out whether the basic idea of the graphic design would speak for trustworthiness and whether the participants woudl have inutitively known how to interact with the interface. The results are presented below.
+With the description of the screens and the first development approaches, mock-ups can already be created with the help of Canva. These can be found in Appendix x. As part of a survey, it was found out whether the basic idea of the graphic design would speak for trustworthiness and whether the participants would have instinctively known how to interact with the interface. The results are presented below.
 
 %\section{The Symptom Graph}
 %\subsection{Performance Evaluation}
 %\subsection{Scalability Comparison}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%v
 \chapter{Implementation}
 Based on the specifications from the previous chapter, it is now possible to open the app to implement. This chapter describes the technologies used for the development of this application. The project structure is also examined in more detail.
 \section{Project Structure}
@@ -166,77 +190,67 @@ class Symptom {
 
 \section{Algorithms for the Attribution of Symptoms to potential Diseases}
 \subsection{List Matching}
-Die erste Methodik welche betrachtet werden soll basiert auf rein theoretischen Aspekten. Durch Angabe der vom Patienten angegebenen Symptome setzt die Applikation eine Liste von diesen zusammen. Währenddessen konnte man bei dem Befüllen der Datenbank mit den nötigen Datensätzen feststellen, dass für jede Krankheit ebenfalls eine Liste an Symptomen hinterlegt wird. Eine intuitive Idee wäre, diese beiden Listen miteinander zu vergleichen entsprechend dazu einen Matching-algorithmus zu entwickeln, welcher die prozentuale Übereinstimmung der Listen kalkuliert. Das sogenannte Word-Matching wird in Quelle [] beschrieben. Bei diesem vorgehen sollte jedoch beachtet werden, dass keinerlei medizinische Daten bei der Berechnung mit einfließen. Dementsprechend sinkt die Wahrscheinlichkeit der Korrektheit der Diagnosestellung. Im Sinne dessen soll eine weitere, genauere Methode betrachtet werden.
+The first methodology to be considered is based on purely theoretical aspects. By specifying the symptoms given by the patient, the application compiles a list of them. When adding the diseases to the database, a list of symptoms was also generated in each disease document. An intuitive idea would be to compare these two lists with each other according to a matching algorithm, which calculates the percentage of word matching in the lists. The so-called word matching is described in source \cite{.wordmatching}. However, it should be noted that no medical data is included in the calculation. Accordingly, the probability of the correctness of the diagnosis decreases. In this sense, another, more exact method is to be considered.
 
-\subsection{Bayesian Networks}
-Entsprechend der fehlenden Genauigkeit der eben definierten Methode wird nun ein genaueres Verfahren betrachtet. Ein sogenanntes Bayesian Network stellt einen Wahrscheinlichkeitsmodel in Form eines directed acyclic graphs (DAG) auf. \cite{.bahn-bonn}
-\subsubsection{Directed Acyclic Graphs}
+\subsection{Machine Learning: Bayes Theorem and Bayesian Networks}
+The so-called Bayes theorem is the foundation of the machine learning technique known as naive Bayes \cite[p. 403]{.bayes1}. According to the Bayes theorem, a principle of probability theory, one may determine the likelihood of an event (such as the existence of a disease) based on the likelihood of occurrences that are connected to it (e.g., certain symptoms) \cite[p. 403 ff.]{.bayes1} \cite{.bayes2}. The Bayes theorem is applied in the case of Naive Bayes to forecast classification issues. The model's components are thought to be completely independent of one another \cite{.naivebayes}.
+\newline \\
+On the other hand, Bayes networks are a particular probabilistic graph type that employs the Bayes theorem to determine the likelihood of occurrences that depend on numerous independent variables \cite{.bayesnet}. In Bayes networks, the edges between variables represent the relationships between them, with the edges' probabilities describing the link's strength. Similar to Naive Bayes, Bayes networks can be used to forecast classification problems, but they can also be used to simulate more intricate relationships between variables  \cite{.bayesnet}. Generally speaking, the Bayes theorem-based methodologies of Naive Bayes and Bayes Networks are used to forecast occurrences. The fundamental distinction is that although Bayes networks represent and model the relationships between variables, Naive Bayes implies that all features are independent. 
+\newline \\
+To create a Bayesian network for disease calculation, it is first necessary to identify the variables that should be included in the model. These variables will include the various symptoms that are associated with different diseases, as well as the diseases themselves. Once they are identified,  one can create a graphical representation of the relationships between them by creating a directed acyclic graph (DAG) \cite{.bayesnet} \cite{.bayesnet2}. In this DAG, the nodes represent the variables, and the edges represent the relationships between the variables. For example, a node for a particular symptom, such as a fever, and another node for a particular disease, such as the flu. Then an edge between the nodes can be created to represent that the presence of a fever is often associated with the flu. It is also possible to assign probabilities to the edges in a Bayesian network to represent the strength of the relationship between the variables. For example, if a fever is a strong indicator of the flu, it might be wise to assign a high probability to the edge between the fever and flu nodes. On the other hand, if it is known that a fever is only a weak indicator of the flu, one might assign a lower probability to the edge.
+\newline \\
+Once the Bayesian network is created, and probabilities are assigned to the edges, one can use it to make predictions about the likelihood of an individual having a particular disease based on the presence or absence of specific symptoms. For example, if one has a Bayesian network that includes nodes for the symptoms of fever, cough, and sore throat, as well as nodes for the diseases of the flu and the common cold, which is information that the patient entered: In that case, one can use the probabilities assigned to the network's edges to calculate the likelihood that the individual has the flu or the common cold.
+\newline \\
+In summary, Bayesian networks are a powerful tool for calculating the likelihood of an individual having a particular disease based on the presence or absence of certain symptoms.
 
-\subsection{Algorithmische Lösung mit Gewichtungen}
-Zunächst wird die im conference paper "towards a ranking of likely diseases in terms of precision and recall" beschriebene Symptomzuordnung untersucht. Das Dokument wurde zwar schon im Jahr 2012 veröffentlicht, geht aber auf Problematiken ein, welche auch heute noch bei bestimmten Krankheitszuordnungsverfahren vorhanden sind und eine, mit Medizinern erarbeitete, Lösung, wie diese Verfahren sauber ersetzt werden können. Die Informationen welche aus dem Paper entnommen werden können bieten auch heute noch eine gute Grundlage für eine algorithmische Lösung der Krankheitsermittlung.
+\subsection{Algorithmic Solution}
+Lastly, the symptom classification described in the conference paper "towards a ranking of likely diseases in terms of precision and recall" \cite{.algo} is examined. Although the paper was published in 2012, it addresses problems that are still present today with certain disease classification methods and a solution, developed with medical experts, on how these methods can be cleanly replaced. The information which can be taken from the paper still offers a good basis for an algorithmic solution of the disease determination. 
+\newline \\
+The paper addresses, among other things, problems that bayesian networks bring with them: the pure information regarding the probabilities of certain diseases is not widespread and accessible or even available \cite{.algo}. The solution described in the paper defines a variant in which one does not have to fixate purely on the probability of a disease based on symptoms, but other values are also included.
 
-\subsubsection{Die Einflussfaktoren der Diagnosestellung}
-Zunächst werden die Einflussfaktoren betrachtet und im Rahmen der Applikation zugeordnet.
+\subsubsection{Influencing Factors}
+First, the influencing factors are considered and assigned in the context of the application.
 \begin{itemize}
-	\item \textbf{Einteilung der Symptome}
+	\item \textbf{Classification of the Symptoms}
 	\newline
-	Nachdem der Nutzer in der Applikation seine Symptome angegeben hat können, basierend auf den Angaben, zugehörige Krankheiten aus der Datenbank gefiltert werden. Dadurch werden alle möglichen Symptome der Krankheiten geliefert und es können zwei Mengen gebildet werden: vorhandene und abwesende Symptome. Mit Hilfe dieser Informationen wird im späteren Verlauf die Wahrscheinlichkeit einer Krankheit basierend auf den Patientensymptomen ermittelt.
+	After the user has entered his symptoms in the application, related diseases can be filtered from the database based on the information provided. This provides all possible symptoms of the diseases and two sets can be formed: present and absent symptoms. This information is later used to determine the probability of a disease based on the patient's symptoms.
 
-	\item \textbf{Wahrscheinlichkeit des Eintretens einer bestimmten Krankheit}
+	\item \textbf{Probability of Occurrence of a certain Disease}
 	\newline
-	Für die Wahrscheinlichkeit des Eintretens einer Krankheit werden im Rahmen dieser Arbeit Dummy-Daten verwendet. Das Vorgehen um diese Daten in der Datenbank zu hinterlegen wird im JupyterNotebook durchgeführt, welches wie schon beschrieben im Anhang x zu finden ist. 
+	For the probability of occurrence of a disease, dummy data are used in this work. The procedure for storing these data in the database is carried out in JupyterNotebook, which can be found in Appendix x as already described. 
 	
-	Zusätzlich zu dieser Information wird die Wahrscheinlichkeit benötigt, wie schwerwiegend ein Symptom tatsächlich ist. Im Paper wird dieser Wert als default importance beschrieben. Der Faktor wird ebenfalls in Form von Dummydaten hinterlegt.
+	In addition to this information, the probability of how severe a symptom actually is is needed. In the paper, this value is described as default importance. The factor is also stored in the form of dummy data.
 	
-	\item \textbf{Patientenspezifische Faktoren}
+	\item \textbf{Patient-specific Factors}
 	\newline
-	Zu den Patientenspezifischen Faktoren gehören Eigenschaften wie das Alter, Geschlecht oder ob der Patient raucht oder nicht. Eine Abfrage dieser Faktoren kann während der Symptomangabe erfolgen. Im Rahmen der Implementierung des Algorithmus bei dieser Arbeit werden diese Faktoren jedoch außen vor gelassen.
+	Patient-specific factors include characteristics such as age, gender, or whether or not the patient smokes. A query for these factors can be made during the symptom specification. However, in the context of the implementation of the algorithm in this work, these factors are left out.
 	
-	Zusätzlich zu diesen Faktoren müssen auch der Auftrittszeitpunkt eines Symptoms und die Intensität mit welcher ein Patient dieses Symptom empfindet eingebunden werden. Diese Informationen werden im Rahmen der Symptomangabe vom Nutzer mitangegeben und temporär, in Form eines user specified symptoms, gespeichert. Die Faktoren der Itensität und Neuartigkeit sind mittels enumerationen im Programmcode hinterlegt. 
+	In addition to these factors, the time of occurrence of a symptom and the intensity with which a patient experiences this symptom must also be included. This information is provided by the user as part of the symptom specification and is stored temporarily in the form of a user specified symptom. The factors of intensity and novelty are stored in the program code by means of enumerations. 
 	
 	\item \textbf{Relation of Diseases and Symptoms}
 	\newline
-	Zur Berechnung der relatedness wird zum einen die Berechnung der bedingten Wahrscheinlichkeit P(s|d) eines Symptomes und einer Krankheit benötigt und zum Anderen der Faktor, ob es sich beim Symptom um ein leitendes Symptom der Krankheit handelt. 
-	
-	\item \textbf{Symptom spezific factors}
-	\newline
-	Zur Berechnung der relatedness wird zum einen die Berechnung der bedingten Wahrscheinlichkeit P(s|d) eines Symptomes und einer Krankheit benötigt und zum Anderen der Faktor, ob es sich beim Symptom um ein leitendes Symptom der Krankheit handelt. Die Implementierung in dieser Arbeit ermittelt den Faktor, ob es sich um ein leitendes Symptom handelt ebenfalls, basierend auf dummydaten.
+	The calculation of relatedness requires, first, the calculation of the conditional probability P(s|d) of a symptom and a disease, and second, the factor of whether the symptom is a leading symptom of the disease.  The implementation in this work determines the factor, whether it is a leading symptom also, based on dummy data.
 \end{itemize}
 \noindent
-Mittels der beschriebenen Faktoren können folgend die Werte precision und recall ermittelt werden. [quelle, seite 9]. Mit Hilfe dieser wiederum kann in einem weiteren Schritt bestimmt werden, in welchem Grad die Symptome des Patienten auf die Krankheitssymptome abgebildet werden können. Final lässt sich das Ranking der Krankheiten wie folgt berechnen:
+By means of the described factors the values precision and recall can be determined \cite[p. 9]{.algo}. With the help of these, in a further step, it can be determined to what degree the patient's symptoms can be mapped to the disease symptoms. Finally, the ranking of the diseases can be calculated as follows:
 \begin{equation}
 	  \begin{aligned}
 		r(d) := F(d) + \lambda + P_p(d)\\
-	 \end{aligned}\qquad\text{aus []}
+	 \end{aligned}\qquad\text{from \cite{.algo}}
 \end{equation}
-Der Lambawert dient zur verminderung des Krankheitswahrscheinlichkeitwertes, da dieser laut den Autoren als weniger wichtig angesehen wird. 
-\newline
-\noindent
-Das Paper geht unter anderem auf Problematiken welche bayesian networks mit sich bringen ein: viele wichtige Faktoren welche für die korrekte Berechnung der Symptomwahrscheinlichkeiten nötig sind, sind quasi unzugänglich und unbekannt. 
+The lamba value is used to reduce the disease probability value, as this is considered less important according to the authors \cite[p. 10]{.algo}. 
+\newline \\
+In the context of the bachelor thesis, the focus will lay on this methodology, since it is basically based on the variant of Bayes Networks but in a more algorithmic way instead of machine learning.
 
-\subsection{Machine Learning}
-%[13]. Since Bayes-nets are
-%theoretically best suited for diagnosis they are successfully implemented in some
-%of the mentioned expert-systems. However statistical approaches like Bayes-nets
-%require knowledge, which isn't broadly available: e.g. the a-priori probabilities for
-%signs and symptoms P(s) are mostly not known. Thus we are not able to compute
-%the conditional probability for a disease, given the symptom P(djs) = P(sjd)P(d)
-%P(s)
-%with the help of Bayes-Theorem. Note that P(sj:d) is normally not known as
-%well. It is not dicult to see that even though we cannot calculate P(d1js) and
-%P(d2js) for two diseases d1 and d2, we are able to compare them by computing
-%P(d1js)=P(d2js). Thus, without knowing P(s), ranking diseases is possible.
-%Similar to our approach is the work described in [14], where a quality measure
-%for diagnosis is dened. However the factors inuencing the ranking are dierent
-%(e.g. they assume to have knowledge about the probability of a nding being
-%caused by a certain disease). Further they do not allow the clinicians to interact
-%with the system and change e.g. symptom weights. In [15] a model similar to
-%ours represents the disease-symptom relations using fuzzy labels, however the
-%symptoms itself are not weighted. They also chose an IR approach to rank likely
-%diseases.
-\subsubsection{Naive Bayes (Classifier)}
-Ein Klassifikator macht es möglich, Eingabedaten einer bestimmten Klasse zuzordnen. Sie werden besonders oft im Machine Learning bereich eingesetzt, beispielsweise für die Erkennung vom Spammails. Im Rahmen der Symptomanalyse wird einem hier ermöglicht, Eingabedaten in Form von Symptomen auf bestimmte Krankheitsklassifikationen abzubilden. [quelle unicamp.br] Das Gesamtergebnis der Berechnung ergibt dann die bedingte Wahrscheinlichkeit des Symptoms basierend auf den Eintrittswahrscheinlichkeit der Symptome zu den Krankheiten. 
-\section{Evaluation of the Algorithms}
-\section{Diagnoses}
-\subsection{Generate Diagnose PDF}
-\subsection{Store PDF Locally on Device}
+
+\section{Evaluation of the Algorithm}
+Within the scope of the work, the last mentioned algorithm was implemented using the Dart programming language. In the next step, it will be evaluated. For this purpose, 3 different symptom compilations were generated. How these look like can be taken together with the exact test results from the appendix F.  There one can also get information about the system on which the emulator is running.
+
+\subsection{Calculation Time}
+With every compilation, the program took more 30 seconds up to over a minute to calculate the individual values for all the specified symptoms and associated diseases. This means that a user has to wait an average of one minute to receive a diagnosis. Considering that the application should be designed to be as user-friendly as possible, this value is clearly too high. In some cases, it is even claimed that a user waits a maximum of 3 seconds for an application to respond \cite{.3sek}.
+
+\subsection{CPU Performance}
+On an Android emulator with Android Studio, the CPU usage of the parent system was 3.2 - 3.7\% continuously. It was always about 0.5\% in idle mode. An impairment of the emulator usage during the computing process could not be determined here.
+  
+\section{Functionalities}
+\subsection{title}

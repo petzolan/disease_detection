@@ -8,20 +8,41 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Widget Tree of Listing 2.1}}{6}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Layered Architecture in Flutter}}{7}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Power/Interest Grid for Stakeholder-Analysis }}{12}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces System Context Diagram }}{13}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Use Case Diagram}}{15}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Domain Model}}{18}{}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Survey Question}}{25}{}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Survey Question}}{26}{}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Client-Server Request Flow}}{30}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Power/Interest Grid for Stakeholder-Analysis }}{11}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces System Context Diagram }}{12}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Use Case Diagram}}{13}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Domain Model}}{16}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Survey Question}}{23}{}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Survey Question}}{24}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces QR-Code for NHS API Response}}{38}{}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Client-Server Request Flow}}{28}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Survey 1, Question 1}}{33}{}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Survey 1, Question 2}}{33}{}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Survey 1, Question 3}}{33}{}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Survey 1, Question 4}}{34}{}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Survey 1, Question 5}}{34}{}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Survey 1, Question 6}}{34}{}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Survey 1, Question 7}}{35}{}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Survey 1, Question 8}}{35}{}%
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Survey 1, Question 8 (Pictures)}}{35}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces QR-Code NHS API Response, GitHub}}{42}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces QR-Code JupyterNotebook, GitHub}}{45}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {I.1}{\ignorespaces System CPU Information}}{52}{}%
+\contentsline {figure}{\numberline {I.2}{\ignorespaces Emulator Details}}{53}{}%
+\contentsline {figure}{\numberline {I.3}{\ignorespaces Processor Time Compilation 1}}{54}{}%
+\contentsline {figure}{\numberline {I.4}{\ignorespaces Processor Time Compilation 2}}{55}{}%
+\contentsline {figure}{\numberline {I.5}{\ignorespaces Processor Time Compilation 3}}{56}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

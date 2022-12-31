@@ -8,7 +8,7 @@
 %  draft,				% Korrekturfassung
   ]{scrreprt}			% scrartcl	
 
-
+\usepackage{tikz,pgfplots}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman,english]{babel}
 \selectlanguage{english}
@@ -45,7 +45,7 @@
 	tabsize=2
 }
 \lstset{style=mystyle}
-\usepackage{ulem}
+
 
 % Blindtext
 \usepackage{blindtext}
@@ -61,7 +61,7 @@
 \usepackage{csquotes}	% Steuerung der Anführungszeichen
 \usepackage[
   sorting=none,
-  backend=bibtex,		% Sortier-Compiler
+  backend=biber,		% Sortier-Compiler
   style=numeric-comp,	% Zitationsstil
   ]{biblatex}
 
@@ -192,10 +192,12 @@ Technische Hochschule Ingolstadt
   
   \include{kapitel/40_poc}
   
-  \include{kapitel/50_fazit}
+  %\include{kapitel/50_fazit}
   
   \include{kapitel/60_fazit}
   
   \include{kapitel/70_fazit}
+  \begin{sloppypar}
   \printbibliography %Citavi 5
+\end{sloppypar}
 \end{document}

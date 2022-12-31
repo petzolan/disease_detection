@@ -25,22 +25,18 @@ When researching how Flutter functions, it is common to come across the phrase, 
 \noindent 
 The categorization created by Eric Windmill provides a decent overview of the possibilities in Flutter. There are undoubtedly a lot more widgets and a lot more usage categories that might be defined.
 \newline \\
-Widgets can be composed, meaning nested inside of one another \cite[p. 61]{.flutterinaction}, so rather than simply returning the widget it describes, a widget's build method returns a tree of widgets. The Domain Object Model (DOM) in any web browser is comparable to this widget tree. A sample widget tree returned by a build method is shown in figure 2.1.
+Widgets can be composed, meaning nested inside of one another \cite[p. 61]{.flutterinaction}, so rather than simply returning the widget it describes, a widget's build method returns a tree of widgets. The Domain Object Model (DOM) in any web browser is comparable to this widget tree. A sample widget tree returned by a build method is shown in figure 2.1. The corresponding code snippet can be found in appendix B.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.45]{widget_tree.png}
-	\caption[Widget Tree of Listing 2.1]{Widget Tree of Listing 2.1}
-\end{figure}
-\subsection{Flutter: Architectural Layers}
-A well-designed application architecture helps improve the system's performance, maintainability, and scalability and makes it more modular \cite{.softwarearchi}. Many different application architectural patterns can be used, including the layered architecture Flutter uses. In software development, layered architecture is a typical design pattern in which the application is divided into different layers. Each layer plays a specific role in the overall functionality of the application. The Flutter architecture includes several critical components, including the Flutter engine, the Dart platform, and the Flutter framework. The Flutter engine renders widgets and manages their interactions with the underlying platform, such as the operating system and device hardware. The Dart platform provides the runtime environment for the Flutter app, including the Dart virtual machine (VM) and the core libraries. Application architecture refers to how the various components of a mobile or web application are organized and how they interact with each other. No layer has privileged access to the layers below, and every part of the framework layer is designed to be optional and interchangeable \cite{.flutterarchitecture}. Figure 3.2 shows the basic structure of a Flutter application. 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.45]{layered_architecture.png}
-	\caption[Layered Architecture in Flutter]{Layered Architecture in Flutter[based on \cite{.flutterarchitecture} and \cite[p. 50]{.flutterinaction}}
+	\includegraphics[scale=0.2]{widget_tree.png}
+	\caption[Widget Tree of Listing 2.1]{Widget Tree of Appendix B}
 \end{figure}
 
+\subsection{Flutter: Architectural Layers}
+Many different application architectural patterns can be used, including layered architecture. The Flutter framework is structured similarly to the familiar approach to project structuring. In software development, layered architecture is a typical design pattern in which the application is divided into different layers. Each layer plays a specific role in the overall functionality of the application. The Flutter architecture includes several critical components, including the Flutter engine, the Dart platform, and the Flutter framework. The Flutter engine renders widgets and manages their interactions with the underlying platform, such as the operating system and device hardware. The Dart platform provides the runtime environment for the Flutter app, including the Dart virtual machine (VM) and the core libraries. Application architecture refers to how the various components of a mobile or web application are organized and how they interact with each other. No layer has privileged access to the layers below, and every part of the framework layer is designed to be optional and interchangeable \cite{.flutterarchitecture}. The architecture of the framework helps to understand decisions regarding project structuring later. A well-designed application architecture helps improve the system's performance, maintainability, scalability and makes it more modular \cite{.softwarearchi}.
+
 \subsection{Programming Paradigm}
-The programming paradigm of the Dart programming language is object-oriented programming (OOP). It uses obj ects, classes, and inheritance to organize and structure code. Dart also incorporates some functional programming concepts, such as immutable data and first-class functions, which allow for more concise and elegant code. Additionally, Dart supports asynchronous programming, enabling developers to write code that can run concurrently and handle multiple tasks simultaneously. Overall, Dart's combination of OOP and functional programming paradigms makes it a versatile and powerful language for building modern web and mobile applications. The SOLID principles are a set of guidelines for designing object-oriented software. Robert C. Martin introduced them in his book "Agile Software Development, Principles, Patterns, and Practices" as a way to improve the maintainability, extensibility, and flexibility of object-oriented code and develop software prone to fewer bugs and cleaner source code \cite{.martin}. These principles should be considered when developing the application.
+The programming paradigm of the Dart programming language is object-oriented programming (OOP). It uses obj ects, classes, and inheritance to organize and structure code. Dart also incorporates some functional programming concepts, such as immutable data and first-class functions, which allow for more concise and elegant code. Additionally, Dart supports asynchronous programming, enabling developers to write code that can run concurrently and handle multiple tasks simultaneously. Overall, Dart's combination of OOP and functional programming paradigms makes it a versatile and powerful language for building modern web and mobile applications. The SOLID principles are a set of guidelines for designing object-oriented software. Robert C. Martin introduced them in his book "Agile Software Development, Principles, Patterns, and Practices" as a way to improve the maintainability, extensibility, and flexibility of object-oriented code and develop software prone to fewer bugs and cleaner source code \cite{.martin}.
 
 \begin{itemize}
 	\item \textbf{Single Responsibility Principle (SRP):}
@@ -59,11 +55,9 @@ The programming paradigm of the Dart programming language is object-oriented pro
 	The fundamental essence of the DIP is that a class should not depend on the specific implementation details of another class. Instead, it should depend on an abstract interface or a set of contracts that define how the two classes should interact \cite{principles}.
 \end{itemize}
 
-
+These principles should be considered when developing the application.
 
 \section{NoSQL Databases}
-
-\subsection{Introduction to NoSQL Databases}
 The generic term NoSQL describes database systems that, unlike SQL databases, are not subject to the relational database model. The abbreviation NoSQL stands for "Not only SQL". The reasons why NoSQL databases have gained interest in recent years can be explained based on two aspects: In contrast to relational databases, which present their data storage in a table format, NoSQL databases benefit from different database models: document-oriented, key Value, graph, and column databases. This wide range of different data models allows developers to choose the model that best suits their application design. The result is a minimization of the code to be developed for an application. In addition, NoSQL databases allow administrators to scale their data on one machine and hardware clusters so that data volumes can be expanded without an expensive investment in new servers. NoSQL databases support the use of CRUD operations.
 \begin{itemize}
 	\item \textbf{C:} create data
@@ -76,6 +70,7 @@ The performance of some NoSQL databases even surpasses that of relational databa
 Cloud Firestore, more often called Google Firestore or simply Firestore, is a cloud-hosted NoSQL database option that enables developers to store and synchronize their data in real-time, meaning that data that just got added to the database and changes made on already existing data is instantly shown to the application users. It is a part of Google's Backend-as-a-Service (BaaS) Firebase \cite[p. 458 ]{.baasfirebase}. BaaS is a concept where developers can use a platform to run their applications without managing servers and other infrastructure components. BaaS platforms offer various services required for applications, such as databases, authentication, storage, and APIs \cite{.baasokta}. To use BaaS, developers must first create an account with a BaaS platform and register their application. The platform then provides a set of APIs and SDKs that developers can use to access the services and integrate them into their applications. Most BaaS platforms offer a web-based console that developers can use to manage their applications and configure the services, and so does Firebase. Something worth mentioning is that Firestore can be used with far more programming languages than Dart and is also compatible with REST and RPC APIs \cite{.firestore}.
 \newline \\
 Cloud Firestore caches data that the connected app is actively using, so the app can write, read, listen to, and query data even if the device is offline. When the device returns online, Cloud Firestore synchronizes any local changes to its servers \cite{.firestore}. It is also possible to access data stored in the cache of the smartphone. Listing 3.1 shows how this can be implemented in Dart.
+\pagebreak
 \begin{lstlisting}[language=Python, caption={Firestore and Dart - getting Cache-data}]
 Future<DocumentSnapshot> checkCacheBeforeServer() async {
 	try {
