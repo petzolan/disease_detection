@@ -479,6 +479,54 @@ The QR code redirects to a GitHub repository created for this bachelor thesis. I
 
 
 \chapter{Mock-ups}
+\section{Home Screen}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{home.png}
+	\caption{Mock-up Home Screen}
+\end{figure}
+\pagebreak
+\section{Diagnostic Process Screen}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{diagnostic.png}
+	\caption{Mock-up Diagnostic Process Screen}
+\end{figure}
+\pagebreak
+\section{Diagnose Screen}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{diagnose.png}
+	\caption{Mock-up Diagnose Screen}
+\end{figure}
+\pagebreak
+\section{Diagnose Overview Screen}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{6.png}
+	\caption{Mock-up Diagnose Overview Screen}
+\end{figure}
+\pagebreak
+\section{Advice Overview Screen}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{7.png}
+	\caption{Mock-up Advice Screen}
+\end{figure}
+\pagebreak
+\section{Login Screen}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.65]{login.png}
+	\caption{Mock-up Login Screen}
+\end{figure}
+\pagebreak
+\section{Doctor Panel Screen}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{8.png}
+	\caption{Mock-up Doctor Panel}
+\end{figure}
 
 
 
@@ -719,6 +767,47 @@ Processor time (in \%)
 	\caption{Processor Time Compilation 3}
 \end{figure}
 
+\chapter{Methods to Store Data Locally}
+\section{Convert to Map}
+\begin{lstlisting}[caption=Data toMap]
+  static Map<String, dynamic> toMap(Diagnose pDiagnose) => {
+	'id': pDiagnose.id,
+	...
+};
+\end{lstlisting}
+\section{Encode Data}
+A list of diagnoses can even be saved directly. Since SharedPreference works with key-value values, these can also be easily deleted from the list by simply removing the associated key.
+\begin{lstlisting}[caption=Encode Data]
+  static String encode(List<Diagnose> pDiagnoses) => json.encode(
+	pDiagnoses
+		.map<Map<String, dynamic>>((diagnose) => Diagnose.toMap(diagnose))
+		.toList(),
+	);
+\end{lstlisting}
+\section{Decode Data}
+Here the variant is displayed to directly convert a list of diagnoses.
+\begin{lstlisting}[caption=Decode Data]
+static List<Diagnose> decode(String pDiagnoses) =>
+	(json.decode(pDiagnoses) as List<dynamic>)
+	.map<Diagnose>((item) => Diagnose.fromJson(item))
+.toList();
+\end{lstlisting}
+\section{Convert to Object (from Json)}
+\begin{lstlisting}[caption=Data fromJson]
+	factory Diagnose.fromJson(Map<String, dynamic> jsonData) {
+		return Diagnose(
+		id: jsonData['id'],
+		...
+		);
+	}
+\end{lstlisting}
+
+\chapter{Status of the Requirements}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.65]{frresults.png}
+	\caption{Functional Requirements}
+\end{figure}
 
 
 \clearpage

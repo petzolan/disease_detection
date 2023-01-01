@@ -1101,6 +1101,105 @@
       \keyw{ladezeit;optimierung;user experience;web performance}
       \warn{\item Entry '.3sek' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring}
     \endentry
+    \entry{.sharedpref}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4ae04b0778814b4423a534d2767bf891}{%
+           family={{Dart packages}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ae04b0778814b4423a534d2767bf891}
+      \strng{fullhash}{4ae04b0778814b4423a534d2767bf891}
+      \strng{bibnamehash}{4ae04b0778814b4423a534d2767bf891}
+      \strng{authorbibnamehash}{4ae04b0778814b4423a534d2767bf891}
+      \strng{authornamehash}{4ae04b0778814b4423a534d2767bf891}
+      \strng{authorfullhash}{4ae04b0778814b4423a534d2767bf891}
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.}
+      \field{title}{shared{\_}preferences | Flutter Package}
+      \field{year}{12/31/2022}
+      \verb{urlraw}
+      \verb https://pub.dev/packages/shared_preferences
+      \endverb
+      \verb{url}
+      \verb https://pub.dev/packages/shared_preferences
+      \endverb
+      \warn{\item Entry '.sharedpref' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{.usesharedpref}{misc}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{abstract}{How to use the shared{\_}preferences package to store key-value data.}
+      \field{title}{Store key-value data on disk}
+      \field{year}{12/30/2022}
+      \verb{urlraw}
+      \verb https://docs.flutter.dev/cookbook/persistence/key-value
+      \endverb
+      \verb{url}
+      \verb https://docs.flutter.dev/cookbook/persistence/key-value
+      \endverb
+      \warn{\item Entry '.usesharedpref' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{.pdf}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4ae04b0778814b4423a534d2767bf891}{%
+           family={{Dart packages}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ae04b0778814b4423a534d2767bf891}
+      \strng{fullhash}{4ae04b0778814b4423a534d2767bf891}
+      \strng{bibnamehash}{4ae04b0778814b4423a534d2767bf891}
+      \strng{authorbibnamehash}{4ae04b0778814b4423a534d2767bf891}
+      \strng{authornamehash}{4ae04b0778814b4423a534d2767bf891}
+      \strng{authorfullhash}{4ae04b0778814b4423a534d2767bf891}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A pdf producer for Dart. It can create pdf files for both web or flutter.}
+      \field{title}{pdf | Dart Package}
+      \field{year}{12/31/2022}
+      \verb{urlraw}
+      \verb https://pub.dev/packages/pdf
+      \endverb
+      \verb{url}
+      \verb https://pub.dev/packages/pdf
+      \endverb
+      \warn{\item Entry '.pdf' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{.sus}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7834593e5fcf861d3db6840e092a652a}{%
+           family={{Affairs, Assistant Secretary for Public}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7834593e5fcf861d3db6840e092a652a}
+      \strng{fullhash}{7834593e5fcf861d3db6840e092a652a}
+      \strng{bibnamehash}{7834593e5fcf861d3db6840e092a652a}
+      \strng{authorbibnamehash}{7834593e5fcf861d3db6840e092a652a}
+      \strng{authornamehash}{7834593e5fcf861d3db6840e092a652a}
+      \strng{authorfullhash}{7834593e5fcf861d3db6840e092a652a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The System Usability Scale (SUS) is a reliable tool for measuring the usability. It consists of a 10 item questionnaire with five response options for respondents; from Strongly agree to Strongly disagree.}
+      \field{title}{System Usability Scale (SUS)}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html
+      \endverb
+      \verb{url}
+      \verb https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html
+      \endverb
+      \keyw{sus;sus questionnaire;system usability scale;usability;usability testing;user experience;UX}
+      \warn{\item Entry '.sus' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

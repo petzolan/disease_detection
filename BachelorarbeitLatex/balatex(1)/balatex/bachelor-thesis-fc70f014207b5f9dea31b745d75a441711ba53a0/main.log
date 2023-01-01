@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.11.22)  30 DEC 2022 23:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.11.22)  1 JAN 2023 01:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1702,6 +1702,30 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Entry '.3sek' (quellen.bib): Invalid format '12/30/
 2022' of date field 'urldate' - ignoring.
 
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with '.sharedpref':
+(biblatex)                - Entry '.sharedpref' (quellen.bib): Invalid format '
+12/31/2022' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with '.usesharedpref':
+(biblatex)                - Entry '.usesharedpref' (quellen.bib): Invalid forma
+t '12/31/2022' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with '.pdf':
+(biblatex)                - Entry '.pdf' (quellen.bib): Invalid format '12/31/2
+022' of date field 'urldate' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with '.sus':
+(biblatex)                - Entry '.sus' (quellen.bib): Invalid format '12/31/2
+022' of date field 'urldate' - ignoring.
+
 )
 Package biblatex Info: Reference section=0 on input line 145.
 Package biblatex Info: Reference segment=0 on input line 145.
@@ -1760,7 +1784,7 @@ Class scrreprt Warning: non empty \lowertitleback ignored by \maketitle
 
 ] [2])
 Package tocbasic Info: character protrusion at toc deactivated on input line 15
-3.
+2.
  (main.toc [3
 \babel@aux{english}{}
 
@@ -1802,7 +1826,7 @@ Package pdftex.def Info: bilder//avoidingDoctorYesNo.png  used on input line 12
 File: bilder//reasonsPuttingOf.png Graphic file (type png)
 <use bilder//reasonsPuttingOf.png>
 Package pdftex.def Info: bilder//reasonsPuttingOf.png  used on input line 20.
-(pdftex.def)             Requested size: 451.6795pt x 185.79083pt.
+(pdftex.def)             Requested size: 395.23248pt x 162.5723pt.
 [1
 
 
@@ -1819,6 +1843,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
+
+ []
 
 [2 <./bilder//reasonsPuttingOf.png>]
 chapter 2.
@@ -1998,7 +2031,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--244
 
  []
 
-) [31]
+[31] [32]) [33]
 \openout2 = `kapitel/40_poc.aux'.
 
  (kapitel/40_poc.tex)
@@ -2006,7 +2039,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--244
 
  (kapitel/60_fazit.tex
 chapter 8.
-) [32
+<bilder//SUS Template.png, id=168, 1046.40938pt x 1376.89406pt>
+File: bilder//SUS Template.png Graphic file (type png)
+<use bilder//SUS Template.png>
+Package pdftex.def Info: bilder//SUS Template.png  used on input line 10.
+(pdftex.def)             Requested size: 287.75548pt x 378.63654pt.
+<bilder//susanswers.png, id=169, 723.45282pt x 665.48625pt>
+File: bilder//susanswers.png Graphic file (type png)
+<use bilder//susanswers.png>
+Package pdftex.def Info: bilder//susanswers.png  used on input line 17.
+(pdftex.def)             Requested size: 397.90028pt x 366.01857pt.
+[34
 
 
 
@@ -2014,73 +2057,117 @@ chapter 8.
 
 
 
-]
+ <./bilder//SUS Template.png>] [35 <./bilder//susanswers.png>] [36] [37]
+chapter 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--97
+
+ []
+
+[38
+
+]) [39]
 \openout2 = `kapitel/70_fazit.aux'.
 
  (kapitel/70_fazit.tex
 chapter A.
-<bilder//1.1.png, id=165, 985.43156pt x 233.37187pt>
+<bilder//1.1.png, id=191, 985.43156pt x 233.37187pt>
 File: bilder//1.1.png Graphic file (type png)
 <use bilder//1.1.png>
 Package pdftex.def Info: bilder//1.1.png  used on input line 11.
 (pdftex.def)             Requested size: 394.16565pt x 93.34709pt.
-<bilder//1.2.png, id=166, 1064.47687pt x 277.035pt>
+<bilder//1.2.png, id=192, 1064.47687pt x 277.035pt>
 File: bilder//1.2.png Graphic file (type png)
 <use bilder//1.2.png>
 Package pdftex.def Info: bilder//1.2.png  used on input line 16.
 (pdftex.def)             Requested size: 425.7832pt x 110.81203pt.
-<bilder//1.3.png, id=167, 947.79094pt x 245.41687pt>
+<bilder//1.3.png, id=193, 947.79094pt x 245.41687pt>
 File: bilder//1.3.png Graphic file (type png)
 <use bilder//1.3.png>
 Package pdftex.def Info: bilder//1.3.png  used on input line 21.
 (pdftex.def)             Requested size: 379.10966pt x 98.165pt.
-<bilder//1.4.png, id=168, 1064.47687pt x 249.18094pt>
+<bilder//1.4.png, id=194, 1064.47687pt x 249.18094pt>
 File: bilder//1.4.png Graphic file (type png)
 <use bilder//1.4.png>
 Package pdftex.def Info: bilder//1.4.png  used on input line 26.
 (pdftex.def)             Requested size: 425.7832pt x 99.6706pt.
-<bilder//2.png, id=169, 1064.47687pt x 422.32782pt>
+<bilder//2.png, id=195, 1064.47687pt x 422.32782pt>
 File: bilder//2.png Graphic file (type png)
 <use bilder//2.png>
 Package pdftex.def Info: bilder//2.png  used on input line 31.
 (pdftex.def)             Requested size: 425.7832pt x 168.92813pt.
-[33
+[40
 
 
 
 
 
  <./bilder//1.1.png> <./bilder//1.2.png> <./bilder//1.3.png>]
-<bilder//3.png, id=173, 955.31906pt x 263.48438pt>
+<bilder//3.png, id=199, 955.31906pt x 263.48438pt>
 File: bilder//3.png Graphic file (type png)
 <use bilder//3.png>
 Package pdftex.def Info: bilder//3.png  used on input line 45.
 (pdftex.def)             Requested size: 382.12085pt x 105.39188pt.
-<bilder//4.png, id=174, 955.31906pt x 253.69781pt>
+<bilder//4.png, id=200, 955.31906pt x 253.69781pt>
 File: bilder//4.png Graphic file (type png)
 <use bilder//4.png>
 Package pdftex.def Info: bilder//4.png  used on input line 50.
 (pdftex.def)             Requested size: 382.12085pt x 101.47733pt.
-<bilder//5.png, id=175, 1064.47687pt x 268.00125pt>
+<bilder//5.png, id=201, 1064.47687pt x 268.00125pt>
 File: bilder//5.png Graphic file (type png)
 <use bilder//5.png>
 Package pdftex.def Info: bilder//5.png  used on input line 55.
 (pdftex.def)             Requested size: 425.7832pt x 107.1986pt.
- [34 <./bilder//1.4.png> <./bilder//2.png> <./bilder//3.png>]
-<bilder//whichUIPics.png, id=179, 1129.21875pt x 502.87875pt>
+ [41 <./bilder//1.4.png> <./bilder//2.png> <./bilder//3.png>]
+<bilder//whichUIPics.png, id=205, 1129.21875pt x 502.87875pt>
 File: bilder//whichUIPics.png Graphic file (type png)
 <use bilder//whichUIPics.png>
 Package pdftex.def Info: bilder//whichUIPics.png  used on input line 60.
 (pdftex.def)             Requested size: 451.6795pt x 201.14793pt.
- [35 <./bilder//4.png> <./bilder//5.png> <./bilder//whichUIPics.png>]
+ [42 <./bilder//4.png> <./bilder//5.png> <./bilder//whichUIPics.png>]
 chapter B.
-[36
+[43
 
 ]
 chapter C.
-[37
+[44
 
-] [38]
+] [45]
 Underfull \hbox (badness 10000) in paragraph at lines 194--194
 
  []
@@ -2105,7 +2192,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--294
 
  []
 
-[39]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 325--325
 
  []
@@ -2115,15 +2202,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--333
 
  []
 
-[40] [41]
+[47] [48]
 chapter D.
-<bilder//nhsresponsegithub.png, id=203, 301.125pt x 301.125pt>
+<bilder//nhsresponsegithub.png, id=230, 301.125pt x 301.125pt>
 File: bilder//nhsresponsegithub.png Graphic file (type png)
 <use bilder//nhsresponsegithub.png>
 Package pdftex.def Info: bilder//nhsresponsegithub.png  used on input line 403.
 
 (pdftex.def)             Requested size: 75.28105pt x 75.28105pt.
-[42
+[49
 
  <./bilder//nhsresponsegithub.png>]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
@@ -2133,90 +2220,143 @@ Underfull \hbox (badness 10000) in paragraph at lines 412--415
 
  []
 
-[43] [44]
+[50] [51]
 chapter E.
-<bilder//juypternotebookgithub.png, id=217, 301.125pt x 301.125pt>
+<bilder//juypternotebookgithub.png, id=243, 301.125pt x 301.125pt>
 File: bilder//juypternotebookgithub.png Graphic file (type png)
 <use bilder//juypternotebookgithub.png>
 Package pdftex.def Info: bilder//juypternotebookgithub.png  used on input line 
 466.
 (pdftex.def)             Requested size: 75.28105pt x 75.28105pt.
-[45
+[52
 
  <./bilder//juypternotebookgithub.png>]
 chapter F.
-[46
+[53
 
 ]
 chapter G.
-[47
+<bilder//home.png, id=251, 1445.4pt x 1445.4pt>
+File: bilder//home.png Graphic file (type png)
+<use bilder//home.png>
+Package pdftex.def Info: bilder//home.png  used on input line 485.
+(pdftex.def)             Requested size: 433.62335pt x 433.62335pt.
+[54
 
-]
+ <./bilder//home.png>]
+<bilder//diagnostic.png, id=257, 1445.4pt x 1445.4pt>
+File: bilder//diagnostic.png Graphic file (type png)
+<use bilder//diagnostic.png>
+Package pdftex.def Info: bilder//diagnostic.png  used on input line 492.
+(pdftex.def)             Requested size: 433.62335pt x 433.62335pt.
+ [55 <./bilder//diagnostic.png>]
+<bilder//diagnose.png, id=262, 1064.47687pt x 1202.99437pt>
+File: bilder//diagnose.png Graphic file (type png)
+<use bilder//diagnose.png>
+Package pdftex.def Info: bilder//diagnose.png  used on input line 499.
+(pdftex.def)             Requested size: 372.57248pt x 421.05434pt.
+ [56 <./bilder//diagnose.png>]
+<bilder//6.png, id=266, 994.46532pt x 1505.625pt>
+File: bilder//6.png Graphic file (type png)
+<use bilder//6.png>
+Package pdftex.def Info: bilder//6.png  used on input line 506.
+(pdftex.def)             Requested size: 348.06807pt x 526.97665pt.
+ [57 <./bilder//6.png>]
+<bilder//7.png, id=270, 597.60106pt x 845.26315pt>
+File: bilder//7.png Graphic file (type png)
+<use bilder//7.png>
+Package pdftex.def Info: bilder//7.png  used on input line 513.
+(pdftex.def)             Requested size: 418.31789pt x 591.68018pt.
+ [58 <./bilder//7.png>]
+<bilder//login.png, id=275, 597.60106pt x 845.26315pt>
+File: bilder//login.png Graphic file (type png)
+<use bilder//login.png>
+Package pdftex.def Info: bilder//login.png  used on input line 520.
+(pdftex.def)             Requested size: 388.43608pt x 549.41455pt.
+ [59 <./bilder//login.png>]
+<bilder//8.png, id=280, 597.60106pt x 845.26315pt>
+File: bilder//8.png Graphic file (type png)
+<use bilder//8.png>
+Package pdftex.def Info: bilder//8.png  used on input line 527.
+(pdftex.def)             Requested size: 418.31789pt x 591.68018pt.
+ [60 <./bilder//8.png>]
 chapter H.
-[48
+[61
 
-] [49] [50] [51]
+] [62] [63] [64]
 chapter I.
-<bilder//cpu.png, id=241, 788.19469pt x 730.98094pt>
+<bilder//cpu.png, id=298, 788.19469pt x 730.98094pt>
 File: bilder//cpu.png Graphic file (type png)
 <use bilder//cpu.png>
-Package pdftex.def Info: bilder//cpu.png  used on input line 667.
+Package pdftex.def Info: bilder//cpu.png  used on input line 715.
 (pdftex.def)             Requested size: 433.50842pt x 402.04076pt.
-<bilder//detailemulator.png, id=242, 993.7125pt x 532.99126pt>
+<bilder//detailemulator.png, id=299, 993.7125pt x 532.99126pt>
 File: bilder//detailemulator.png Graphic file (type png)
 <use bilder//detailemulator.png>
-Package pdftex.def Info: bilder//detailemulator.png  used on input line 673.
+Package pdftex.def Info: bilder//detailemulator.png  used on input line 721.
 (pdftex.def)             Requested size: 447.16649pt x 239.84384pt.
-[52
+[65
 
- <./bilder//cpu.png>] [53 <./bilder//detailemulator.png>]
-<bilder//COMP1.png, id=249, 715.17188pt x 718.93594pt>
+ <./bilder//cpu.png>] [66 <./bilder//detailemulator.png>]
+<bilder//COMP1.png, id=307, 715.17188pt x 718.93594pt>
 File: bilder//COMP1.png Graphic file (type png)
 <use bilder//COMP1.png>
-Package pdftex.def Info: bilder//COMP1.png  used on input line 688.
+Package pdftex.def Info: bilder//COMP1.png  used on input line 736.
 (pdftex.def)             Requested size: 357.58505pt x 359.46709pt.
- [54 <./bilder//COMP1.png>]
-<bilder//COMP2.png, id=255, 715.17188pt x 718.93594pt>
+ [67 <./bilder//COMP1.png>]
+<bilder//COMP2.png, id=312, 715.17188pt x 718.93594pt>
 File: bilder//COMP2.png Graphic file (type png)
 <use bilder//COMP2.png>
-Package pdftex.def Info: bilder//COMP2.png  used on input line 703.
+Package pdftex.def Info: bilder//COMP2.png  used on input line 751.
 (pdftex.def)             Requested size: 357.58505pt x 359.46709pt.
- [55 <./bilder//COMP2.png>]
-<bilder//COMP3.png, id=259, 715.17188pt x 718.93594pt>
+ [68 <./bilder//COMP2.png>]
+<bilder//COMP3.png, id=316, 715.17188pt x 718.93594pt>
 File: bilder//COMP3.png Graphic file (type png)
 <use bilder//COMP3.png>
-Package pdftex.def Info: bilder//COMP3.png  used on input line 718.
+Package pdftex.def Info: bilder//COMP3.png  used on input line 766.
 (pdftex.def)             Requested size: 357.58505pt x 359.46709pt.
- [56 <./bilder//COMP3.png>]
-Package tocbasic Info: character protrusion at lof deactivated on input line 73
-2.
- (main.lof)
+ [69 <./bilder//COMP3.png>]
+chapter J.
+[70
+
+]
+chapter K.
+<bilder//frresults.png, id=323, 621.07031pt x 791.20593pt>
+File: bilder//frresults.png Graphic file (type png)
+<use bilder//frresults.png>
+Package pdftex.def Info: bilder//frresults.png  used on input line 808.
+(pdftex.def)             Requested size: 403.69092pt x 514.27776pt.
+[71
+
+ <./bilder//frresults.png>]
+Package tocbasic Info: character protrusion at lof deactivated on input line 82
+1.
+ (main.lof [72
+
+
+])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
-
-[57
-
-
-]
-Package tocbasic Info: character protrusion at lot deactivated on input line 73
-3.
+ [73]
+Package tocbasic Info: character protrusion at lot deactivated on input line 82
+2.
  (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
-) [58
+) [74
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 20
-1.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 19
+8.
 
 (C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 201.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 198.
 
 
 (C:\Users\Thomazzzz\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cf
@@ -2227,11 +2367,11 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [59
+ [75
 
 
 
-] [60] [61] (main.aux (kapitel/00_abstract.aux)
+] [76] [77] (main.aux (kapitel/00_abstract.aux)
 (kapitel/10_einleitung.aux) (kapitel/20_grundlagen.aux)
 (kapitel/30_requirements_engineering.aux) (kapitel/30_datenbank.aux)
 (kapitel/30_planung.aux) (kapitel/40_poc.aux) (kapitel/60_fazit.aux)
@@ -2241,13 +2381,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45509 strings out of 477992
- 1079173 string characters out of 2825577
- 2387409 words of memory out of 3000000
- 63192 multiletter control sequences out of 15000+600000
- 616077 words of font info for 254 fonts, out of 8000000 for 9000
+ 45655 strings out of 477992
+ 1082107 string characters out of 2825577
+ 2387968 words of memory out of 3000000
+ 63316 multiletter control sequences out of 15000+600000
+ 616719 words of font info for 260 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 110i,20n,106p,10601b,2591s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 110i,20n,106p,10601b,2605s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.en
 c}{C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.e
 nc}{C:/Users/Thomazzzz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.e
@@ -2264,9 +2404,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso8.pfb><C:/Users/Thomazzzz
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Thoma
 zzzz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Users/Th
 omazzzz/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (68 pages, 1720263 bytes).
+Output written on main.pdf (84 pages, 2943272 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
+ 414 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71316 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 71366 words of extra memory for PDF output out of 74296 (max. 10000000)
 

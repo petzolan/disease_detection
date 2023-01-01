@@ -238,7 +238,7 @@ By means of the described factors the values precision and recall can be determi
 		r(d) := F(d) + \lambda + P_p(d)\\
 	 \end{aligned}\qquad\text{from \cite{.algo}}
 \end{equation}
-The lamba value is used to reduce the disease probability value, as this is considered less important according to the authors \cite[p. 10]{.algo}. 
+Where F(d) stands for the factor of symptoms matching the disease symptoms and P\_(d) stands for the incidence proportions. In case of this work the incidence proportions will be the probablity assigned to each disease. The lamba value is used to reduce the disease probability value, as this is considered less important according to the authors \cite[p. 10]{.algo}. 
 \newline \\
 In the context of the bachelor thesis, the focus will lay on this methodology, since it is basically based on the variant of Bayes Networks but in a more algorithmic way instead of machine learning.
 
@@ -252,5 +252,43 @@ With every compilation, the program took more 30 seconds up to over a minute to 
 \subsection{CPU Performance}
 On an Android emulator with Android Studio, the CPU usage of the parent system was 3.2 - 3.7\% continuously. It was always about 0.5\% in idle mode. An impairment of the emulator usage during the computing process could not be determined here.
   
-\section{Functionalities}
-\subsection{title}
+\section{Implementation of the functional Requirements}
+\subsection{Doctor Login and Verification [FR2], [FR3]}
+The specification of a doctor can only be done by a simple e-mail verification in the context of this bachelor thesis. For this, one can make use of the already described possibilities of the BaaS Firebase. The plugin that is included in the application to use Firebase and Firestore has a method that allows to send a verification email to the specified user email. As soon as the user follows the sent link he will be marked as verified. Also the login can be realized over the described package, for this already an example from appendix H.4 can be regarded (line 35 ff.)
+\subsection{Creating the Diagnoses}
+To generate a diagnosis, the user must first work through the process for making a diagnosis. This includes specifying their symptoms and evaluating them. Subsequently, the algorithm calculates the most probable disease. Once this is done, there is the possibility of narrowing down the actual possible diseases based on the probabilities. For example, one can say that only diseases with a probability of at least 20\% are included in the diagnosis. These diseases can be described in detail in the diagnosis screen already described. This can be done by simple database queries to the Firestore database, which deliver the diseases as a result. In this way, the fields of the documents can be filtered and displayed on the graphical user interface. In the project additionally a class diagnosis should be created which serves as a template for such a class. The received data fields are assigned to this class. This makes it possible to store objects of this class locally, but also delete them by refering the key.
+\subsubsection{Saving the Diagnoses [FR7]}
+In order to store the created instances of the Diagnosis class on the user's smartphone, the methods .toMap(), .encode(), .decode() and .fromJson() should be created in the Diagnosis class.
+\begin{itemize}
+	\item \textbf{.toMap():}
+	\newline
+	The .toMap() method of the class ensures that the object is internally converted to a map with JSON structure. This ensures that this JSON can be converted internally.
+	\item \textbf{.encode():}
+	\newline
+	When the object is successfully converted to a map, the .encode() method is used. This ensures that the map is converted to a string, since JSON documents are usually long strings. 
+	The string just created can now be stored locally using the dependeny shared\_preferences \cite{.sharedpref}. SharedPreferences stores the data in a key-value format. So one could assign a key to each diagnostic and then retrieve it using the key. This is done as described in Listing 7.3 (based on \cite{.usesharedpref}). 
+	\scriptsize
+	\begin{lstlisting}[caption=Storing Data to Locally with SharedPreferences]
+	  Future<void> _saveData() async {
+		SharedPreferences prefs = await SharedPreferences.getInstance();
+		await prefs.setString(_diagnoseListKey, _diagnoseListString);
+	}
+	\end{lstlisting}
+	\normalsize
+	\item \textbf{.decode():}
+	\newline
+	If one wants to call the diagnosis again, the system only has to convert the saved string into a JSON object. For this purpose the method .decode() is created. 
+	\item \textbf{.fromJson():}
+	\newline
+	The JSON object can now be converted back to the correct instance of the Diagnosis class. The method .fromJson() is used for this purpose. The resulting object can now be used again in the application.
+\end{itemize}
+Examples of the methods described can be found in Appendix J.
+\subsubsection{Generating the PDFs [OR1]}
+Flutter makes it really easy to create a PDF for the diagnosis. The dependency pdf can be used for this purpose. Among other things, the page format and the content of the PDF can be specified there. By referencing the attributes of the diagnostic elements, the necessary texts can be easily generated and subsequently saved as described in Listing 7.4 (based on \cite{.pdf}).
+	\scriptsize
+\begin{lstlisting}[caption=Saving a PDF]
+final file = File("diagnose_DD_MM_YYYY.pdf");
+await file.writeAsBytes(await pdf.save());
+\end{lstlisting}
+\normalsize
+
