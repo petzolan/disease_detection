@@ -410,6 +410,35 @@
       \verb https://books.google.de/books?id=2TrCDwAAQBAJ%7D,%20year=%7B2019%7D,%20publisher=%7Bdpunkt.verlag%7D
       \endverb
     \endentry
+    \entry{.indeedsolid}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ba5cdb767841cf672701d0754ba65d85}{%
+           family={Argalias},
+           familyi={A\bibinitperiod},
+           given={Nikos},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba5cdb767841cf672701d0754ba65d85}
+      \strng{fullhash}{ba5cdb767841cf672701d0754ba65d85}
+      \strng{bibnamehash}{ba5cdb767841cf672701d0754ba65d85}
+      \strng{authorbibnamehash}{ba5cdb767841cf672701d0754ba65d85}
+      \strng{authornamehash}{ba5cdb767841cf672701d0754ba65d85}
+      \strng{authorfullhash}{ba5cdb767841cf672701d0754ba65d85}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Introduction The SOLID principles are a set of coding guidelines that were first introduced by software developer Robert C. Martin.}
+      \field{title}{Introduction The SOLID principles are a set of coding guidelines that were first introduced by software dev}
+      \field{year}{20.12.2022}
+      \verb{urlraw}
+      \verb https://www.linkedin.com/pulse/solidify-your-front-end-code-5-principles-writing-better-argalias
+      \endverb
+      \verb{url}
+      \verb https://www.linkedin.com/pulse/solidify-your-front-end-code-5-principles-writing-better-argalias
+      \endverb
+      \warn{\item Entry '.indeedsolid' (quellen.bib): Invalid format '1/1/2023' of date field 'urldate' - ignoring}
+    \endentry
     \entry{.martin}{book}{}
       \name{author}{1}{}{%
         {{hash=dc18187967c965194440ccc64963cbcd}{%
@@ -492,8 +521,8 @@
       \strng{authorbibnamehash}{5e0245a7df7d302fc19a52236a43c412}
       \strng{authornamehash}{5e0245a7df7d302fc19a52236a43c412}
       \strng{authorfullhash}{5e0245a7df7d302fc19a52236a43c412}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{All 5 SOLID design principles are broadly~used, If you don't know them by name, you will quickly recognize that they describe the rules and principles for writing good code. In this article, you'll learn about the Liskov Substitution Principle.}
@@ -508,6 +537,33 @@
       \endverb
       \keyw{a-Retrace;Java}
       \warn{\item Entry 'stackify' (quellen.bib): Invalid format '11/24/2022' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{.mongonosql}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=206e3718af092fd1d12f80cae771ccac}{%
+           family={MongoDB},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{fullhash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{bibnamehash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{authorbibnamehash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{authornamehash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{authorfullhash}{206e3718af092fd1d12f80cae771ccac}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{NoSQL beschreibt die Vielzahl von geschaffenen Datenbanktechnologien um Schwachstellen von RDBMS und Anforderungen moderner Softwareentwicklung anzugehen.}
+      \field{title}{NoSQL Databankenerklärung}
+      \field{year}{1/1/2023}
+      \verb{urlraw}
+      \verb https://www.mongodb.com/de-de/nosql-explained
+      \endverb
+      \verb{url}
+      \verb https://www.mongodb.com/de-de/nosql-explained
+      \endverb
+      \warn{\item Entry '.mongonosql' (quellen.bib): Invalid format '1/1/2023' of date field 'urldate' - ignoring}
     \endentry
     \entry{.crud}{article}{}
       \name{author}{2}{}{%
@@ -528,8 +584,8 @@
       \strng{authorbibnamehash}{d0d2720fef25cfc18c443b188184a7e3}
       \strng{authornamehash}{d0d2720fef25cfc18c443b188184a7e3}
       \strng{authorfullhash}{d0d2720fef25cfc18c443b188184a7e3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2349-6835}
@@ -607,8 +663,8 @@
       \strng{authorbibnamehash}{035489ff8d092741943e4a83241f5af9}
       \strng{authornamehash}{035489ff8d092741943e4a83241f5af9}
       \strng{authorfullhash}{035489ff8d092741943e4a83241f5af9}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Use our flexible, scalable NoSQL cloud database to store and sync data for client- and server-side development.}
@@ -634,8 +690,8 @@
       \strng{authorbibnamehash}{62182ca58a739daa8ddd8a48b7b19abb}
       \strng{authornamehash}{62182ca58a739daa8ddd8a48b7b19abb}
       \strng{authorfullhash}{62182ca58a739daa8ddd8a48b7b19abb}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Rund 94,2 Prozent der 14- bis 19-jährigen Personen in Deutschland besitzen im Jahr 2021 ein Smartphone.}
@@ -666,8 +722,8 @@
       \strng{authorbibnamehash}{35cffc872caa03104f1613bd3bd4feb1}
       \strng{authornamehash}{35cffc872caa03104f1613bd3bd4feb1}
       \strng{authorfullhash}{35cffc872caa03104f1613bd3bd4feb1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780429591754}
@@ -679,6 +735,34 @@
       \verb{url}
       \verb https://books.google.de/books?id=87G2DwAAQBAJ
       \endverb
+    \endentry
+    \entry{.stakes}{article}{}
+      \name{author}{1}{}{%
+        {{hash=917597032f2c4aacc84a1dc035323eb9}{%
+           family={{Katja Maass}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{917597032f2c4aacc84a1dc035323eb9}
+      \strng{fullhash}{917597032f2c4aacc84a1dc035323eb9}
+      \strng{bibnamehash}{917597032f2c4aacc84a1dc035323eb9}
+      \strng{authorbibnamehash}{917597032f2c4aacc84a1dc035323eb9}
+      \strng{authornamehash}{917597032f2c4aacc84a1dc035323eb9}
+      \strng{authorfullhash}{917597032f2c4aacc84a1dc035323eb9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Eine Stakeholder-Matrix bietet in komplexen Projekten {\&} Change-Prozessen einen Überblick über Interessensgruppen und Schlüsselpersonen}
+      \field{journaltitle}{ICS}
+      \field{title}{Stakeholder Matrix}
+      \field{year}{12/5/2021}
+      \verb{urlraw}
+      \verb https://mychange.solutions/toolbox/leading-change/stakeholder-matrix/
+      \endverb
+      \verb{url}
+      \verb https://mychange.solutions/toolbox/leading-change/stakeholder-matrix/
+      \endverb
+      \warn{\item Entry '.stakes' (quellen.bib): Invalid format '1/1/2023' of date field 'urldate' - ignoring}
     \endentry
     \entry{.systemcontext}{misc}{}
       \name{author}{1}{}{%
@@ -694,8 +778,8 @@
       \strng{authorbibnamehash}{457ec7edc99b6a61f24d71555f532609}
       \strng{authornamehash}{457ec7edc99b6a61f24d71555f532609}
       \strng{authorfullhash}{457ec7edc99b6a61f24d71555f532609}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The system context defines the system boundary and all system actors -- humans and external systems -- that interact with the system under development. It is one of the most important parts of the system model.{\&}nbsp;Many artifacts of the system specification and architecture are relative defined to the definition of the system. Every system behavior$\ldots$ Read more}
@@ -710,8 +794,8 @@
       \warn{\item Entry '.systemcontext' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring}
     \endentry
     \entry{.req2}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{title}{The Requirements Engineering Handbook - Google Books}
       \field{year}{11/22/2022}
@@ -724,8 +808,8 @@
       \warn{\item Entry '.req2' (quellen.bib): Invalid format '11/22/2022' of date field 'urldate' - ignoring}
     \endentry
     \entry{.req}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{title}{Functional and Non-functional Requirements -- Francois Botha}
       \field{year}{12/30/2022}
@@ -749,8 +833,8 @@
       \strng{authorbibnamehash}{eff3c590c74df0d0830183eb6fd06cac}
       \strng{authornamehash}{eff3c590c74df0d0830183eb6fd06cac}
       \strng{authorfullhash}{eff3c590c74df0d0830183eb6fd06cac}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{SAFe for Lean Enterprises}
@@ -781,8 +865,8 @@
       \strng{authorbibnamehash}{57fc530ac2208a313b1e2572b5d67e56}
       \strng{authornamehash}{57fc530ac2208a313b1e2572b5d67e56}
       \strng{authorfullhash}{57fc530ac2208a313b1e2572b5d67e56}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781098100100}
@@ -807,8 +891,8 @@
       \strng{authorbibnamehash}{b73f408691dbccfe5eba984f6edf6fe9}
       \strng{authornamehash}{b73f408691dbccfe5eba984f6edf6fe9}
       \strng{authorfullhash}{b73f408691dbccfe5eba984f6edf6fe9}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Find information and advice on health conditions, symptoms, healthy living, medicines and how to get help.}
@@ -823,8 +907,8 @@
       \warn{\item Entry '.nhs' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring}
     \endentry
     \entry{.apimedic}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{Symptom Checker API | Integrate medical diagnosis into your app today}
       \field{year}{12/29/2022}
@@ -837,8 +921,8 @@
       \warn{\item Entry '.apimedic' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring}
     \endentry
     \entry{.materialio}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{title}{Material Design}
       \field{year}{1/1/1980}
@@ -867,8 +951,8 @@
       \strng{authorbibnamehash}{641b0babc68f74dfe3cf5352bcef93b9}
       \strng{authornamehash}{641b0babc68f74dfe3cf5352bcef93b9}
       \strng{authorfullhash}{641b0babc68f74dfe3cf5352bcef93b9}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780123972873}
@@ -903,8 +987,8 @@
       \strng{authorbibnamehash}{3930d9eeabe9ae5f16baf964e5b2d48b}
       \strng{authornamehash}{3930d9eeabe9ae5f16baf964e5b2d48b}
       \strng{authorfullhash}{3930d9eeabe9ae5f16baf964e5b2d48b}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780133563474}
@@ -916,6 +1000,37 @@
       \endverb
       \verb{url}
       \verb https://books.google.de/books?id=yD0kAwAAQBAJ
+      \endverb
+    \endentry
+    \entry{.3layer}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1f54615d2d683f06396195896023ee56}{%
+           family={Das\bibnamedelimb Gupta\bibnamedelimb \& Ramprosad\bibnamedelima Mondal},
+           familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim \\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={P.K.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {S. Chand Publishing}%
+      }
+      \strng{namehash}{1f54615d2d683f06396195896023ee56}
+      \strng{fullhash}{1f54615d2d683f06396195896023ee56}
+      \strng{bibnamehash}{1f54615d2d683f06396195896023ee56}
+      \strng{authorbibnamehash}{1f54615d2d683f06396195896023ee56}
+      \strng{authornamehash}{1f54615d2d683f06396195896023ee56}
+      \strng{authorfullhash}{1f54615d2d683f06396195896023ee56}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9789383746804}
+      \field{title}{Informatics Practices for Class 12}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://books.google.de/books?id=53QtDAAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.de/books?id=53QtDAAAQBAJ
       \endverb
     \endentry
     \entry{.wordmatching}{misc}{}
@@ -930,8 +1045,8 @@
       \strng{authorbibnamehash}{fef43b9377d19565ca7e91d2ee8f6d27}
       \strng{authornamehash}{fef43b9377d19565ca7e91d2ee8f6d27}
       \strng{authorfullhash}{fef43b9377d19565ca7e91d2ee8f6d27}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Oracle Enterprise Data Quality Online Help}
@@ -964,8 +1079,8 @@
       \strng{editorbibnamehash}{f896078e132bb8d5b2290a6acdb1522d}
       \strng{editornamehash}{f896078e132bb8d5b2290a6acdb1522d}
       \strng{editorfullhash}{f896078e132bb8d5b2290a6acdb1522d}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0-12-811432-2}
@@ -973,8 +1088,8 @@
       \field{year}{2019}
     \endentry
     \entry{.bayes2}{article}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{abstract}{1. Begriff: Theorem aus der Wahrscheinlichkeitsrechnung zur Berechnung bedingter Wahrscheinlichkeiten., author = {{Prof. Dr. Robert Gillenkirch}}, year = {19.2.2018}, title = {Definition: Bayes-Theorem}, url = {https://wirtschaftslexikon.gabler.de/definition/bayes-theorem-53898}, keywords = {Bayes-Theorem}, urldate = {12/30/2022}, journal = {Springer Fachmedien Wiesbaden GmbH}}
     \endentry
     \entry{.naivebayes}{misc}{}
@@ -989,8 +1104,8 @@
       \strng{authorbibnamehash}{3483ff058deda3dad41fa7925fab2dac}
       \strng{authornamehash}{3483ff058deda3dad41fa7925fab2dac}
       \strng{authorfullhash}{3483ff058deda3dad41fa7925fab2dac}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes' theorem with the ``naive'' assumption of conditional independence between every pair of features given the val...}
@@ -1005,8 +1120,8 @@
       \warn{\item Entry '.naivebayes' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring}
     \endentry
     \entry{.bayesnet}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{Introduction to Bayesian networks | Bayes Server}
       \field{year}{12/21/2022}
@@ -1032,8 +1147,8 @@
       \strng{authorbibnamehash}{915af163e2107106fced5dd3164d9a8e}
       \strng{authornamehash}{915af163e2107106fced5dd3164d9a8e}
       \strng{authorfullhash}{915af163e2107106fced5dd3164d9a8e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Machine Learning Mastery}
@@ -1076,8 +1191,8 @@
       \strng{authorbibnamehash}{abc5648302b8ccd74bfc3a17a78f002e}
       \strng{authornamehash}{abc5648302b8ccd74bfc3a17a78f002e}
       \strng{authorfullhash}{74919de6d25835c5bf3ca8abfd1aa760}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{08}
@@ -1085,8 +1200,8 @@
       \field{year}{2012}
     \endentry
     \entry{.3sek}{article}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{abstract}{Warum ist es so wichtig, die optimale Ladezeit anzustreben? Auf jemanden oder auf etwas zu waren ist uns Menschen nicht fremd. Im Schnitt verbringt jeder Mensch in seinem Leben rund ein bis zwei Jahre mit Warten. Dies kann an der Bushaltestelle, Suppermarktkasse, dem Abwarten auf die Ankunft einer Zustellung, oder die Ankunft einer geliebten Person}
       \field{journaltitle}{Computer Science Blog}
@@ -1114,8 +1229,8 @@
       \strng{authornamehash}{4ae04b0778814b4423a534d2767bf891}
       \strng{authorfullhash}{4ae04b0778814b4423a534d2767bf891}
       \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.}
@@ -1130,8 +1245,8 @@
       \warn{\item Entry '.sharedpref' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring}
     \endentry
     \entry{.usesharedpref}{misc}{}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{abstract}{How to use the shared{\_}preferences package to store key-value data.}
       \field{title}{Store key-value data on disk}
@@ -1157,8 +1272,8 @@
       \strng{authornamehash}{4ae04b0778814b4423a534d2767bf891}
       \strng{authorfullhash}{4ae04b0778814b4423a534d2767bf891}
       \field{extraname}{2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A pdf producer for Dart. It can create pdf files for both web or flutter.}
@@ -1184,8 +1299,8 @@
       \strng{authorbibnamehash}{7834593e5fcf861d3db6840e092a652a}
       \strng{authornamehash}{7834593e5fcf861d3db6840e092a652a}
       \strng{authorfullhash}{7834593e5fcf861d3db6840e092a652a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The System Usability Scale (SUS) is a reliable tool for measuring the usability. It consists of a 10 item questionnaire with five response options for respondents; from Strongly agree to Strongly disagree.}

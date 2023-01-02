@@ -3,68 +3,31 @@
 \clearpage
 \appendix
 \addcontentsline{toc}{chapter}{Appendix} 
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
 
-\chapter{Details of Survey 1}
+\tocless\chapter{Details of Survey 1}
 \begin{center}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{1.1.png}
-	\caption{Survey 1, Question 1}
+	\includegraphics[scale=0.6]{umfrage11.png}
+			\caption{Survey 1, Questions 1 - 4}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{1.2.png}
-		\caption{Survey 1, Question 2}
+	\includegraphics[scale=0.7]{umfrage12.png}
+		\caption{Survey 1, Question 5}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{1.3.png}
-	\caption{Survey 1, Question 3}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{1.4.png}
-	\caption{Survey 1, Question 4}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{2.png}
-	\caption{Survey 1, Question 5}
-\end{figure}
-Below are the answers given for the "other" option.
-\begin{itemize}
-	\item I thought I would make it without a doctor
-	\item I had no time to visit a doctor
-	\item Too much effort to get an appointment
-	\item Was able to assess and treat my symptoms myself
-	\item Social Anxiety
-	\item Know nurse and can ask there for small problems
-\end{itemize}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{3.png}
-	\caption{Survey 1, Question 6}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{4.png}
-	\caption{Survey 1, Question 7}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{5.png}
-	\caption{Survey 1, Question 8}
-\end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{whichUIPics.png}
-	\caption{Survey 1, Question 8 (Pictures)}
+	\includegraphics[scale=0.7]{umfrage13.png}
+	\caption{Survey 1, Questions 6 - 8}
 \end{figure}
 \end{center}
 \pagebreak
 
 
-\chapter{Code Snippet of Widget Tree}
+\tocless\chapter{Code Snippet of Widget Tree}
 \begin{lstlisting}[language=Python, caption={Code Snipped of Widget Tree}]
 Widget build ( BuildContext context ) {
 	 return Scaffold(
@@ -80,12 +43,12 @@ Widget build ( BuildContext context ) {
 \pagebreak
 
 
-\chapter{Overview of the Requirements}
-\section{Optional Requirements}
+\tocless\chapter{Overview of the Requirements}
+\tocless\section{Optional Requirements}
 \begin{table}[H]
 	\begin{center}
 		\scriptsize
-		\def\arraystretch{2}%
+		\def\arraystretch{1.5}%
 		\begin{tabular}{ c|l }
 			\hline
 			\textbf{ID} & \textbf{Description}  \\
@@ -99,11 +62,11 @@ Widget build ( BuildContext context ) {
 	\end{center}
 	\caption{Optional Requirements}
 \end{table}
-\section{Function Requirements}
+\tocless\section{Function Requirements}
 \begin{table}[H]
 	\begin{center}
 		\scriptsize
-		\def\arraystretch{2}%
+		\def\arraystretch{1.5}%
 		\begin{tabular}{ c|l}
 			\hline
 			\textbf{ID} & \textbf{Description}  \\
@@ -136,11 +99,11 @@ Widget build ( BuildContext context ) {
 	\caption{Functional Requirements}
 \end{table}
 
-\section{Non-functional Requirements}
+\tocless\section{Non-functional Requirements}
 \begin{table}[H]
 	\begin{center}
 		\scriptsize
-		\def\arraystretch{2}%
+		\def\arraystretch{1.5}%
 		\begin{tabular}{ c|l }
 			\hline
 			\textbf{ID} & \textbf{Description}  \\
@@ -160,7 +123,7 @@ Widget build ( BuildContext context ) {
 
 
 
-c
+\tocless\chapter{Use Cases}
 \begin{table}[H]
 	\begin{center}\scriptsize
 		\def\arraystretch{2}%
@@ -371,9 +334,9 @@ c
 
 \newpage
 \scriptsize
-\chapter{Response of the APIs}
+\tocless\chapter{Response of the APIs}
 
-\section{Response of the NHS API}
+\tocless\section{Response of the NHS API}
 The total length of an NHS response from the server is a JSON with approximately 466 lines. Because of this, only the abbreviated response from the server is shown here. A full response can be viewed by scanning the QR code shown below. 
 \begin{lstlisting}[caption={Abbreviated Response of NHS API}]
 	{
@@ -408,11 +371,12 @@ The QR code redirects to a GitHub repository created for this bachelor thesis. I
 	\url{https://github.com/petzolan/disease_detection/blob/main/data.json}
 \end{center}
 \pagebreak
-\section{Response of the ApiMedic API}
+\tocless\section{Response of the ApiMedic API}
 Responses to requests to the ApiMedic API always look similar. The response for the request to retrieve all diseases (abbreviated) and a response regarding an explicit disease are shown below.
 \newline \\
 \textit{All diseases:} 
-\begin{lstlisting}[caption={Abbreviated Reponse of all Diseases ApiMedic API}]
+
+\begin{lstlisting}[basicstyle=\tiny, caption={Abbreviated Reponse of all Diseases ApiMedic API}]
 [
 	{
 		"ID":130,
@@ -436,9 +400,10 @@ Responses to requests to the ApiMedic API always look similar. The response for 
 	},
 ...
 \end{lstlisting}
+
 \vspace{1cm}
 \textit{Disease with the ID 105:} 
-\begin{lstlisting}[caption={Response ApiMedic API (issue ID 105)}]
+\begin{lstlisting}[basicstyle=\tiny, caption={Response ApiMedic API (issue ID 105)}]
 {
 	"Description": "Measles is caused by a virus and is very contagious. Measles can be very unpleasant and can lead sometimes to serious complications. Anyone can get measles if he has not been vaccinated. People who did not have measles before can also get it if they come in contact with an infected person. However, the condition is most common in young children. The infection disappears usually in around 7 to 10 days.",
 	
@@ -460,7 +425,7 @@ Responses to requests to the ApiMedic API always look similar. The response for 
 
 
 \pagebreak
-\chapter{Jupyter Notebook (QR-Code)}
+\tocless\chapter{Jupyter Notebook (QR-Code)}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.25]{juypternotebookgithub.png}
@@ -473,66 +438,155 @@ The QR code redirects to a GitHub repository created for this bachelor thesis. I
 
 
 
-\chapter{Details of Survey 2}
+\tocless\chapter{Details of Survey 2}
+\begin{center}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{umfrage21.png}
+		\caption{Survey 2, Questions 1 - 4}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{umfrage22.png}
+		\caption{Survey 2, Question 5 - 8}
+	\end{figure}
+\end{center}
+\pagebreak
 
 
-
-
-\chapter{Mock-ups}
-\section{Home Screen}
+\tocless\chapter{Mock-ups}
+\tocless\section{Home Screen}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{home.png}
+	\includegraphics[scale=0.15]{home.png}
 	\caption{Mock-up Home Screen}
 \end{figure}
-\pagebreak
-\section{Diagnostic Process Screen}
+
+\tocless\section{Diagnostic Process Screen}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{diagnostic.png}
+	\includegraphics[scale=0.2]{diagnostic.png}
 	\caption{Mock-up Diagnostic Process Screen}
 \end{figure}
-\pagebreak
-\section{Diagnose Screen}
+
+\tocless\section{Diagnose Screen}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.35]{diagnose.png}
+	\includegraphics[scale=0.2]{diagnose.png}
 	\caption{Mock-up Diagnose Screen}
 \end{figure}
-\pagebreak
-\section{Diagnose Overview Screen}
+
+\tocless\section{Diagnose Overview Screen}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.35]{6.png}
+	\includegraphics[scale=0.175]{6.png}
 	\caption{Mock-up Diagnose Overview Screen}
 \end{figure}
-\pagebreak
-\section{Advice Overview Screen}
+
+\tocless\section{Advice Overview Screen}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{7.png}
+	\includegraphics[scale=0.3]{7.png}
 	\caption{Mock-up Advice Screen}
 \end{figure}
-\pagebreak
-\section{Login Screen}
+
+\tocless\section{Login Screen}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.65]{login.png}
+	\includegraphics[scale=0.3]{login.png}
 	\caption{Mock-up Login Screen}
 \end{figure}
-\pagebreak
-\section{Doctor Panel Screen}
+
+\tocless\section{Doctor Panel Screen}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{8.png}
+	\includegraphics[scale=0.35]{8.png}
 	\caption{Mock-up Doctor Panel}
 \end{figure}
 
 
 
+\tocless\chapter{Example Stepper Widget}
+\begin{lstlisting}[caption=Stepper Example, basicstyle=\tiny]
+	Widget build(BuildContext context) {
+		return Scaffold(
+		appBar: AppBarWidget(
+			stringTitle: "New Diagnose",
+			route: Routes.home,),
+		body: Container(
+		color: Colors.white,
+		child: Theme(
+			data: ThemeData(
+			colorScheme: Theme.of(context).colorScheme.copyWith(
+			primary: AppVariables.lightBlue,),),
+		child: Stepper(
+			type: stepperType,
+			physics: ScrollPhysics(),
+			currentStep: _currentStep,
+			onStepTapped: (step) => tapped(step),
+			onStepContinue: continued,
+			onStepCancel: cancel,
+			steps: [
+			Step(
+			title: const Text('Welcome!'),
+			content: const Text("Let\'s find out what you got!"),
+			isActive: _currentStep >= 0,
+			state:
+			_currentStep >= 0 ? StepState.complete : StepState.disabled,
+			),
+			Step(
+			title: const Text('Location of the Symptoms'),
+			subtitle: const Text(
+			"Please select the body Part you are experiencing your symptoms on.",),
+			content: MultiSelectChipField<String>(
+			items: allbodyParts,
+			icon: Icon(Icons.check),
+			headerColor: AppVariables.lightBlue,
+			decoration: BoxDecoration(
+			border: Border.all(
+			color: AppVariables.lightBlue,
+			),),
+			selectedChipColor: AppVariables.lightBlue.withOpacity(0.5),
+			title: const Text("Body Parts"),
+			textStyle: const TextStyle(color: Colors.black),
+			chipColor: AppVariables.lightBlue.withOpacity(0.1),
+			onTap: (values) {
+				setState(() {
+					selectedBodyParts = values;
+				});},),
+			isActive: _currentStep >= 0,
+			state:
+			_currentStep >= 0 ? StepState.complete : StepState.disabled,),
+			Step(
+			title: const Text('Select Symptoms'),
+			subtitle: const Text(
+			"Please select the symptoms.",
+			),
+			content: MultiSelectChipField<String>(
+			items: allSymptomsOfBodyPart,
+			icon: Icon(Icons.check),
+			headerColor: AppVariables.lightBlue,
+			decoration: BoxDecoration(
+			border: Border.all(
+			color: AppVariables.lightBlue,
+			),),
+			selectedChipColor: AppVariables.lightBlue.withOpacity(0.5),
+			title: const Text("Symptoms"),
+			textStyle: const TextStyle(color: Colors.black),
+			chipColor: AppVariables.lightBlue.withOpacity(0.1),
+			onTap: (values) {
+				setState(() {
+					selectedSymptoms = values;
+				});},),
+			isActive: _currentStep >= 0,
+			state:
+			_currentStep >= 0 ? StepState.complete : StepState.disabled,),
+...
+\end{lstlisting}
+\pagebreak
 
-\chapter{Implemented Services}
-\section{DatabaseService}
+\tocless\chapter{Implemented Services}
+\tocless\section{DatabaseService}
 \begin{lstlisting}[caption=DatabaseService Code]
 class DatabaseService {
 	/* CREATE AN INSTANCE OF THE DATABASE */
@@ -572,7 +626,7 @@ class DatabaseService {
 ...
 \end{lstlisting}
 \pagebreak
-\section{ConvertService}
+\tocless\section{ConvertService}
 \begin{lstlisting}[caption=AppNavigator Class]
 class ConvertService {
 	/* CREATE AN INSTANCE OF THE DATABASE */
@@ -595,7 +649,7 @@ class ConvertService {
 ...
 \end{lstlisting}
 \pagebreak
-\section{AppNavigator (NavigationService)}
+\tocless\section{AppNavigator (NavigationService)}
 \begin{lstlisting}[caption=AppNavigator Class]
 	enum Routes { survey, home, advices, doctorPanel, detailScreen, diagnosesList }
 	
@@ -653,7 +707,7 @@ class ConvertService {
 \end{lstlisting}
 
 \pagebreak
-\section{AuthService}
+\tocless\section{AuthService}
 \begin{lstlisting}[caption=AuthService]
 class AuthService {
 	/* CREATE AN INSTANCE OF THE DATABASE */
@@ -707,23 +761,23 @@ class AuthService {
 // MORE METHODS
 ...
 \end{lstlisting}
-\chapter{Evaluation of the Algorithm}
-\section{Information about the System}
-\subsection{CPU}
+\tocless\chapter{Evaluation of the Algorithm}
+\tocless\section{Information about the System}
+\tocless\subsection{CPU}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.55]{cpu.png}
+	\includegraphics[scale=0.4]{cpu.png}
 	\caption{System CPU Information}
 \end{figure}
-\subsubsection{Emulator}
+\tocless\subsubsection{Emulator}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.45]{detailemulator.png}
+	\includegraphics[scale=0.25 ]{detailemulator.png}
 	\caption{Emulator Details}
 \end{figure}
 \pagebreak
-\subsection{Details of the Compilations}
-\subsubsection{Compilation 1}
+\tocless\subsection{Details of the Compilations}
+\tocless\subsubsection{Compilation 1}
 \begin{itemize}
 	\item Body Part: Chest
 	\item Symptoms: Cough, Neusea
@@ -767,15 +821,15 @@ Processor time (in \%)
 	\caption{Processor Time Compilation 3}
 \end{figure}
 
-\chapter{Methods to Store Data Locally}
-\section{Convert to Map}
+\tocless\chapter{Methods to Store Data Locally}
+\tocless\section{Convert to Map}
 \begin{lstlisting}[caption=Data toMap]
   static Map<String, dynamic> toMap(Diagnose pDiagnose) => {
 	'id': pDiagnose.id,
 	...
 };
 \end{lstlisting}
-\section{Encode Data}
+\tocless\section{Encode Data}
 A list of diagnoses can even be saved directly. Since SharedPreference works with key-value values, these can also be easily deleted from the list by simply removing the associated key.
 \begin{lstlisting}[caption=Encode Data]
   static String encode(List<Diagnose> pDiagnoses) => json.encode(
@@ -784,7 +838,7 @@ A list of diagnoses can even be saved directly. Since SharedPreference works wit
 		.toList(),
 	);
 \end{lstlisting}
-\section{Decode Data}
+\tocless\section{Decode Data}
 Here the variant is displayed to directly convert a list of diagnoses.
 \begin{lstlisting}[caption=Decode Data]
 static List<Diagnose> decode(String pDiagnoses) =>
@@ -792,7 +846,7 @@ static List<Diagnose> decode(String pDiagnoses) =>
 	.map<Diagnose>((item) => Diagnose.fromJson(item))
 .toList();
 \end{lstlisting}
-\section{Convert to Object (from Json)}
+\tocless\section{Convert to Object (from Json)}
 \begin{lstlisting}[caption=Data fromJson]
 	factory Diagnose.fromJson(Map<String, dynamic> jsonData) {
 		return Diagnose(
@@ -802,7 +856,7 @@ static List<Diagnose> decode(String pDiagnoses) =>
 	}
 \end{lstlisting}
 
-\chapter{Status of the Requirements}
+\tocless\chapter{Status of the Requirements}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.65]{frresults.png}
