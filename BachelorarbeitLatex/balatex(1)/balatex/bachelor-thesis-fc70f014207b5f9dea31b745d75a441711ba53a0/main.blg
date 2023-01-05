@@ -1,84 +1,74 @@
-[0] Config.pm:306> INFO - This is Biber 2.18
-[0] Config.pm:309> INFO - Logfile is 'main.blg'
-[92] biber-MSWIN64:340> INFO - === 
-[123] Biber.pm:418> INFO - Reading 'main.bcf'
-[215] Biber.pm:978> INFO - Found 51 citekeys in bib section 0
-[227] Biber.pm:4401> INFO - Processing section 0
-[236] Biber.pm:4592> INFO - Looking for bibtex file 'quellen.bib' for section 0
-[281] bibtex.pm:1713> INFO - LaTeX decoding ...
-[325] bibtex.pm:1518> INFO - Found BibTeX data source 'quellen.bib'
-[471] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[471] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[471] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[471] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[497] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[511] bbl.pm:757> INFO - Output to main.bbl
-[512] Biber.pm:130> WARN - legacy year field '8/4/2022' in entry '.bahn-bonn' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - Entry '.bahn-bonn' (quellen.bib): Invalid format '20.08.2022' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - legacy year field '5/1/2022' in entry '.sok' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - Entry '.sok' (quellen.bib): Invalid format '8/4/2022' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - Entry '.blatt' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - legacy year field '19.08.2022' in entry '.rki' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - Entry '.rki' (quellen.bib): Invalid format '20.08.2022' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - legacy year field '12/27/2022' in entry '.adaHOME' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - Entry '.adaHOME' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - legacy year field '12/27/2022' in entry '.adaKI' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - legacy year field '12/27/2022' in entry '.adaFAQ' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - Entry '.adaFAQ' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - legacy year field '12/27/2022' in entry '.adaDOCU' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - Entry '.adaDOCU' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - legacy year field '12/27/2022' in entry '.symptomchecker' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - Entry '.symptomchecker' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - legacy year field '12/28/2022' in entry 'whatisdart' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - legacy year field '12/27/2022' in entry '.dartoverview' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - Entry '.dartoverview' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - legacy year field '12/27/2022' in entry '.flutterarchitecture' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - Entry '.flutterarchitecture' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - legacy year field '20.12.2022' in entry '.indeedsolid' is not an integer - this will probably not sort properly.
-[512] Biber.pm:130> WARN - Entry '.indeedsolid' (quellen.bib): Invalid format '1/1/2023' of date field 'urldate' - ignoring
-[512] Biber.pm:130> WARN - legacy year field '11/4/2018' in entry 'stackify' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry 'stackify' (quellen.bib): Invalid format '11/24/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '1/1/2023' in entry '.mongonosql' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.mongonosql' (quellen.bib): Invalid format '1/1/2023' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '12/28/2022' in entry '.baasokta' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.baasokta' (quellen.bib): Invalid format '12/28/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '12/15/2022' in entry '.firestore' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.firestore' (quellen.bib): Invalid format '12/28/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '12/28/2022' in entry '.smartphonenutzer' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.smartphonenutzer' (quellen.bib): Invalid format '12/28/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '12/5/2021' in entry '.stakes' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.stakes' (quellen.bib): Invalid format '1/1/2023' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - Entry '.systemcontext' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '11/22/2022' in entry '.req2' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.req2' (quellen.bib): Invalid format '11/22/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '12/30/2022' in entry '.req' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.req' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '10/5/2022' in entry '.safe' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.safe' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field 'NaN' in entry '.nhs' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.nhs' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '12/29/2022' in entry '.apimedic' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.apimedic' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '1/1/1980' in entry '.materialio' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.materialio' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - Entry '.wordmatching' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '12/29/2022' in entry '.naivebayes' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.naivebayes' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '12/21/2022' in entry '.bayesnet' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.bayesnet' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '10/10/2019' in entry '.bayesnet2' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.bayesnet2' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '17.1.2022' in entry '.3sek' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.3sek' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring
-[513] Biber.pm:130> WARN - legacy year field '12/31/2022' in entry '.sharedpref' is not an integer - this will probably not sort properly.
-[513] Biber.pm:130> WARN - Entry '.sharedpref' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring
-[514] Biber.pm:130> WARN - legacy year field '12/30/2022' in entry '.usesharedpref' is not an integer - this will probably not sort properly.
-[514] Biber.pm:130> WARN - Entry '.usesharedpref' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring
-[514] Biber.pm:130> WARN - legacy year field '12/31/2022' in entry '.pdf' is not an integer - this will probably not sort properly.
-[514] Biber.pm:130> WARN - Entry '.pdf' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring
-[514] Biber.pm:130> WARN - Entry '.sus' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring
-[514] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\THOMAZ~1\AppData\Local\Temp\biber_tmp_rn_t\674950b6c2d2c238e85c8ff6c7d97b02_11928.utf8, line 140, warning: possible runaway string started at line 139
-[514] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\THOMAZ~1\AppData\Local\Temp\biber_tmp_rn_t\674950b6c2d2c238e85c8ff6c7d97b02_11928.utf8, line 181, warning: 1 characters of junk seen at toplevel
-[514] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\THOMAZ~1\AppData\Local\Temp\biber_tmp_rn_t\674950b6c2d2c238e85c8ff6c7d97b02_11928.utf8, line 223, warning: possible runaway string started at line 222
-[514] Biber.pm:130> WARN - BibTeX subsystem: C:\Users\THOMAZ~1\AppData\Local\Temp\biber_tmp_rn_t\674950b6c2d2c238e85c8ff6c7d97b02_11928.utf8, line 392, warning: possible runaway string started at line 391
-[514] Biber.pm:132> INFO - WARNINGS: 68
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: kapitel/00_abstract.aux
+A level-1 auxiliary file: kapitel/10_einleitung.aux
+A level-1 auxiliary file: kapitel/20_grundlagen.aux
+A level-1 auxiliary file: kapitel/30_requirements_engineering.aux
+A level-1 auxiliary file: kapitel/30_datenbank.aux
+A level-1 auxiliary file: kapitel/30_planung.aux
+A level-1 auxiliary file: kapitel/60_fazit.aux
+A level-1 auxiliary file: kapitel/70_fazit.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 12280 items from 5000.
+Database file #1: main-blx.bib
+Database file #2: quellen.bib
+Biblatex version: 3.17
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 52 entries,
+            6399 wiz_defined-function locations,
+            1497 strings with 21612 characters,
+and the built_in function-call counts, 201206 in all, are:
+= -- 12203
+> -- 3787
+< -- 1171
++ -- 3838
+- -- 1143
+* -- 11594
+:= -- 17563
+add.period$ -- 0
+call.type$ -- 52
+change.case$ -- 461
+chr.to.int$ -- 317
+cite$ -- 102
+duplicate$ -- 23283
+empty$ -- 21186
+format.name$ -- 1801
+if$ -- 42646
+int.to.chr$ -- 0
+int.to.str$ -- 115
+missing$ -- 0
+newline$ -- 1095
+num.names$ -- 1638
+pop$ -- 17309
+preamble$ -- 1
+purify$ -- 594
+quote$ -- 0
+skip$ -- 7579
+stack$ -- 0
+substring$ -- 19796
+swap$ -- 5666
+text.length$ -- 1057
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1756
+warning$ -- 0
+while$ -- 2408
+width$ -- 0
+write$ -- 1044

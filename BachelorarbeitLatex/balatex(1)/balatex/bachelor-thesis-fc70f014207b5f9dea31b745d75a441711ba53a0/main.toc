@@ -24,14 +24,14 @@
 \contentsline {chapter}{\numberline {4}Requirements Engineering}{10}{}%
 \contentsline {section}{\numberline {4.1}Target Group and User Group}{10}{}%
 \contentsline {section}{\numberline {4.2}Stakeholder Analysis}{10}{}%
-\contentsline {subsection}{\numberline {4.2.1}Internal Stakeholder}{11}{}%
-\contentsline {subsubsection}{\nonumberline Developer}{11}{}%
+\contentsline {subsection}{\numberline {4.2.1}Internal Stakeholder}{10}{}%
+\contentsline {subsubsection}{\nonumberline Developer}{10}{}%
 \contentsline {subsection}{\numberline {4.2.2}External Stakeholder}{11}{}%
 \contentsline {subsubsection}{\nonumberline Users}{11}{}%
 \contentsline {subsubsection}{\nonumberline Doctors}{11}{}%
 \contentsline {subsubsection}{\nonumberline Stakeholder Matrix}{11}{}%
 \contentsline {section}{\numberline {4.3}System Context Diagram}{12}{}%
-\contentsline {section}{\numberline {4.4}User Requirements Specification}{13}{}%
+\contentsline {section}{\numberline {4.4}User Requirements Specification}{12}{}%
 \contentsline {subsection}{\numberline {4.4.1}Optional Requirements}{13}{}%
 \contentsline {subsection}{\numberline {4.4.2}Functional Requirements}{13}{}%
 \contentsline {subsection}{\numberline {4.4.3}Non-functional Requirements}{13}{}%
@@ -90,11 +90,12 @@
 \contentsline {section}{\numberline {8.1}System Usability Scale}{35}{}%
 \contentsline {subsubsection}{\nonumberline Evaluation of the SUS}{36}{}%
 \contentsline {section}{\numberline {8.2}Requirements}{36}{}%
-\contentsline {chapter}{\numberline {9}Conclusion and Outlook}{38}{}%
-\contentsline {chapter}{Appendix}{40}{}%
-\contentsline {subsubsection}{\nonumberline Compilation 2}{64}{}%
-\contentsline {subsubsection}{\nonumberline Compilation 3}{65}{}%
-\contentsline {chapter}{Literature}{68}{}%
-\contentsline {chapter}{List of Figures}{68}{}%
-\contentsline {chapter}{List of Tables}{68}{}%
+\contentsline {section}{\numberline {8.3}Project GitHub}{38}{}%
+\contentsline {chapter}{\numberline {9}Conclusion and Outlook}{39}{}%
+\contentsline {chapter}{Appendix}{41}{}%
+\contentsline {subsubsection}{\nonumberline Compilation 2}{65}{}%
+\contentsline {subsubsection}{\nonumberline Compilation 3}{66}{}%
+\contentsline {chapter}{Literature}{69}{}%
+\contentsline {chapter}{List of Figures}{69}{}%
+\contentsline {chapter}{List of Tables}{69}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

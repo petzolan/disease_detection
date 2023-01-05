@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
+% This file may safely be deleted. It will be recreated as
+% required.
 %
 \begingroup
 \makeatletter
@@ -16,1306 +16,1150 @@
   {}
 \endgroup
 
+\datalist[entry]{none/global//global/global}
+  \entry{.bahn-bonn}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Corona macht rücksichtsvoller: Thema Gesundheit bei den
+  Deutschen immer wichtiger}
+    \verb{url}
+    \verb https://www.bah-bonn.de/presse/bah-gesundheitsmonitor/presse-detailse
+    \verb ite/corona-macht-ruecksichtsvoller-thema-gesundheit-bei-den-deutschen
+    \verb -immer-wichtiger/
+    \endverb
+    \list{location}{1}{%
+      {Berlin}%
+    }
+    \field{year}{8/4/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
 
-\refsection{0}
-  \datalist[entry]{none/global//global/global}
-    \entry{.bahn-bonn}{misc}{}
-      \list{location}{1}{%
-        {Berlin}%
-      }
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{title}{Corona macht rücksichtsvoller: Thema Gesundheit bei den Deutschen immer wichtiger}
-      \field{year}{8/4/2022}
-      \verb{urlraw}
-      \verb https://www.bah-bonn.de/presse/bah-gesundheitsmonitor/presse-detailseite/corona-macht-ruecksichtsvoller-thema-gesundheit-bei-den-deutschen-immer-wichtiger/
-      \endverb
-      \verb{url}
-      \verb https://www.bah-bonn.de/presse/bah-gesundheitsmonitor/presse-detailseite/corona-macht-ruecksichtsvoller-thema-gesundheit-bei-den-deutschen-immer-wichtiger/
-      \endverb
-      \warn{\item Entry '.bahn-bonn' (quellen.bib): Invalid format '20.08.2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.sok}{article}{}
-      \name{author}{1}{}{%
-        {{hash=5871c2366e4609e0a70ccef9d6bf35fc}{%
-           family={Senada},
-           familyi={S\bibinitperiod},
-           given={Sokollu},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{5871c2366e4609e0a70ccef9d6bf35fc}
-      \strng{fullhash}{5871c2366e4609e0a70ccef9d6bf35fc}
-      \strng{bibnamehash}{5871c2366e4609e0a70ccef9d6bf35fc}
-      \strng{authorbibnamehash}{5871c2366e4609e0a70ccef9d6bf35fc}
-      \strng{authornamehash}{5871c2366e4609e0a70ccef9d6bf35fc}
-      \strng{authorfullhash}{5871c2366e4609e0a70ccef9d6bf35fc}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Patientenstopp, Überbelastung, Zutrittsverbot: Immer wieder werden Patienten in der Pandemie~von Hausarztpraxen abgewiesen - zum Auskurieren ohne Behandlung.}
-      \field{journaltitle}{SWR Aktuell}
-      \field{title}{Überforderung der Arztpraxen: Corona-Überlastung: Patienten schildern Grenzsituationen bei Hausärzten}
-      \field{year}{5/1/2022}
-      \verb{file}
-      \verb Corona-Uberlastung Patienten schildern Grenzsituationen:Attachments/Corona-Uberlastung Patienten schildern Grenzsituationen.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.swr.de/swraktuell/baden-wuerttemberg/patienten-im-stich-gelassen-in-corona-zeiten-100.html
-      \endverb
-      \verb{url}
-      \verb https://www.swr.de/swraktuell/baden-wuerttemberg/patienten-im-stich-gelassen-in-corona-zeiten-100.html
-      \endverb
-      \warn{\item Entry '.sok' (quellen.bib): Invalid format '8/4/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.blatt}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=98847a694a4f73f68f06fa1b3525b6ed}{%
-           family={{Deutscher Ärzteverlag GmbH, Redaktion Deutsches Ärzteblatt}},
-           familyi={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{98847a694a4f73f68f06fa1b3525b6ed}
-      \strng{fullhash}{98847a694a4f73f68f06fa1b3525b6ed}
-      \strng{bibnamehash}{98847a694a4f73f68f06fa1b3525b6ed}
-      \strng{authorbibnamehash}{98847a694a4f73f68f06fa1b3525b6ed}
-      \strng{authornamehash}{98847a694a4f73f68f06fa1b3525b6ed}
-      \strng{authorfullhash}{98847a694a4f73f68f06fa1b3525b6ed}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Berlin -- Das leichte Wachstum bei der Zahl der Ärztinnen und Ärzte reichte bei weitem nicht aus, um den Behandlungsbedarf einer Gesellschaft des langen Lebens... {\#}BAEK {\#}Aerztemangel}
-      \field{title}{Bundesärztekammer warnt vor Ärztemangel}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://www.aerzteblatt.de/nachrichten/134020/Bundesaerztekammer-warnt-vor-Aerztemangel
-      \endverb
-      \verb{url}
-      \verb https://www.aerzteblatt.de/nachrichten/134020/Bundesaerztekammer-warnt-vor-Aerztemangel
-      \endverb
-      \keyw{Ärztemangel;Ärzteschaft;Ärztestatistik;Nachrichten}
-      \warn{\item Entry '.blatt' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.rki}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=c396e13d68907b5c020c33362d149928}{%
-           family={{Rober Koch Institut}},
-           familyi={R\bibinitperiod}}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=7bd6d5f70951f46f6c3aa915ab8246a1}{%
-           family={{Robert Koch Institut}},
-           familyi={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{c396e13d68907b5c020c33362d149928}
-      \strng{fullhash}{c396e13d68907b5c020c33362d149928}
-      \strng{bibnamehash}{c396e13d68907b5c020c33362d149928}
-      \strng{authorbibnamehash}{c396e13d68907b5c020c33362d149928}
-      \strng{authornamehash}{c396e13d68907b5c020c33362d149928}
-      \strng{authorfullhash}{c396e13d68907b5c020c33362d149928}
-      \strng{editorbibnamehash}{7bd6d5f70951f46f6c3aa915ab8246a1}
-      \strng{editornamehash}{7bd6d5f70951f46f6c3aa915ab8246a1}
-      \strng{editorfullhash}{7bd6d5f70951f46f6c3aa915ab8246a1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Regionale Verteilung der COVID-19-Fälle weltweit}
-      \field{title}{COVID-19: Fallzahlen in Deutschland und weltwei: Fallzahlen in Deutschland}
-      \field{year}{19.08.2022}
-      \verb{urlraw}
-      \verb https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html
-      \endverb
-      \verb{url}
-      \verb https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html
-      \endverb
-      \keyw{China;Coronavirus;Hubei;Hygiene;nCoV;neuartiges Coronavirus;Risikogebiet;Wuhan}
-      \warn{\item Entry '.rki' (quellen.bib): Invalid format '20.08.2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.adaHOME}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=1a382809b7c03f686e12dd15677c5497}{%
-           family={Ada},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{fullhash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{bibnamehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{authorbibnamehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{authornamehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{authorfullhash}{1a382809b7c03f686e12dd15677c5497}
-      \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Hallo. Wir sind Ada. Unsere App hilft Menschen dabei sich um ihre Gesundheit zu kümmern. Mit unseren Partnern innovieren wir das Gesundheitswesen dank unserer Enterprise Solutions. Wie können wir Dir helfen?}
-      \field{title}{Health. Powered by Ada}
-      \field{year}{12/27/2022}
-      \verb{urlraw}
-      \verb https://ada.com/de/
-      \endverb
-      \verb{url}
-      \verb https://ada.com/de/
-      \endverb
-      \warn{\item Entry '.adaHOME' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.adaKI}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=1a382809b7c03f686e12dd15677c5497}{%
-           family={Ada},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{fullhash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{bibnamehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{authorbibnamehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{authornamehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{authorfullhash}{1a382809b7c03f686e12dd15677c5497}
-      \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Hinter Adas Power steckt eine ma{ß}geschneiderte KI-Technologie, die unser Expertenteam aus {"A}rzten und Wissenschaftlern {"u}ber sieben Jahre entwickelt hat. Mit$\ldots$}
-      \field{title}{Wie funktioniert Adas Symptomanalyse?}
-      \field{year}{12/27/2022}
-      \verb{urlraw}
-      \verb https://ada.com/de/help/360000319469/%7D, urldate = {12/27/2022}
-      \endverb
-      \verb{url}
-      \verb https://ada.com/de/help/360000319469/%7D,%20urldate%20=%20%7B12/27/2022%7D
-      \endverb
-    \endentry
-    \entry{.adaFAQ}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=1a382809b7c03f686e12dd15677c5497}{%
-           family={Ada},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{fullhash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{bibnamehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{authorbibnamehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{authornamehash}{1a382809b7c03f686e12dd15677c5497}
-      \strng{authorfullhash}{1a382809b7c03f686e12dd15677c5497}
-      \field{extraname}{3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Für alle geschäftliche Anfragen kontaktiere uns bitte über das Kontaktformular auf unserer Website.}
-      \field{title}{Bietet ihr API oder SDK an?}
-      \field{year}{12/27/2022}
-      \verb{urlraw}
-      \verb https://ada.com/de/help/360000309665/
-      \endverb
-      \verb{url}
-      \verb https://ada.com/de/help/360000309665/
-      \endverb
-      \warn{\item Entry '.adaFAQ' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.adaDOCU}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=bf28e6515bcd3cbb99f6e56364366b1e}{%
-           family={{Ada Developer Documentation}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{bf28e6515bcd3cbb99f6e56364366b1e}
-      \strng{fullhash}{bf28e6515bcd3cbb99f6e56364366b1e}
-      \strng{bibnamehash}{bf28e6515bcd3cbb99f6e56364366b1e}
-      \strng{authorbibnamehash}{bf28e6515bcd3cbb99f6e56364366b1e}
-      \strng{authornamehash}{bf28e6515bcd3cbb99f6e56364366b1e}
-      \strng{authorfullhash}{bf28e6515bcd3cbb99f6e56364366b1e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Developer tools for the Ada Brand Interaction Platform. Conversational AI and personalized CX for enterprises.}
-      \field{title}{Ada Developer Documentation}
-      \field{year}{12/27/2022}
-      \verb{urlraw}
-      \verb https://developers.ada.cx/
-      \endverb
-      \verb{url}
-      \verb https://developers.ada.cx/
-      \endverb
-      \warn{\item Entry '.adaDOCU' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.symptomchecker}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{title}{Android-Apps auf Google Play}
-      \field{year}{12/27/2022}
-      \verb{urlraw}
-      \verb https://play.google.com/store/apps/details?id=com.programming.progressive.diagnoseapp&gl=DE%7D
-      \endverb
-      \verb{url}
-      \verb https://play.google.com/store/apps/details?id=com.programming.progressive.diagnoseapp&gl=DE%7D
-      \endverb
-      \warn{\item Entry '.symptomchecker' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.flutterDEV}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=9eb4c2367f19dada6d72b59cae390cec}{%
-           family={Boukhary},
-           familyi={B\bibinitperiod},
-           given={Shady},
-           giveni={S\bibinitperiod}}}%
-        {{hash=deb5353dd0139fe8406250df20f40279}{%
-           family={Colmenares},
-           familyi={C\bibinitperiod},
-           given={Eduardo},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{de6a70a037225d8559c3ef1a1681f770}
-      \strng{fullhash}{de6a70a037225d8559c3ef1a1681f770}
-      \strng{bibnamehash}{de6a70a037225d8559c3ef1a1681f770}
-      \strng{authorbibnamehash}{de6a70a037225d8559c3ef1a1681f770}
-      \strng{authornamehash}{de6a70a037225d8559c3ef1a1681f770}
-      \strng{authorfullhash}{de6a70a037225d8559c3ef1a1681f770}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2019 International Conference on Computational Science and Computational Intelligence (CSCI)}
-      \field{title}{A Clean Approach to Flutter Development through the Flutter Clean Architecture Package}
-      \field{year}{2019}
-      \field{pages}{1115\bibrangedash 1120}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/CSCI49370.2019.00211
-      \endverb
-    \endentry
-    \entry{whatisdart}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{title}{Everything You Need to Know About Flutter App Development}
-      \field{year}{12/28/2022}
-      \verb{urlraw}
-      \verb https://www.cometchat.com/blog/flutter-app-development
-      \endverb
-      \verb{url}
-      \verb https://www.cometchat.com/blog/flutter-app-development
-      \endverb
-    \endentry
-    \entry{.javadart}{article}{}
-      \name{author}{1}{}{%
-        {{hash=875e25a71f0ba21b264b068b1a6db476}{%
-           family={Hassan},
-           familyi={H\bibinitperiod},
-           given={AfafMirghani},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{875e25a71f0ba21b264b068b1a6db476}
-      \strng{fullhash}{875e25a71f0ba21b264b068b1a6db476}
-      \strng{bibnamehash}{875e25a71f0ba21b264b068b1a6db476}
-      \strng{authorbibnamehash}{875e25a71f0ba21b264b068b1a6db476}
-      \strng{authornamehash}{875e25a71f0ba21b264b068b1a6db476}
-      \strng{authorfullhash}{875e25a71f0ba21b264b068b1a6db476}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Indonesian Journal of Electrical Engineering and Computer Science}
-      \field{number}{2}
-      \field{title}{JAVA and DART programming languages: Conceptual comparison}
-      \field{volume}{17}
-      \field{year}{2020}
-      \field{pages}{845\bibrangedash 849}
-      \range{pages}{5}
-    \endentry
-    \entry{.dartoverview}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A short introduction to Dart}
-      \field{title}{Dart overview}
-      \field{year}{12/27/2022}
-      \verb{urlraw}
-      \verb https://dart.dev/overview%7D
-      \endverb
-      \verb{url}
-      \verb https://dart.dev/overview%7D
-      \endverb
-      \warn{\item Entry '.dartoverview' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.flutterinaction}{book}{}
-      \name{author}{1}{}{%
-        {{hash=858ae538522ef3906d5295f5efcc2168}{%
-           family={Windmill},
-           familyi={W\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Manning}%
-      }
-      \strng{namehash}{858ae538522ef3906d5295f5efcc2168}
-      \strng{fullhash}{858ae538522ef3906d5295f5efcc2168}
-      \strng{bibnamehash}{858ae538522ef3906d5295f5efcc2168}
-      \strng{authorbibnamehash}{858ae538522ef3906d5295f5efcc2168}
-      \strng{authornamehash}{858ae538522ef3906d5295f5efcc2168}
-      \strng{authorfullhash}{858ae538522ef3906d5295f5efcc2168}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781638356431}
-      \field{title}{Flutter in Action}
-      \field{year}{2020}
-    \endentry
-    \entry{.flutterarchitecture}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A high-level overview of the architecture of Flutter, including the core principles and concepts that form its design.}
-      \field{title}{Flutter architectural overview}
-      \field{year}{12/27/2022}
-      \verb{urlraw}
-      \verb https://docs.flutter.dev/resources/architectural-overview#architectural-layers%7D
-      \endverb
-      \verb{url}
-      \verb https://docs.flutter.dev/resources/architectural-overview#architectural-layers%7D
-      \endverb
-      \warn{\item Entry '.flutterarchitecture' (quellen.bib): Invalid format '12/27/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.softwarearchi}{book}{}
-      \name{author}{1}{}{%
-        {{hash=e7e436367d42d10ff924bcea6b484acc}{%
-           family={Lilienthal},
-           familyi={L\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{e7e436367d42d10ff924bcea6b484acc}
-      \strng{fullhash}{e7e436367d42d10ff924bcea6b484acc}
-      \strng{bibnamehash}{e7e436367d42d10ff924bcea6b484acc}
-      \strng{authorbibnamehash}{e7e436367d42d10ff924bcea6b484acc}
-      \strng{authornamehash}{e7e436367d42d10ff924bcea6b484acc}
-      \strng{authorfullhash}{e7e436367d42d10ff924bcea6b484acc}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9783960888970}
-      \field{title}{Langlebige Software-Architekturen: Technische Schulden analysieren, begrenzen und abbauen}
-      \verb{urlraw}
-      \verb https://books.google.de/books?id=2TrCDwAAQBAJ%7D, year={2019}, publisher={dpunkt.verlag}
-      \endverb
-      \verb{url}
-      \verb https://books.google.de/books?id=2TrCDwAAQBAJ%7D,%20year=%7B2019%7D,%20publisher=%7Bdpunkt.verlag%7D
-      \endverb
-    \endentry
-    \entry{.indeedsolid}{article}{}
-      \name{author}{1}{}{%
-        {{hash=ba5cdb767841cf672701d0754ba65d85}{%
-           family={Argalias},
-           familyi={A\bibinitperiod},
-           given={Nikos},
-           giveni={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{ba5cdb767841cf672701d0754ba65d85}
-      \strng{fullhash}{ba5cdb767841cf672701d0754ba65d85}
-      \strng{bibnamehash}{ba5cdb767841cf672701d0754ba65d85}
-      \strng{authorbibnamehash}{ba5cdb767841cf672701d0754ba65d85}
-      \strng{authornamehash}{ba5cdb767841cf672701d0754ba65d85}
-      \strng{authorfullhash}{ba5cdb767841cf672701d0754ba65d85}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Introduction The SOLID principles are a set of coding guidelines that were first introduced by software developer Robert C. Martin.}
-      \field{title}{Introduction The SOLID principles are a set of coding guidelines that were first introduced by software dev}
-      \field{year}{20.12.2022}
-      \verb{urlraw}
-      \verb https://www.linkedin.com/pulse/solidify-your-front-end-code-5-principles-writing-better-argalias
-      \endverb
-      \verb{url}
-      \verb https://www.linkedin.com/pulse/solidify-your-front-end-code-5-principles-writing-better-argalias
-      \endverb
-      \warn{\item Entry '.indeedsolid' (quellen.bib): Invalid format '1/1/2023' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.martin}{book}{}
-      \name{author}{1}{}{%
-        {{hash=dc18187967c965194440ccc64963cbcd}{%
-           family={Martin},
-           familyi={M\bibinitperiod},
-           given={R.C.},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Pearson Education}%
-      }
-      \strng{namehash}{dc18187967c965194440ccc64963cbcd}
-      \strng{fullhash}{dc18187967c965194440ccc64963cbcd}
-      \strng{bibnamehash}{dc18187967c965194440ccc64963cbcd}
-      \strng{authorbibnamehash}{dc18187967c965194440ccc64963cbcd}
-      \strng{authornamehash}{dc18187967c965194440ccc64963cbcd}
-      \strng{authorfullhash}{dc18187967c965194440ccc64963cbcd}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780135974445}
-      \field{series}{Alan Apt series}
-      \field{title}{Agile Software Development: Principles, Patterns, and Practices}
-      \field{year}{2003}
-      \verb{urlraw}
-      \verb https://books.google.de/books?id=0HYhAQAAIAAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.de/books?id=0HYhAQAAIAAJ
-      \endverb
-    \endentry
-    \entry{principles}{book}{}
-      \name{author}{2}{}{%
-        {{hash=df9fa1b7707f16b518b72396611c4a73}{%
-           family={Ostrowski},
-           familyi={O\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=d1c460d4905f241485c3ab1a4cea7d80}{%
-           family={Gaczkowski},
-           familyi={G\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Packt Publishing}%
-      }
-      \strng{namehash}{08a6aa24382168157c6a58b01dcd4883}
-      \strng{fullhash}{08a6aa24382168157c6a58b01dcd4883}
-      \strng{bibnamehash}{08a6aa24382168157c6a58b01dcd4883}
-      \strng{authorbibnamehash}{08a6aa24382168157c6a58b01dcd4883}
-      \strng{authornamehash}{08a6aa24382168157c6a58b01dcd4883}
-      \strng{authorfullhash}{08a6aa24382168157c6a58b01dcd4883}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781789612462}
-      \field{title}{Software Architecture with C++: Design modern systems using effective architecture concepts, design patterns, and techniques with C++20}
-      \field{year}{2021}
-      \verb{urlraw}
-      \verb https://books.google.de/books?id=GrAmEAAAQBAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.de/books?id=GrAmEAAAQBAJ
-      \endverb
-    \endentry
-    \entry{stackify}{article}{}
-      \name{author}{1}{}{%
-        {{hash=5e0245a7df7d302fc19a52236a43c412}{%
-           family={Janssen},
-           familyi={J\bibinitperiod},
-           given={Thorben},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{5e0245a7df7d302fc19a52236a43c412}
-      \strng{fullhash}{5e0245a7df7d302fc19a52236a43c412}
-      \strng{bibnamehash}{5e0245a7df7d302fc19a52236a43c412}
-      \strng{authorbibnamehash}{5e0245a7df7d302fc19a52236a43c412}
-      \strng{authornamehash}{5e0245a7df7d302fc19a52236a43c412}
-      \strng{authorfullhash}{5e0245a7df7d302fc19a52236a43c412}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{All 5 SOLID design principles are broadly~used, If you don't know them by name, you will quickly recognize that they describe the rules and principles for writing good code. In this article, you'll learn about the Liskov Substitution Principle.}
-      \field{journaltitle}{Stackify}
-      \field{title}{SOLID Design Principles Explained: The Liskov Substitution Principle with Code Examples}
-      \field{year}{11/4/2018}
-      \verb{urlraw}
-      \verb https://stackify.com/solid-design-liskov-substitution-principle/
-      \endverb
-      \verb{url}
-      \verb https://stackify.com/solid-design-liskov-substitution-principle/
-      \endverb
-      \keyw{a-Retrace;Java}
-      \warn{\item Entry 'stackify' (quellen.bib): Invalid format '11/24/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.mongonosql}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=206e3718af092fd1d12f80cae771ccac}{%
-           family={MongoDB},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{206e3718af092fd1d12f80cae771ccac}
-      \strng{fullhash}{206e3718af092fd1d12f80cae771ccac}
-      \strng{bibnamehash}{206e3718af092fd1d12f80cae771ccac}
-      \strng{authorbibnamehash}{206e3718af092fd1d12f80cae771ccac}
-      \strng{authornamehash}{206e3718af092fd1d12f80cae771ccac}
-      \strng{authorfullhash}{206e3718af092fd1d12f80cae771ccac}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{NoSQL beschreibt die Vielzahl von geschaffenen Datenbanktechnologien um Schwachstellen von RDBMS und Anforderungen moderner Softwareentwicklung anzugehen.}
-      \field{title}{NoSQL Databankenerklärung}
-      \field{year}{1/1/2023}
-      \verb{urlraw}
-      \verb https://www.mongodb.com/de-de/nosql-explained
-      \endverb
-      \verb{url}
-      \verb https://www.mongodb.com/de-de/nosql-explained
-      \endverb
-      \warn{\item Entry '.mongonosql' (quellen.bib): Invalid format '1/1/2023' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.crud}{article}{}
-      \name{author}{2}{}{%
-        {{hash=765a4905235fcde8a63867d0713c40fa}{%
-           family={AMANDEEP},
-           familyi={A\bibinitperiod},
-           given={KAUR},
-           giveni={K\bibinitperiod}}}%
-        {{hash=964d921346c40f735205bc529b074313}{%
-           family={{KANWALVIR SINGH}},
-           familyi={K\bibinitperiod},
-           given={DHINDSA},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{d0d2720fef25cfc18c443b188184a7e3}
-      \strng{fullhash}{d0d2720fef25cfc18c443b188184a7e3}
-      \strng{bibnamehash}{d0d2720fef25cfc18c443b188184a7e3}
-      \strng{authorbibnamehash}{d0d2720fef25cfc18c443b188184a7e3}
-      \strng{authornamehash}{d0d2720fef25cfc18c443b188184a7e3}
-      \strng{authorfullhash}{d0d2720fef25cfc18c443b188184a7e3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2349-6835}
-      \field{journaltitle}{i-manager's Journal on Cloud Computing}
-      \field{number}{2}
-      \field{title}{PERFORMANCE EVALUATION FOR CRUD OPERATIONS IN NoSQL DATABASES}
-      \field{volume}{3}
-      \field{year}{2016}
-      \field{pages}{1}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.26634/jcc.3.2.8164
-      \endverb
-    \endentry
-    \entry{.baasfirebase}{book}{}
-      \name{author}{2}{}{%
-        {{hash=2bc67a67c7d46f1b3ad69d54c2731808}{%
-           family={Alessandria},
-           familyi={A\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=72bd3b9802addfcfeb078e1e95a45fc5}{%
-           family={Kayfitz},
-           familyi={K\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Packt Publishing}%
-      }
-      \strng{namehash}{e227dd474a3650f84c4384a529feef94}
-      \strng{fullhash}{e227dd474a3650f84c4384a529feef94}
-      \strng{bibnamehash}{e227dd474a3650f84c4384a529feef94}
-      \strng{authorbibnamehash}{e227dd474a3650f84c4384a529feef94}
-      \strng{authornamehash}{e227dd474a3650f84c4384a529feef94}
-      \strng{authorfullhash}{e227dd474a3650f84c4384a529feef94}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781838827373}
-      \field{title}{Flutter Cookbook: Over 100 proven techniques and solutions for app development with Flutter 2.2 and Dart}
-      \field{year}{2021}
-      \verb{urlraw}
-      \verb https://books.google.de/books?id=zDE0EAAAQBAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.de/books?id=zDE0EAAAQBAJ
-      \endverb
-    \endentry
-    \entry{.baasokta}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Backend as a service (BaaS) is a cloud-computing model where you outsource computing activities, such as hosting or data storage. Learn more about BaaS here.}
-      \field{title}{What Is BaaS (Backend as a Service)? Definition and Usage | Okta Australia}
-      \field{year}{12/28/2022}
-      \verb{urlraw}
-      \verb https://www.okta.com/au/identity-101/baas-backend-as-a-service/
-      \endverb
-      \verb{url}
-      \verb https://www.okta.com/au/identity-101/baas-backend-as-a-service/
-      \endverb
-      \warn{\item Entry '.baasokta' (quellen.bib): Invalid format '12/28/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.firestore}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=035489ff8d092741943e4a83241f5af9}{%
-           family={Firebase},
-           familyi={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{035489ff8d092741943e4a83241f5af9}
-      \strng{fullhash}{035489ff8d092741943e4a83241f5af9}
-      \strng{bibnamehash}{035489ff8d092741943e4a83241f5af9}
-      \strng{authorbibnamehash}{035489ff8d092741943e4a83241f5af9}
-      \strng{authornamehash}{035489ff8d092741943e4a83241f5af9}
-      \strng{authorfullhash}{035489ff8d092741943e4a83241f5af9}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Use our flexible, scalable NoSQL cloud database to store and sync data for client- and server-side development.}
-      \field{title}{Firestore {\&}nbsp;|{\&}nbsp; Firebase}
-      \field{year}{12/15/2022}
-      \verb{urlraw}
-      \verb https://firebase.google.com/docs/firestore
-      \endverb
-      \verb{url}
-      \verb https://firebase.google.com/docs/firestore
-      \endverb
-      \warn{\item Entry '.firestore' (quellen.bib): Invalid format '12/28/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.smartphonenutzer}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=62182ca58a739daa8ddd8a48b7b19abb}{%
-           family={Statista},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{62182ca58a739daa8ddd8a48b7b19abb}
-      \strng{fullhash}{62182ca58a739daa8ddd8a48b7b19abb}
-      \strng{bibnamehash}{62182ca58a739daa8ddd8a48b7b19abb}
-      \strng{authorbibnamehash}{62182ca58a739daa8ddd8a48b7b19abb}
-      \strng{authornamehash}{62182ca58a739daa8ddd8a48b7b19abb}
-      \strng{authorfullhash}{62182ca58a739daa8ddd8a48b7b19abb}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Rund 94,2 Prozent der 14- bis 19-jährigen Personen in Deutschland besitzen im Jahr 2021 ein Smartphone.}
-      \field{title}{Smartphones - Penetrationsrate in Deutschland nach Altersgruppe 2021 | Statista}
-      \field{year}{12/28/2022}
-      \verb{urlraw}
-      \verb https://de.statista.com/statistik/daten/studie/459963/umfrage/anteil-der-smartphone-nutzer-in-deutschland-nach-altersgruppe/
-      \endverb
-      \verb{url}
-      \verb https://de.statista.com/statistik/daten/studie/459963/umfrage/anteil-der-smartphone-nutzer-in-deutschland-nach-altersgruppe/
-      \endverb
-      \warn{\item Entry '.smartphonenutzer' (quellen.bib): Invalid format '12/28/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.stakeholder}{book}{}
-      \name{author}{1}{}{%
-        {{hash=35cffc872caa03104f1613bd3bd4feb1}{%
-           family={Pirozzi},
-           familyi={P\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {CRC Press}%
-      }
-      \strng{namehash}{35cffc872caa03104f1613bd3bd4feb1}
-      \strng{fullhash}{35cffc872caa03104f1613bd3bd4feb1}
-      \strng{bibnamehash}{35cffc872caa03104f1613bd3bd4feb1}
-      \strng{authorbibnamehash}{35cffc872caa03104f1613bd3bd4feb1}
-      \strng{authornamehash}{35cffc872caa03104f1613bd3bd4feb1}
-      \strng{authorfullhash}{35cffc872caa03104f1613bd3bd4feb1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780429591754}
-      \field{title}{The Stakeholder Perspective: Relationship Management to Increase Value and Success Rates of Projects}
-      \field{year}{2019}
-      \verb{urlraw}
-      \verb https://books.google.de/books?id=87G2DwAAQBAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.de/books?id=87G2DwAAQBAJ
-      \endverb
-    \endentry
-    \entry{.stakes}{article}{}
-      \name{author}{1}{}{%
-        {{hash=917597032f2c4aacc84a1dc035323eb9}{%
-           family={{Katja Maass}},
-           familyi={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{917597032f2c4aacc84a1dc035323eb9}
-      \strng{fullhash}{917597032f2c4aacc84a1dc035323eb9}
-      \strng{bibnamehash}{917597032f2c4aacc84a1dc035323eb9}
-      \strng{authorbibnamehash}{917597032f2c4aacc84a1dc035323eb9}
-      \strng{authornamehash}{917597032f2c4aacc84a1dc035323eb9}
-      \strng{authorfullhash}{917597032f2c4aacc84a1dc035323eb9}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Eine Stakeholder-Matrix bietet in komplexen Projekten {\&} Change-Prozessen einen Überblick über Interessensgruppen und Schlüsselpersonen}
-      \field{journaltitle}{ICS}
-      \field{title}{Stakeholder Matrix}
-      \field{year}{12/5/2021}
-      \verb{urlraw}
-      \verb https://mychange.solutions/toolbox/leading-change/stakeholder-matrix/
-      \endverb
-      \verb{url}
-      \verb https://mychange.solutions/toolbox/leading-change/stakeholder-matrix/
-      \endverb
-      \warn{\item Entry '.stakes' (quellen.bib): Invalid format '1/1/2023' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.systemcontext}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=457ec7edc99b6a61f24d71555f532609}{%
-           family={Weilkiens},
-           familyi={W\bibinitperiod},
-           given={Tim},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{457ec7edc99b6a61f24d71555f532609}
-      \strng{fullhash}{457ec7edc99b6a61f24d71555f532609}
-      \strng{bibnamehash}{457ec7edc99b6a61f24d71555f532609}
-      \strng{authorbibnamehash}{457ec7edc99b6a61f24d71555f532609}
-      \strng{authornamehash}{457ec7edc99b6a61f24d71555f532609}
-      \strng{authorfullhash}{457ec7edc99b6a61f24d71555f532609}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The system context defines the system boundary and all system actors -- humans and external systems -- that interact with the system under development. It is one of the most important parts of the system model.{\&}nbsp;Many artifacts of the system specification and architecture are relative defined to the definition of the system. Every system behavior$\ldots$ Read more}
-      \field{title}{How to model a simple system context with SysML - Model Based Systems Engineering}
-      \field{year}{2012}
-      \verb{urlraw}
-      \verb https://mbse4u.com/2012/07/23/how-to-model-a-simple-system-context-with-sysml/
-      \endverb
-      \verb{url}
-      \verb https://mbse4u.com/2012/07/23/how-to-model-a-simple-system-context-with-sysml/
-      \endverb
-      \warn{\item Entry '.systemcontext' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.req2}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labeltitlesource}{title}
-      \field{title}{The Requirements Engineering Handbook - Google Books}
-      \field{year}{11/22/2022}
-      \verb{urlraw}
-      \verb https://www.google.de/books/edition/The_Requirements_Engineering_Handbook/Rkulpi4N3JsC?hl=de&gbpv=1&dq=requirements+engineering+functional+and+nonfunctional+requirements&pg=PA46&printsec=frontcover
-      \endverb
-      \verb{url}
-      \verb https://www.google.de/books/edition/The_Requirements_Engineering_Handbook/Rkulpi4N3JsC?hl=de&gbpv=1&dq=requirements+engineering+functional+and+nonfunctional+requirements&pg=PA46&printsec=frontcover
-      \endverb
-      \warn{\item Entry '.req2' (quellen.bib): Invalid format '11/22/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.req}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labeltitlesource}{title}
-      \field{title}{Functional and Non-functional Requirements -- Francois Botha}
-      \field{year}{12/30/2022}
-      \verb{urlraw}
-      \verb https://francoisbotha.io/2018/05/15/functional-and-non-functional-requirements/
-      \endverb
-      \verb{url}
-      \verb https://francoisbotha.io/2018/05/15/functional-and-non-functional-requirements/
-      \endverb
-      \warn{\item Entry '.req' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.safe}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=eff3c590c74df0d0830183eb6fd06cac}{%
-           family={{Scaled Agile Framework}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{eff3c590c74df0d0830183eb6fd06cac}
-      \strng{fullhash}{eff3c590c74df0d0830183eb6fd06cac}
-      \strng{bibnamehash}{eff3c590c74df0d0830183eb6fd06cac}
-      \strng{authorbibnamehash}{eff3c590c74df0d0830183eb6fd06cac}
-      \strng{authornamehash}{eff3c590c74df0d0830183eb6fd06cac}
-      \strng{authorfullhash}{eff3c590c74df0d0830183eb6fd06cac}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{SAFe for Lean Enterprises}
-      \field{title}{Advanced Topic - Domain Modeling - Scaled Agile Framework}
-      \field{year}{10/5/2022}
-      \verb{urlraw}
-      \verb https://www.scaledagileframework.com/domain-modeling/
-      \endverb
-      \verb{url}
-      \verb https://www.scaledagileframework.com/domain-modeling/
-      \endverb
-      \warn{\item Entry '.safe' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.domainmodel}{book}{}
-      \name{author}{1}{}{%
-        {{hash=57fc530ac2208a313b1e2572b5d67e56}{%
-           family={Khononov},
-           familyi={K\bibinitperiod},
-           given={V.},
-           giveni={V\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {O'Reilly Media}%
-      }
-      \strng{namehash}{57fc530ac2208a313b1e2572b5d67e56}
-      \strng{fullhash}{57fc530ac2208a313b1e2572b5d67e56}
-      \strng{bibnamehash}{57fc530ac2208a313b1e2572b5d67e56}
-      \strng{authorbibnamehash}{57fc530ac2208a313b1e2572b5d67e56}
-      \strng{authornamehash}{57fc530ac2208a313b1e2572b5d67e56}
-      \strng{authorfullhash}{57fc530ac2208a313b1e2572b5d67e56}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781098100100}
-      \field{title}{Learning Domain-Driven Design}
-      \field{year}{2021}
-      \verb{urlraw}
-      \verb https://books.google.de/books?id=qAtHEAAAQBAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.de/books?id=qAtHEAAAQBAJ
-      \endverb
-    \endentry
-    \entry{.nhs}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b73f408691dbccfe5eba984f6edf6fe9}{%
-           family={nhs.uk},
-           familyi={n\bibinitperiod}}}%
-      }
-      \strng{namehash}{b73f408691dbccfe5eba984f6edf6fe9}
-      \strng{fullhash}{b73f408691dbccfe5eba984f6edf6fe9}
-      \strng{bibnamehash}{b73f408691dbccfe5eba984f6edf6fe9}
-      \strng{authorbibnamehash}{b73f408691dbccfe5eba984f6edf6fe9}
-      \strng{authornamehash}{b73f408691dbccfe5eba984f6edf6fe9}
-      \strng{authorfullhash}{b73f408691dbccfe5eba984f6edf6fe9}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Find information and advice on health conditions, symptoms, healthy living, medicines and how to get help.}
-      \field{title}{The NHS website}
-      \field{year}{NaN}
-      \verb{urlraw}
-      \verb https://www.nhs.uk/
-      \endverb
-      \verb{url}
-      \verb https://www.nhs.uk/
-      \endverb
-      \warn{\item Entry '.nhs' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.apimedic}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labeltitlesource}{title}
-      \field{title}{Symptom Checker API | Integrate medical diagnosis into your app today}
-      \field{year}{12/29/2022}
-      \verb{urlraw}
-      \verb https://apimedic.com/
-      \endverb
-      \verb{url}
-      \verb https://apimedic.com/
-      \endverb
-      \warn{\item Entry '.apimedic' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.materialio}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labeltitlesource}{title}
-      \field{title}{Material Design}
-      \field{year}{1/1/1980}
-      \verb{urlraw}
-      \verb https://m3.material.io/
-      \endverb
-      \verb{url}
-      \verb https://m3.material.io/
-      \endverb
-      \warn{\item Entry '.materialio' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.mckay}{book}{}
-      \name{author}{1}{}{%
-        {{hash=641b0babc68f74dfe3cf5352bcef93b9}{%
-           family={McKay},
-           familyi={M\bibinitperiod},
-           given={E.N.},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier Science}%
-      }
-      \strng{namehash}{641b0babc68f74dfe3cf5352bcef93b9}
-      \strng{fullhash}{641b0babc68f74dfe3cf5352bcef93b9}
-      \strng{bibnamehash}{641b0babc68f74dfe3cf5352bcef93b9}
-      \strng{authorbibnamehash}{641b0babc68f74dfe3cf5352bcef93b9}
-      \strng{authornamehash}{641b0babc68f74dfe3cf5352bcef93b9}
-      \strng{authorfullhash}{641b0babc68f74dfe3cf5352bcef93b9}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780123972873}
-      \field{title}{UI is Communication: How to Design Intuitive, User Centered Interfaces by Focusing on Effective Communication}
-      \field{year}{2013}
-      \verb{urlraw}
-      \verb https://books.google.de/books?id=wNozxtKuOKcC
-      \endverb
-      \verb{url}
-      \verb https://books.google.de/books?id=wNozxtKuOKcC
-      \endverb
-    \endentry
-    \entry{.essui}{book}{}
-      \name{author}{2}{}{%
-        {{hash=b11ad2fa22f3ec0b220e82fff30cfa7c}{%
-           family={Banga},
-           familyi={B\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-        {{hash=7611b62c9b1e2a61fc7f39b0556dff87}{%
-           family={Weinhold},
-           familyi={W\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Pearson Education}%
-      }
-      \strng{namehash}{3930d9eeabe9ae5f16baf964e5b2d48b}
-      \strng{fullhash}{3930d9eeabe9ae5f16baf964e5b2d48b}
-      \strng{bibnamehash}{3930d9eeabe9ae5f16baf964e5b2d48b}
-      \strng{authorbibnamehash}{3930d9eeabe9ae5f16baf964e5b2d48b}
-      \strng{authornamehash}{3930d9eeabe9ae5f16baf964e5b2d48b}
-      \strng{authorfullhash}{3930d9eeabe9ae5f16baf964e5b2d48b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780133563474}
-      \field{series}{Usability}
-      \field{title}{Essential Mobile Interaction Design: Perfecting Interface Design in Mobile Apps}
-      \field{year}{2014}
-      \verb{urlraw}
-      \verb https://books.google.de/books?id=yD0kAwAAQBAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.de/books?id=yD0kAwAAQBAJ
-      \endverb
-    \endentry
-    \entry{.3layer}{book}{}
-      \name{author}{1}{}{%
-        {{hash=1f54615d2d683f06396195896023ee56}{%
-           family={Das\bibnamedelimb Gupta\bibnamedelimb \& Ramprosad\bibnamedelima Mondal},
-           familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim \\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={P.K.},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {S. Chand Publishing}%
-      }
-      \strng{namehash}{1f54615d2d683f06396195896023ee56}
-      \strng{fullhash}{1f54615d2d683f06396195896023ee56}
-      \strng{bibnamehash}{1f54615d2d683f06396195896023ee56}
-      \strng{authorbibnamehash}{1f54615d2d683f06396195896023ee56}
-      \strng{authornamehash}{1f54615d2d683f06396195896023ee56}
-      \strng{authorfullhash}{1f54615d2d683f06396195896023ee56}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9789383746804}
-      \field{title}{Informatics Practices for Class 12}
-      \field{year}{2018}
-      \verb{urlraw}
-      \verb https://books.google.de/books?id=53QtDAAAQBAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.de/books?id=53QtDAAAQBAJ
-      \endverb
-    \endentry
-    \entry{.wordmatching}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=fef43b9377d19565ca7e91d2ee8f6d27}{%
-           family={{Oracle Help Center}},
-           familyi={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{fef43b9377d19565ca7e91d2ee8f6d27}
-      \strng{fullhash}{fef43b9377d19565ca7e91d2ee8f6d27}
-      \strng{bibnamehash}{fef43b9377d19565ca7e91d2ee8f6d27}
-      \strng{authorbibnamehash}{fef43b9377d19565ca7e91d2ee8f6d27}
-      \strng{authornamehash}{fef43b9377d19565ca7e91d2ee8f6d27}
-      \strng{authorfullhash}{fef43b9377d19565ca7e91d2ee8f6d27}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Oracle Enterprise Data Quality Online Help}
-      \field{year}{2018}
-      \verb{urlraw}
-      \verb https://docs.oracle.com/en/middleware/enterprise-data-quality/12.2.1.3/edqoh/comparison-word-match-percentage.html
-      \endverb
-      \verb{url}
-      \verb https://docs.oracle.com/en/middleware/enterprise-data-quality/12.2.1.3/edqoh/comparison-word-match-percentage.html
-      \endverb
-      \warn{\item Entry '.wordmatching' (quellen.bib): Invalid format '12/29/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.bayes1}{book}{}
-      \name{editor}{1}{}{%
-        {{hash=f896078e132bb8d5b2290a6acdb1522d}{%
-           family={Ranganathan},
-           familyi={R\bibinitperiod},
-           given={Shoba},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Amsterdam}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{f896078e132bb8d5b2290a6acdb1522d}
-      \strng{fullhash}{f896078e132bb8d5b2290a6acdb1522d}
-      \strng{bibnamehash}{f896078e132bb8d5b2290a6acdb1522d}
-      \strng{editorbibnamehash}{f896078e132bb8d5b2290a6acdb1522d}
-      \strng{editornamehash}{f896078e132bb8d5b2290a6acdb1522d}
-      \strng{editorfullhash}{f896078e132bb8d5b2290a6acdb1522d}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{isbn}{978-0-12-811432-2}
-      \field{title}{Encyclopedia of bioinformatics and computational biology: Volume 1 Methods; Volume 2 Topics; Volume 3 Applications}
-      \field{year}{2019}
-    \endentry
-    \entry{.bayes2}{article}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{abstract}{1. Begriff: Theorem aus der Wahrscheinlichkeitsrechnung zur Berechnung bedingter Wahrscheinlichkeiten., author = {{Prof. Dr. Robert Gillenkirch}}, year = {19.2.2018}, title = {Definition: Bayes-Theorem}, url = {https://wirtschaftslexikon.gabler.de/definition/bayes-theorem-53898}, keywords = {Bayes-Theorem}, urldate = {12/30/2022}, journal = {Springer Fachmedien Wiesbaden GmbH}}
-    \endentry
-    \entry{.naivebayes}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=3483ff058deda3dad41fa7925fab2dac}{%
-           family={scikit-learn},
-           familyi={s\bibinithyphendelim l\bibinitperiod}}}%
-      }
-      \strng{namehash}{3483ff058deda3dad41fa7925fab2dac}
-      \strng{fullhash}{3483ff058deda3dad41fa7925fab2dac}
-      \strng{bibnamehash}{3483ff058deda3dad41fa7925fab2dac}
-      \strng{authorbibnamehash}{3483ff058deda3dad41fa7925fab2dac}
-      \strng{authornamehash}{3483ff058deda3dad41fa7925fab2dac}
-      \strng{authorfullhash}{3483ff058deda3dad41fa7925fab2dac}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes' theorem with the ``naive'' assumption of conditional independence between every pair of features given the val...}
-      \field{title}{1.9. Naive Bayes}
-      \field{year}{12/29/2022}
-      \verb{urlraw}
-      \verb https://scikit-learn.org/stable/modules/naive_bayes.html
-      \endverb
-      \verb{url}
-      \verb https://scikit-learn.org/stable/modules/naive_bayes.html
-      \endverb
-      \warn{\item Entry '.naivebayes' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.bayesnet}{misc}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labeltitlesource}{title}
-      \field{title}{Introduction to Bayesian networks | Bayes Server}
-      \field{year}{12/21/2022}
-      \verb{urlraw}
-      \verb https://www.bayesserver.com/docs/introduction/bayesian-networks/
-      \endverb
-      \verb{url}
-      \verb https://www.bayesserver.com/docs/introduction/bayesian-networks/
-      \endverb
-      \warn{\item Entry '.bayesnet' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.bayesnet2}{article}{}
-      \name{author}{1}{}{%
-        {{hash=915af163e2107106fced5dd3164d9a8e}{%
-           family={Brownlee},
-           familyi={B\bibinitperiod},
-           given={Jason},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{915af163e2107106fced5dd3164d9a8e}
-      \strng{fullhash}{915af163e2107106fced5dd3164d9a8e}
-      \strng{bibnamehash}{915af163e2107106fced5dd3164d9a8e}
-      \strng{authorbibnamehash}{915af163e2107106fced5dd3164d9a8e}
-      \strng{authornamehash}{915af163e2107106fced5dd3164d9a8e}
-      \strng{authorfullhash}{915af163e2107106fced5dd3164d9a8e}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Machine Learning Mastery}
-      \field{title}{A Gentle Introduction to Bayesian Belief Networks}
-      \field{year}{10/10/2019}
-      \verb{urlraw}
-      \verb https://machinelearningmastery.com/introduction-to-bayesian-belief-networks/
-      \endverb
-      \verb{url}
-      \verb https://machinelearningmastery.com/introduction-to-bayesian-belief-networks/
-      \endverb
-      \warn{\item Entry '.bayesnet2' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.algo}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=1b6ac72a3f6c11a5de659a1873cbeee5}{%
-           family={Oberkampf},
-           familyi={O\bibinitperiod},
-           given={Heiner},
-           giveni={H\bibinitperiod}}}%
-        {{hash=a6752203fbce73d763cf94e14c15ab4c}{%
-           family={Zillner},
-           familyi={Z\bibinitperiod},
-           given={Sonja},
-           giveni={S\bibinitperiod}}}%
-        {{hash=c2ef1a18c9a03db4d48cdc0577ee7fcf}{%
-           family={Bauer},
-           familyi={B\bibinitperiod},
-           given={Bernhard},
-           giveni={B\bibinitperiod}}}%
-        {{hash=c28ffa43880a039e0c167c8346b4fdaf}{%
-           family={Hammon},
-           familyi={H\bibinitperiod},
-           given={Matthias},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{abc5648302b8ccd74bfc3a17a78f002e}
-      \strng{fullhash}{74919de6d25835c5bf3ca8abfd1aa760}
-      \strng{bibnamehash}{abc5648302b8ccd74bfc3a17a78f002e}
-      \strng{authorbibnamehash}{abc5648302b8ccd74bfc3a17a78f002e}
-      \strng{authornamehash}{abc5648302b8ccd74bfc3a17a78f002e}
-      \strng{authorfullhash}{74919de6d25835c5bf3ca8abfd1aa760}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{08}
-      \field{title}{Towards a Ranking of Likely Diseases in Terms of Precision and Recall}
-      \field{year}{2012}
-    \endentry
-    \entry{.3sek}{article}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Warum ist es so wichtig, die optimale Ladezeit anzustreben? Auf jemanden oder auf etwas zu waren ist uns Menschen nicht fremd. Im Schnitt verbringt jeder Mensch in seinem Leben rund ein bis zwei Jahre mit Warten. Dies kann an der Bushaltestelle, Suppermarktkasse, dem Abwarten auf die Ankunft einer Zustellung, oder die Ankunft einer geliebten Person}
-      \field{journaltitle}{Computer Science Blog}
-      \field{title}{Drei Sekunden sind zu lang -- Auswirkung der Ladezeit von Webseiten auf die User Experience}
-      \field{year}{17.1.2022}
-      \verb{urlraw}
-      \verb https://blog.mi.hdm-stuttgart.de/index.php/2022/01/17/drei-sekunden-sind-zu-lang-auswirkung-der-ladezeit-von-webseiten-auf-die-user-experience/
-      \endverb
-      \verb{url}
-      \verb https://blog.mi.hdm-stuttgart.de/index.php/2022/01/17/drei-sekunden-sind-zu-lang-auswirkung-der-ladezeit-von-webseiten-auf-die-user-experience/
-      \endverb
-      \keyw{ladezeit;optimierung;user experience;web performance}
-      \warn{\item Entry '.3sek' (quellen.bib): Invalid format '12/30/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.sharedpref}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=4ae04b0778814b4423a534d2767bf891}{%
-           family={{Dart packages}},
-           familyi={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{4ae04b0778814b4423a534d2767bf891}
-      \strng{fullhash}{4ae04b0778814b4423a534d2767bf891}
-      \strng{bibnamehash}{4ae04b0778814b4423a534d2767bf891}
-      \strng{authorbibnamehash}{4ae04b0778814b4423a534d2767bf891}
-      \strng{authornamehash}{4ae04b0778814b4423a534d2767bf891}
-      \strng{authorfullhash}{4ae04b0778814b4423a534d2767bf891}
-      \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.}
-      \field{title}{shared{\_}preferences | Flutter Package}
-      \field{year}{12/31/2022}
-      \verb{urlraw}
-      \verb https://pub.dev/packages/shared_preferences
-      \endverb
-      \verb{url}
-      \verb https://pub.dev/packages/shared_preferences
-      \endverb
-      \warn{\item Entry '.sharedpref' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.usesharedpref}{misc}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labeltitlesource}{title}
-      \field{abstract}{How to use the shared{\_}preferences package to store key-value data.}
-      \field{title}{Store key-value data on disk}
-      \field{year}{12/30/2022}
-      \verb{urlraw}
-      \verb https://docs.flutter.dev/cookbook/persistence/key-value
-      \endverb
-      \verb{url}
-      \verb https://docs.flutter.dev/cookbook/persistence/key-value
-      \endverb
-      \warn{\item Entry '.usesharedpref' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.pdf}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=4ae04b0778814b4423a534d2767bf891}{%
-           family={{Dart packages}},
-           familyi={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{4ae04b0778814b4423a534d2767bf891}
-      \strng{fullhash}{4ae04b0778814b4423a534d2767bf891}
-      \strng{bibnamehash}{4ae04b0778814b4423a534d2767bf891}
-      \strng{authorbibnamehash}{4ae04b0778814b4423a534d2767bf891}
-      \strng{authornamehash}{4ae04b0778814b4423a534d2767bf891}
-      \strng{authorfullhash}{4ae04b0778814b4423a534d2767bf891}
-      \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A pdf producer for Dart. It can create pdf files for both web or flutter.}
-      \field{title}{pdf | Dart Package}
-      \field{year}{12/31/2022}
-      \verb{urlraw}
-      \verb https://pub.dev/packages/pdf
-      \endverb
-      \verb{url}
-      \verb https://pub.dev/packages/pdf
-      \endverb
-      \warn{\item Entry '.pdf' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring}
-    \endentry
-    \entry{.sus}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=7834593e5fcf861d3db6840e092a652a}{%
-           family={{Affairs, Assistant Secretary for Public}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{7834593e5fcf861d3db6840e092a652a}
-      \strng{fullhash}{7834593e5fcf861d3db6840e092a652a}
-      \strng{bibnamehash}{7834593e5fcf861d3db6840e092a652a}
-      \strng{authorbibnamehash}{7834593e5fcf861d3db6840e092a652a}
-      \strng{authornamehash}{7834593e5fcf861d3db6840e092a652a}
-      \strng{authorfullhash}{7834593e5fcf861d3db6840e092a652a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The System Usability Scale (SUS) is a reliable tool for measuring the usability. It consists of a 10 item questionnaire with five response options for respondents; from Strongly agree to Strongly disagree.}
-      \field{title}{System Usability Scale (SUS)}
-      \field{year}{2013}
-      \verb{urlraw}
-      \verb https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html
-      \endverb
-      \verb{url}
-      \verb https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html
-      \endverb
-      \keyw{sus;sus questionnaire;system usability scale;usability;usability testing;user experience;UX}
-      \warn{\item Entry '.sus' (quellen.bib): Invalid format '12/31/2022' of date field 'urldate' - ignoring}
-    \endentry
-  \enddatalist
-\endrefsection
+  \entry{.sok}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SS}{%
+         family={Senada},
+         familyi={S\bibinitperiod},
+         given={Sokollu},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SS1}
+    \strng{fullhash}{SS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Patientenstopp, {\"U}berbelastung, Zutrittsverbot: Immer wieder werden
+  Patienten in der Pandemie~von Hausarztpraxen abgewiesen - zum Auskurieren
+  ohne Behandlung.%
+    }
+    \field{title}{{\"U}berforderung der Arztpraxen: Corona-{\"U}berlastung:
+  Patienten schildern Grenzsituationen bei Haus{\"a}rzten}
+    \verb{url}
+    \verb https://www.swr.de/swraktuell/baden-wuerttemberg/patienten-im-stich-g
+    \verb elassen-in-corona-zeiten-100.html
+    \endverb
+    \verb{file}
+    \verb Corona-Uberlastung Patienten schildern Grenzsituationen:Attachments/C
+    \verb orona-Uberlastung Patienten schildern Grenzsituationen.pdf:applicatio
+    \verb n/pdf
+    \endverb
+    \field{journaltitle}{SWR Aktuell}
+    \field{year}{5/1/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.blatt}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutscher {\"A}rzteverlag GmbH, Redaktion Deutsches
+  {\"A}rzteblatt}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \keyw{{\"A}rztemangel;{\"A}rzteschaft;{\"A}rztestatistik;Nachrichten}
+    \strng{namehash}{D2}
+    \strng{fullhash}{D2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Berlin -- Das leichte Wachstum bei der Zahl der {\"A}rztinnen und {\"A}rzte
+  reichte bei weitem nicht aus, um den Behandlungsbedarf einer Gesellschaft des
+  langen Lebens... {\#}BAEK {\#}Aerztemangel%
+    }
+    \field{title}{Bundes{\"a}rztekammer warnt vor {\"A}rztemangel}
+    \verb{url}
+    \verb https://www.aerzteblatt.de/nachrichten/134020/Bundesaerztekammer-warn
+    \verb t-vor-Aerztemangel
+    \endverb
+    \field{year}{2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.rki}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Rober Koch Institut}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=R}{%
+         family={{Robert Koch Institut}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \keyw{China;Coronavirus;Hubei;Hygiene;nCoV;neuartiges
+  Coronavirus;Risikogebiet;Wuhan}
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Regionale Verteilung der COVID-19-Fälle weltweit%
+    }
+    \field{title}{COVID-19: Fallzahlen in Deutschland und weltwei: Fallzahlen
+  in Deutschland}
+    \verb{url}
+    \verb https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahl
+    \verb en.html
+    \endverb
+    \field{year}{19.08.2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.adaHOME}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={Ada},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Hallo. Wir sind Ada. Unsere App hilft Menschen dabei sich um ihre
+  Gesundheit zu k{\"u}mmern. Mit unseren Partnern innovieren wir das
+  Gesundheitswesen dank unserer Enterprise Solutions. Wie k{\"o}nnen wir Dir
+  helfen?%
+    }
+    \field{title}{Health. Powered by Ada}
+    \verb{url}
+    \verb https://ada.com/de/
+    \endverb
+    \field{year}{12/27/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.adaKI}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={Ada},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Hinter Adas Power steckt eine ma{\ss}geschneiderte KI-Technologie, die
+  unser Expertenteam aus {"A}rzten und Wissenschaftlern {"u}ber sieben Jahre
+  entwickelt hat. Mit$\ldots$%
+    }
+    \field{title}{Wie funktioniert Adas Symptomanalyse?}
+    \verb{url}
+    \verb https://ada.com/de/help/360000319469/%7D, urldate = {12/27/2022}
+    \endverb
+    \field{year}{12/27/2022}
+  \endentry
+
+  \entry{.adaFAQ}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={Ada},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    F{\"u}r alle gesch{\"a}ftliche Anfragen kontaktiere uns bitte {\"u}ber das
+  Kontaktformular auf unserer Website.%
+    }
+    \field{title}{Bietet ihr API oder SDK an?}
+    \verb{url}
+    \verb https://ada.com/de/help/360000309665/
+    \endverb
+    \field{year}{12/27/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.adaDOCU}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Ada Developer Documentation}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Developer tools for the Ada Brand Interaction Platform. Conversational AI
+  and personalized CX for enterprises.%
+    }
+    \field{title}{Ada Developer Documentation}
+    \verb{url}
+    \verb https://developers.ada.cx/
+    \endverb
+    \field{year}{12/27/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.symptomchecker}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Android-Apps auf Google Play}
+    \verb{url}
+    \verb https://play.google.com/store/apps/details?id=com.programming.progres
+    \verb sive.diagnoseapp&gl=DE%7D
+    \endverb
+    \field{year}{12/27/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.flutterDEV}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BS}{%
+         family={Boukhary},
+         familyi={B\bibinitperiod},
+         given={Shady},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Colmenares},
+         familyi={C\bibinitperiod},
+         given={Eduardo},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BSCE1}
+    \strng{fullhash}{BSCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2019 International Conference on Computational Science
+  and Computational Intelligence (CSCI)}
+    \verb{doi}
+    \verb 10.1109/CSCI49370.2019.00211
+    \endverb
+    \field{pages}{1115\bibrangedash 1120}
+    \field{title}{A Clean Approach to Flutter Development through the Flutter
+  Clean Architecture Package}
+    \field{year}{2019}
+  \endentry
+
+  \entry{whatisdart}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Everything You Need to Know About Flutter App Development}
+    \verb{url}
+    \verb https://www.cometchat.com/blog/flutter-app-development
+    \endverb
+    \field{year}{12/28/2022}
+  \endentry
+
+  \entry{.javadart}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HA}{%
+         family={Hassan},
+         familyi={H\bibinitperiod},
+         given={AfafMirghani},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HA1}
+    \strng{fullhash}{HA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{845\bibrangedash 849}
+    \field{title}{JAVA and DART programming languages: Conceptual comparison}
+    \field{volume}{17}
+    \field{journaltitle}{Indonesian Journal of Electrical Engineering and
+  Computer Science}
+    \field{year}{2020}
+  \endentry
+
+  \entry{.dartoverview}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A short introduction to Dart%
+    }
+    \field{title}{Dart overview}
+    \verb{url}
+    \verb https://dart.dev/overview%7D
+    \endverb
+    \field{year}{12/27/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.flutterinaction}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WE}{%
+         family={Windmill},
+         familyi={W\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Manning}%
+    }
+    \strng{namehash}{WE1}
+    \strng{fullhash}{WE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9781638356431}
+    \field{title}{Flutter in Action}
+    \field{year}{2020}
+  \endentry
+
+  \entry{.flutterarchitecture}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A high-level overview of the architecture of Flutter, including the core
+  principles and concepts that form its design.%
+    }
+    \field{title}{Flutter architectural overview}
+    \verb{url}
+    \verb https://docs.flutter.dev/resources/architectural-overview#architectur
+    \verb al-layers%7D
+    \endverb
+    \field{year}{12/27/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.softwarearchi}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LC}{%
+         family={Lilienthal},
+         familyi={L\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LC1}
+    \strng{fullhash}{LC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9783960888970}
+    \field{title}{Langlebige Software-Architekturen: Technische Schulden
+  analysieren, begrenzen und abbauen}
+    \verb{url}
+    \verb https://books.google.de/books?id=2TrCDwAAQBAJ%7D, year={2019}, publis
+    \verb her={dpunkt.verlag}
+    \endverb
+  \endentry
+
+  \entry{.indeedsolid}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AN}{%
+         family={Argalias},
+         familyi={A\bibinitperiod},
+         given={Nikos},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AN1}
+    \strng{fullhash}{AN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Introduction The SOLID principles are a set of coding guidelines that were
+  first introduced by software developer Robert C. Martin.%
+    }
+    \field{title}{Introduction The SOLID principles are a set of coding
+  guidelines that were first introduced by software dev}
+    \verb{url}
+    \verb https://www.linkedin.com/pulse/solidify-your-front-end-code-5-princip
+    \verb les-writing-better-argalias
+    \endverb
+    \field{year}{20.12.2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.martin}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MR}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={R.C.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson Education}%
+    }
+    \strng{namehash}{MR1}
+    \strng{fullhash}{MR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9780135974445}
+    \field{series}{Alan Apt series}
+    \field{title}{Agile Software Development: Principles, Patterns, and
+  Practices}
+    \verb{url}
+    \verb https://books.google.de/books?id=0HYhAQAAIAAJ
+    \endverb
+    \field{year}{2003}
+  \endentry
+
+  \entry{principles}{book}{}
+    \name{author}{2}{}{%
+      {{hash=OA}{%
+         family={Ostrowski},
+         familyi={O\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Gaczkowski},
+         familyi={G\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt Publishing}%
+    }
+    \strng{namehash}{OAGP1}
+    \strng{fullhash}{OAGP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9781789612462}
+    \field{title}{Software Architecture with C++: Design modern systems using
+  effective architecture concepts, design patterns, and techniques with C++20}
+    \verb{url}
+    \verb https://books.google.de/books?id=GrAmEAAAQBAJ
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{stackify}{article}{}
+    \name{author}{1}{}{%
+      {{hash=JT}{%
+         family={Janssen},
+         familyi={J\bibinitperiod},
+         given={Thorben},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{a-Retrace;Java}
+    \strng{namehash}{JT1}
+    \strng{fullhash}{JT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    All 5 SOLID design principles are broadly~used, If you don't know them by
+  name, you will quickly recognize that they describe the rules and principles
+  for writing good code. In this article, you'll learn about the Liskov
+  Substitution Principle.%
+    }
+    \field{title}{SOLID Design Principles Explained: The Liskov Substitution
+  Principle with Code Examples}
+    \verb{url}
+    \verb https://stackify.com/solid-design-liskov-substitution-principle/
+    \endverb
+    \field{journaltitle}{Stackify}
+    \field{year}{11/4/2018}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.mongonosql}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={MongoDB},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    NoSQL beschreibt die Vielzahl von geschaffenen Datenbanktechnologien um
+  Schwachstellen von RDBMS und Anforderungen moderner Softwareentwicklung
+  anzugehen.%
+    }
+    \field{title}{NoSQL Databankenerkl{\"a}rung}
+    \verb{url}
+    \verb https://www.mongodb.com/de-de/nosql-explained
+    \endverb
+    \field{year}{1/1/2023}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.crud}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AK}{%
+         family={AMANDEEP},
+         familyi={A\bibinitperiod},
+         given={KAUR},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={{KANWALVIR SINGH}},
+         familyi={K\bibinitperiod},
+         given={DHINDSA},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AKKD1}
+    \strng{fullhash}{AKKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.26634/jcc.3.2.8164
+    \endverb
+    \field{issn}{2349-6835}
+    \field{number}{2}
+    \field{pages}{1}
+    \field{title}{PERFORMANCE EVALUATION FOR CRUD OPERATIONS IN NoSQL
+  DATABASES}
+    \field{volume}{3}
+    \field{journaltitle}{i-manager's Journal on Cloud Computing}
+    \field{year}{2016}
+  \endentry
+
+  \entry{.baasfirebase}{book}{}
+    \name{author}{2}{}{%
+      {{hash=AS}{%
+         family={Alessandria},
+         familyi={A\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kayfitz},
+         familyi={K\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt Publishing}%
+    }
+    \strng{namehash}{ASKB1}
+    \strng{fullhash}{ASKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9781838827373}
+    \field{title}{Flutter Cookbook: Over 100 proven techniques and solutions
+  for app development with Flutter 2.2 and Dart}
+    \verb{url}
+    \verb https://books.google.de/books?id=zDE0EAAAQBAJ
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{.baasokta}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Backend as a service (BaaS) is a cloud-computing model where you outsource
+  computing activities, such as hosting or data storage. Learn more about BaaS
+  here.%
+    }
+    \field{title}{What Is BaaS (Backend as a Service)? Definition and Usage |
+  Okta Australia}
+    \verb{url}
+    \verb https://www.okta.com/au/identity-101/baas-backend-as-a-service/
+    \endverb
+    \field{year}{12/28/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.firestore}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={Firebase},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Use our flexible, scalable NoSQL cloud database to store and sync data for
+  client- and server-side development.%
+    }
+    \field{title}{Firestore {\&}nbsp;|{\&}nbsp; Firebase}
+    \verb{url}
+    \verb https://firebase.google.com/docs/firestore
+    \endverb
+    \field{year}{12/15/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.smartphonenutzer}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={Statista},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Rund 94,2 Prozent der 14- bis 19-j{\"a}hrigen Personen in Deutschland
+  besitzen im Jahr 2021 ein Smartphone.%
+    }
+    \field{title}{Smartphones - Penetrationsrate in Deutschland nach
+  Altersgruppe 2021 | Statista}
+    \verb{url}
+    \verb https://de.statista.com/statistik/daten/studie/459963/umfrage/anteil-
+    \verb der-smartphone-nutzer-in-deutschland-nach-altersgruppe/
+    \endverb
+    \field{year}{12/28/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.stakeholder}{book}{}
+    \name{author}{1}{}{%
+      {{hash=PM}{%
+         family={Pirozzi},
+         familyi={P\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CRC Press}%
+    }
+    \strng{namehash}{PM1}
+    \strng{fullhash}{PM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9780429591754}
+    \field{title}{The Stakeholder Perspective: Relationship Management to
+  Increase Value and Success Rates of Projects}
+    \verb{url}
+    \verb https://books.google.de/books?id=87G2DwAAQBAJ
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{.stakes}{article}{}
+    \name{author}{1}{}{%
+      {{hash=K}{%
+         family={{Katja Maass}},
+         familyi={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{K1}
+    \strng{fullhash}{K1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Eine Stakeholder-Matrix bietet in komplexen Projekten {\&} Change-Prozessen
+  einen {\"U}berblick {\"u}ber Interessensgruppen und Schl{\"u}sselpersonen%
+    }
+    \field{title}{Stakeholder Matrix}
+    \verb{url}
+    \verb https://mychange.solutions/toolbox/leading-change/stakeholder-matrix/
+    \endverb
+    \field{journaltitle}{ICS}
+    \field{year}{12/5/2021}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.systemcontext}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WT}{%
+         family={Weilkiens},
+         familyi={W\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WT1}
+    \strng{fullhash}{WT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The system context defines the system boundary and all system actors --
+  humans and external systems -- that interact with the system under
+  development. It is one of the most important parts of the system
+  model.{\&}nbsp;Many artifacts of the system specification and architecture
+  are relative defined to the definition of the system. Every system
+  behavior$\ldots$ Read more%
+    }
+    \field{title}{How to model a simple system context with SysML - Model Based
+  Systems Engineering}
+    \verb{url}
+    \verb https://mbse4u.com/2012/07/23/how-to-model-a-simple-system-context-wi
+    \verb th-sysml/
+    \endverb
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.req2}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{The Requirements Engineering Handbook - Google Books}
+    \verb{url}
+    \verb https://www.google.de/books/edition/The_Requirements_Engineering_Hand
+    \verb book/Rkulpi4N3JsC?hl=de&gbpv=1&dq=requirements+engineering+functional
+    \verb +and+nonfunctional+requirements&pg=PA46&printsec=frontcover
+    \endverb
+    \field{year}{11/22/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.req}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Functional and Non-functional Requirements -- Francois Botha}
+    \verb{url}
+    \verb https://francoisbotha.io/2018/05/15/functional-and-non-functional-req
+    \verb uirements/
+    \endverb
+    \field{year}{12/30/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.safe}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Scaled Agile Framework}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    SAFe for Lean Enterprises%
+    }
+    \field{title}{Advanced Topic - Domain Modeling - Scaled Agile Framework}
+    \verb{url}
+    \verb https://www.scaledagileframework.com/domain-modeling/
+    \endverb
+    \field{year}{10/5/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.domainmodel}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KV}{%
+         family={Khononov},
+         familyi={K\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {O'Reilly Media}%
+    }
+    \strng{namehash}{KV1}
+    \strng{fullhash}{KV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9781098100100}
+    \field{title}{Learning Domain-Driven Design}
+    \verb{url}
+    \verb https://books.google.de/books?id=qAtHEAAAQBAJ
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{.nhs}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=n}{%
+         family={nhs.uk},
+         familyi={n\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{n1}
+    \strng{fullhash}{n1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Find information and advice on health conditions, symptoms, healthy living,
+  medicines and how to get help.%
+    }
+    \field{title}{The NHS website}
+    \verb{url}
+    \verb https://www.nhs.uk/
+    \endverb
+    \field{year}{NaN}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.apimedic}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Symptom Checker API | Integrate medical diagnosis into your
+  app today}
+    \verb{url}
+    \verb https://apimedic.com/
+    \endverb
+    \field{year}{12/29/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.materialio}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Material Design}
+    \verb{url}
+    \verb https://m3.material.io/
+    \endverb
+    \field{year}{1/1/1980}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.mckay}{book}{}
+    \name{author}{1}{}{%
+      {{hash=ME}{%
+         family={McKay},
+         familyi={M\bibinitperiod},
+         given={E.N.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Science}%
+    }
+    \strng{namehash}{ME1}
+    \strng{fullhash}{ME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9780123972873}
+    \field{title}{UI is Communication: How to Design Intuitive, User Centered
+  Interfaces by Focusing on Effective Communication}
+    \verb{url}
+    \verb https://books.google.de/books?id=wNozxtKuOKcC
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{.essui}{book}{}
+    \name{author}{2}{}{%
+      {{hash=BC}{%
+         family={Banga},
+         familyi={B\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Weinhold},
+         familyi={W\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson Education}%
+    }
+    \strng{namehash}{BCWJ1}
+    \strng{fullhash}{BCWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9780133563474}
+    \field{series}{Usability}
+    \field{title}{Essential Mobile Interaction Design: Perfecting Interface
+  Design in Mobile Apps}
+    \verb{url}
+    \verb https://books.google.de/books?id=yD0kAwAAQBAJ
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{.3layer}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DGRMP}{%
+         family={Das Gupta \& Ramprosad\bibnamedelima Mondal},
+         familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  \bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={P.K.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {S. Chand Publishing}%
+    }
+    \strng{namehash}{DGRMP1}
+    \strng{fullhash}{DGRMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9789383746804}
+    \field{title}{Informatics Practices for Class 12}
+    \verb{url}
+    \verb https://books.google.de/books?id=53QtDAAAQBAJ
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{.wordmatching}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{Oracle Help Center}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Oracle Enterprise Data Quality Online Help}
+    \verb{url}
+    \verb https://docs.oracle.com/en/middleware/enterprise-data-quality/12.2.1.
+    \verb 3/edqoh/comparison-word-match-percentage.html
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.bayes1}{book}{}
+    \name{editor}{1}{}{%
+      {{hash=RS}{%
+         family={Ranganathan},
+         familyi={R\bibinitperiod},
+         given={Shoba},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RS1}
+    \strng{fullhash}{RS1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-12-811432-2}
+    \field{title}{Encyclopedia of bioinformatics and computational biology:
+  Volume 1 Methods; Volume 2 Topics; Volume 3 Applications}
+    \list{location}{1}{%
+      {Amsterdam}%
+    }
+    \field{year}{2019}
+  \endentry
+
+  \entry{.bayes2}{article}{}
+    \field{abstract}{%
+    1. Begriff: Theorem aus der Wahrscheinlichkeitsrechnung zur Berechnung
+  bedingter Wahrscheinlichkeiten., author = {{Prof. Dr. Robert Gillenkirch}},
+  year = {19.2.2018}, title = {Definition: Bayes-Theorem}, url =
+  {https://wirtschaftslexikon.gabler.de/definition/bayes-theorem-53898},
+  keywords = {Bayes-Theorem}, urldate = {12/30/2022}, journal = {Springer
+  Fachmedien Wiesbaden GmbH}%
+    }
+  \endentry
+
+  \entry{.naivebayes}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=sl}{%
+         prefix={scikit},
+         prefixi={s\bibinitperiod},
+         family={learn},
+         familyi={l\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ls1}
+    \strng{fullhash}{ls1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Naive Bayes methods are a set of supervised learning algorithms based on
+  applying Bayes' theorem with the ``naive'' assumption of conditional
+  independence between every pair of features given the val...%
+    }
+    \field{title}{1.9. Naive Bayes}
+    \verb{url}
+    \verb https://scikit-learn.org/stable/modules/naive_bayes.html
+    \endverb
+    \field{year}{12/29/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.bayesnet}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Introduction to Bayesian networks | Bayes Server}
+    \verb{url}
+    \verb https://www.bayesserver.com/docs/introduction/bayesian-networks/
+    \endverb
+    \field{year}{12/21/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.bayesnet2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BJ}{%
+         family={Brownlee},
+         familyi={B\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ1}
+    \strng{fullhash}{BJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{A Gentle Introduction to Bayesian Belief Networks}
+    \verb{url}
+    \verb https://machinelearningmastery.com/introduction-to-bayesian-belief-ne
+    \verb tworks/
+    \endverb
+    \field{journaltitle}{Machine Learning Mastery}
+    \field{year}{10/10/2019}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.algo}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=OH}{%
+         family={Oberkampf},
+         familyi={O\bibinitperiod},
+         given={Heiner},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZS}{%
+         family={Zillner},
+         familyi={Z\bibinitperiod},
+         given={Sonja},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BB}{%
+         family={Bauer},
+         familyi={B\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hammon},
+         familyi={H\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OH+1}
+    \strng{fullhash}{OHZSBBHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Towards a Ranking of Likely Diseases in Terms of Precision
+  and Recall}
+    \field{month}{08}
+    \field{year}{2012}
+  \endentry
+
+  \entry{.3sek}{article}{}
+    \keyw{ladezeit;optimierung;user experience;web performance}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Warum ist es so wichtig, die optimale Ladezeit anzustreben? Auf jemanden
+  oder auf etwas zu waren ist uns Menschen nicht fremd. Im Schnitt verbringt
+  jeder Mensch in seinem Leben rund ein bis zwei Jahre mit Warten. Dies kann an
+  der Bushaltestelle, Suppermarktkasse, dem Abwarten auf die Ankunft einer
+  Zustellung, oder die Ankunft einer geliebten Person%
+    }
+    \field{title}{Drei Sekunden sind zu lang -- Auswirkung der Ladezeit von
+  Webseiten auf die User Experience}
+    \verb{url}
+    \verb https://blog.mi.hdm-stuttgart.de/index.php/2022/01/17/drei-sekunden-s
+    \verb ind-zu-lang-auswirkung-der-ladezeit-von-webseiten-auf-die-user-experi
+    \verb ence/
+    \endverb
+    \field{journaltitle}{Computer Science Blog}
+    \field{year}{17.1.2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.sharedpref}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Dart packages}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Flutter plugin for reading and writing simple key-value pairs. Wraps
+  NSUserDefaults on iOS and SharedPreferences on Android.%
+    }
+    \field{title}{shared{\_}preferences | Flutter Package}
+    \verb{url}
+    \verb https://pub.dev/packages/shared_preferences
+    \endverb
+    \field{year}{12/31/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.usesharedpref}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    How to use the shared{\_}preferences package to store key-value data.%
+    }
+    \field{title}{Store key-value data on disk}
+    \verb{url}
+    \verb https://docs.flutter.dev/cookbook/persistence/key-value
+    \endverb
+    \field{year}{12/30/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.pdf}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Dart packages}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A pdf producer for Dart. It can create pdf files for both web or flutter.%
+    }
+    \field{title}{pdf | Dart Package}
+    \verb{url}
+    \verb https://pub.dev/packages/pdf
+    \endverb
+    \field{year}{12/31/2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{.sus}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Affairs, Assistant Secretary for Public}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \keyw{sus;sus questionnaire;system usability scale;usability;usability
+  testing;user experience;UX}
+    \strng{namehash}{A3}
+    \strng{fullhash}{A3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The System Usability Scale (SUS) is a reliable tool for measuring the
+  usability. It consists of a 10 item questionnaire with five response options
+  for respondents; from Strongly agree to Strongly disagree.%
+    }
+    \field{title}{System Usability Scale (SUS)}
+    \verb{url}
+    \verb https://www.usability.gov/how-to-and-tools/methods/system-usability-s
+    \verb cale.html
+    \endverb
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+\enddatalist
 \endinput
-

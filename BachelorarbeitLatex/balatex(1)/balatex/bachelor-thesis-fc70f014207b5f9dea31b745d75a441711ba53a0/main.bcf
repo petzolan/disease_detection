@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.9" bltxversion="3.18b" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.8" bltxversion="3.17" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -135,10 +135,6 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>nosortothers</bcf:key>
-      <bcf:value>0</bcf:value>
-    </bcf:option>
-    <bcf:option type="singlevalued">
-      <bcf:key>pluralothers</bcf:key>
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
@@ -376,11 +372,11 @@
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
-      <bcf:key>skipbiblist</bcf:key>
+      <bcf:key>skiplab</bcf:key>
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
-      <bcf:key>skiplab</bcf:key>
+      <bcf:key>skipbiblist</bcf:key>
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
@@ -603,7 +599,6 @@
     <bcf:option datatype="boolean">labeltitle</bcf:option>
     <bcf:option datatype="boolean">labeltitleyear</bcf:option>
     <bcf:option datatype="boolean">labeldateparts</bcf:option>
-    <bcf:option datatype="boolean">pluralothers</bcf:option>
     <bcf:option datatype="boolean">nohashothers</bcf:option>
     <bcf:option datatype="boolean">nosortothers</bcf:option>
     <bcf:option datatype="boolean">noroman</bcf:option>
@@ -1051,7 +1046,7 @@
     <bcf:namepart order="3">given</bcf:namepart>
   </bcf:uniquenametemplate>
   <!-- SORTING NAME KEY TEMPLATES -->
-  <bcf:sortingnamekeytemplate name="global" visibility="sort">
+  <bcf:sortingnamekeytemplate name="global">
     <bcf:keypart order="1">
       <bcf:part type="namepart" order="1" use="1">prefix</bcf:part>
       <bcf:part type="namepart" order="2">family</bcf:part>
@@ -2352,103 +2347,151 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">quellen.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">.bahn-bonn</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">.bahn-bonn</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">.sok</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">.blatt</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">.sok</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">.rki</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">.adaHOME</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">.adaKI</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">.adaFAQ</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">.adaDOCU</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">.symptomchecker</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">.symptomchecker</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">.flutterDEV</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">whatisdart</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">.javadart</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">.dartoverview</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">.dartoverview</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">.flutterinaction</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">.flutterinaction</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">.flutterarchitecture</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">.flutterarchitecture</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">.dartoverview</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">.flutterarchitecture</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">.softwarearchi</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">.indeedsolid</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">.martin</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">.martin</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">.indeedsolid</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">principles</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">stackify</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">principles</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">.martin</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">principles</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">.mongonosql</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">.mongonosql</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">.mongonosql</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">.crud</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">.baasfirebase</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">.baasokta</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">.firestore</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">.firestore</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">.firestore</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">.smartphonenutzer</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">.stakeholder</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">.stakes</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">.systemcontext</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">.req2</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">.req</bcf:citekey>
-    <bcf:citekey order="49" intorder="1">.req2</bcf:citekey>
-    <bcf:citekey order="50" intorder="1">.safe</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">.safe</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">.domainmodel</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">.safe</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">.domainmodel</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">.safe</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">.domainmodel</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">.nhs</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">.apimedic</bcf:citekey>
-    <bcf:citekey order="59" intorder="1">.materialio</bcf:citekey>
-    <bcf:citekey order="60" intorder="1">.mckay</bcf:citekey>
-    <bcf:citekey order="61" intorder="1">.mckay</bcf:citekey>
-    <bcf:citekey order="62" intorder="1">.mckay</bcf:citekey>
-    <bcf:citekey order="63" intorder="1">.essui</bcf:citekey>
-    <bcf:citekey order="64" intorder="1">.3layer</bcf:citekey>
-    <bcf:citekey order="65" intorder="1">.wordmatching</bcf:citekey>
-    <bcf:citekey order="66" intorder="1">.bayes1</bcf:citekey>
-    <bcf:citekey order="67" intorder="1">.bayes1</bcf:citekey>
-    <bcf:citekey order="68" intorder="1">.bayes2</bcf:citekey>
-    <bcf:citekey order="69" intorder="1">.naivebayes</bcf:citekey>
-    <bcf:citekey order="70" intorder="1">.bayesnet</bcf:citekey>
-    <bcf:citekey order="71" intorder="1">.bayesnet</bcf:citekey>
-    <bcf:citekey order="72" intorder="1">.bayesnet</bcf:citekey>
-    <bcf:citekey order="73" intorder="1">.bayesnet2</bcf:citekey>
-    <bcf:citekey order="74" intorder="1">.algo</bcf:citekey>
-    <bcf:citekey order="75" intorder="1">.algo</bcf:citekey>
-    <bcf:citekey order="76" intorder="1">.algo</bcf:citekey>
-    <bcf:citekey order="77" intorder="1">.algo</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">.algo</bcf:citekey>
-    <bcf:citekey order="79" intorder="1">.algo</bcf:citekey>
-    <bcf:citekey order="80" intorder="1">.algo</bcf:citekey>
-    <bcf:citekey order="81" intorder="1">.algo</bcf:citekey>
-    <bcf:citekey order="82" intorder="1">.3sek</bcf:citekey>
-    <bcf:citekey order="83" intorder="1">.sharedpref</bcf:citekey>
-    <bcf:citekey order="84" intorder="1">.usesharedpref</bcf:citekey>
-    <bcf:citekey order="85" intorder="1">.pdf</bcf:citekey>
-    <bcf:citekey order="86" intorder="1">.sus</bcf:citekey>
-    <bcf:citekey order="87" intorder="1">.sus</bcf:citekey>
-    <bcf:citekey order="88" intorder="1">.sus</bcf:citekey>
-    <bcf:citekey order="89" intorder="1">.sus</bcf:citekey>
+    <bcf:citekey order="1">.bahn-bonn</bcf:citekey>
+    <bcf:citekey order="2">.bahn-bonn</bcf:citekey>
+    <bcf:citekey order="3">.sok</bcf:citekey>
+    <bcf:citekey order="4">.blatt</bcf:citekey>
+    <bcf:citekey order="5">.sok</bcf:citekey>
+    <bcf:citekey order="6">.rki</bcf:citekey>
+    <bcf:citekey order="7">.adaHOME</bcf:citekey>
+    <bcf:citekey order="8">.adaKI</bcf:citekey>
+    <bcf:citekey order="9">.adaFAQ</bcf:citekey>
+    <bcf:citekey order="10">.adaDOCU</bcf:citekey>
+    <bcf:citekey order="11">.symptomchecker</bcf:citekey>
+    <bcf:citekey order="12">.symptomchecker</bcf:citekey>
+    <bcf:citekey order="13">.flutterDEV</bcf:citekey>
+    <bcf:citekey order="14">whatisdart</bcf:citekey>
+    <bcf:citekey order="15">.javadart</bcf:citekey>
+    <bcf:citekey order="16">.dartoverview</bcf:citekey>
+    <bcf:citekey order="17">.dartoverview</bcf:citekey>
+    <bcf:citekey order="18">.flutterinaction</bcf:citekey>
+    <bcf:citekey order="19">.flutterinaction</bcf:citekey>
+    <bcf:citekey order="20">.flutterarchitecture</bcf:citekey>
+    <bcf:citekey order="21">.flutterarchitecture</bcf:citekey>
+    <bcf:citekey order="22">.dartoverview</bcf:citekey>
+    <bcf:citekey order="23">.flutterarchitecture</bcf:citekey>
+    <bcf:citekey order="24">.softwarearchi</bcf:citekey>
+    <bcf:citekey order="25">.indeedsolid</bcf:citekey>
+    <bcf:citekey order="26">.martin</bcf:citekey>
+    <bcf:citekey order="27">.martin</bcf:citekey>
+    <bcf:citekey order="28">.indeedsolid</bcf:citekey>
+    <bcf:citekey order="29">principles</bcf:citekey>
+    <bcf:citekey order="30">stackify</bcf:citekey>
+    <bcf:citekey order="31">principles</bcf:citekey>
+    <bcf:citekey order="32">.martin</bcf:citekey>
+    <bcf:citekey order="33">principles</bcf:citekey>
+    <bcf:citekey order="34">.mongonosql</bcf:citekey>
+    <bcf:citekey order="35">.mongonosql</bcf:citekey>
+    <bcf:citekey order="36">.mongonosql</bcf:citekey>
+    <bcf:citekey order="37">.crud</bcf:citekey>
+    <bcf:citekey order="38">.baasfirebase</bcf:citekey>
+    <bcf:citekey order="39">.baasokta</bcf:citekey>
+    <bcf:citekey order="40">.firestore</bcf:citekey>
+    <bcf:citekey order="41">.firestore</bcf:citekey>
+    <bcf:citekey order="42">.firestore</bcf:citekey>
+    <bcf:citekey order="43">.smartphonenutzer</bcf:citekey>
+    <bcf:citekey order="44">.stakeholder</bcf:citekey>
+    <bcf:citekey order="45">.stakes</bcf:citekey>
+    <bcf:citekey order="46">.systemcontext</bcf:citekey>
+    <bcf:citekey order="47">.req2</bcf:citekey>
+    <bcf:citekey order="48">.req</bcf:citekey>
+    <bcf:citekey order="49">.req2</bcf:citekey>
+    <bcf:citekey order="50">.safe</bcf:citekey>
+    <bcf:citekey order="51">.safe</bcf:citekey>
+    <bcf:citekey order="52">.domainmodel</bcf:citekey>
+    <bcf:citekey order="53">.safe</bcf:citekey>
+    <bcf:citekey order="54">.domainmodel</bcf:citekey>
+    <bcf:citekey order="55">.safe</bcf:citekey>
+    <bcf:citekey order="56">.domainmodel</bcf:citekey>
+    <bcf:citekey order="57">.nhs</bcf:citekey>
+    <bcf:citekey order="58">.apimedic</bcf:citekey>
+    <bcf:citekey order="59">.materialio</bcf:citekey>
+    <bcf:citekey order="60">.mckay</bcf:citekey>
+    <bcf:citekey order="61">.mckay</bcf:citekey>
+    <bcf:citekey order="62">.mckay</bcf:citekey>
+    <bcf:citekey order="63">.essui</bcf:citekey>
+    <bcf:citekey order="64">.3layer</bcf:citekey>
+    <bcf:citekey order="65">.wordmatching</bcf:citekey>
+    <bcf:citekey order="66">.bayes1</bcf:citekey>
+    <bcf:citekey order="67">.bayes1</bcf:citekey>
+    <bcf:citekey order="68">.bayes2</bcf:citekey>
+    <bcf:citekey order="69">.naivebayes</bcf:citekey>
+    <bcf:citekey order="70">.bayesnet</bcf:citekey>
+    <bcf:citekey order="71">.bayesnet</bcf:citekey>
+    <bcf:citekey order="72">.bayesnet</bcf:citekey>
+    <bcf:citekey order="73">.bayesnet2</bcf:citekey>
+    <bcf:citekey order="74">.algo</bcf:citekey>
+    <bcf:citekey order="75">.algo</bcf:citekey>
+    <bcf:citekey order="76">.algo</bcf:citekey>
+    <bcf:citekey order="77">.algo</bcf:citekey>
+    <bcf:citekey order="77">.algo</bcf:citekey>
+    <bcf:citekey order="77">.algo</bcf:citekey>
+    <bcf:citekey order="77">.algo</bcf:citekey>
+    <bcf:citekey order="78">.algo</bcf:citekey>
+    <bcf:citekey order="79">.3sek</bcf:citekey>
+    <bcf:citekey order="80">.sharedpref</bcf:citekey>
+    <bcf:citekey order="81">.usesharedpref</bcf:citekey>
+    <bcf:citekey order="82">.pdf</bcf:citekey>
+    <bcf:citekey order="83">.sus</bcf:citekey>
+    <bcf:citekey order="84">.sus</bcf:citekey>
+    <bcf:citekey order="85">.sus</bcf:citekey>
+    <bcf:citekey order="86">.sus</bcf:citekey>
+    <bcf:citekey order="87">.bahn-bonn</bcf:citekey>
+    <bcf:citekey order="88">.sok</bcf:citekey>
+    <bcf:citekey order="89">.blatt</bcf:citekey>
+    <bcf:citekey order="90">.rki</bcf:citekey>
+    <bcf:citekey order="91">.adaHOME</bcf:citekey>
+    <bcf:citekey order="92">.adaKI</bcf:citekey>
+    <bcf:citekey order="93">.adaFAQ</bcf:citekey>
+    <bcf:citekey order="94">.adaDOCU</bcf:citekey>
+    <bcf:citekey order="95">.symptomchecker</bcf:citekey>
+    <bcf:citekey order="96">.flutterDEV</bcf:citekey>
+    <bcf:citekey order="97">whatisdart</bcf:citekey>
+    <bcf:citekey order="98">.javadart</bcf:citekey>
+    <bcf:citekey order="99">.dartoverview</bcf:citekey>
+    <bcf:citekey order="100">.flutterinaction</bcf:citekey>
+    <bcf:citekey order="101">.flutterarchitecture</bcf:citekey>
+    <bcf:citekey order="102">.softwarearchi</bcf:citekey>
+    <bcf:citekey order="103">.indeedsolid</bcf:citekey>
+    <bcf:citekey order="104">.martin</bcf:citekey>
+    <bcf:citekey order="105">principles</bcf:citekey>
+    <bcf:citekey order="106">stackify</bcf:citekey>
+    <bcf:citekey order="107">.mongonosql</bcf:citekey>
+    <bcf:citekey order="108">.crud</bcf:citekey>
+    <bcf:citekey order="109">.baasfirebase</bcf:citekey>
+    <bcf:citekey order="110">.baasokta</bcf:citekey>
+    <bcf:citekey order="111">.firestore</bcf:citekey>
+    <bcf:citekey order="112">.smartphonenutzer</bcf:citekey>
+    <bcf:citekey order="113">.stakeholder</bcf:citekey>
+    <bcf:citekey order="114">.stakes</bcf:citekey>
+    <bcf:citekey order="115">.systemcontext</bcf:citekey>
+    <bcf:citekey order="116">.req2</bcf:citekey>
+    <bcf:citekey order="117">.req</bcf:citekey>
+    <bcf:citekey order="118">.safe</bcf:citekey>
+    <bcf:citekey order="119">.domainmodel</bcf:citekey>
+    <bcf:citekey order="120">.nhs</bcf:citekey>
+    <bcf:citekey order="121">.apimedic</bcf:citekey>
+    <bcf:citekey order="122">.materialio</bcf:citekey>
+    <bcf:citekey order="123">.mckay</bcf:citekey>
+    <bcf:citekey order="124">.essui</bcf:citekey>
+    <bcf:citekey order="125">.3layer</bcf:citekey>
+    <bcf:citekey order="126">.wordmatching</bcf:citekey>
+    <bcf:citekey order="127">.bayes1</bcf:citekey>
+    <bcf:citekey order="128">.bayes2</bcf:citekey>
+    <bcf:citekey order="129">.naivebayes</bcf:citekey>
+    <bcf:citekey order="130">.bayesnet</bcf:citekey>
+    <bcf:citekey order="131">.bayesnet2</bcf:citekey>
+    <bcf:citekey order="132">.algo</bcf:citekey>
+    <bcf:citekey order="133">.3sek</bcf:citekey>
+    <bcf:citekey order="134">.sharedpref</bcf:citekey>
+    <bcf:citekey order="135">.usesharedpref</bcf:citekey>
+    <bcf:citekey order="136">.pdf</bcf:citekey>
+    <bcf:citekey order="137">.sus</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
     <bcf:sort order="1">
       <bcf:sortitem order="1">citeorder</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2">
-      <bcf:sortitem order="1">intciteorder</bcf:sortitem>
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
