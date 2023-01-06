@@ -336,8 +336,8 @@ Widget build ( BuildContext context ) {
 \scriptsize
 \tocless\chapter{Response of the APIs}
 
-\tocless\section{Response of the NHS API}
-The total length of an NHS response from the server is a JSON with approximately 466 lines. Because of this, only the abbreviated response from the server is shown here. A full response can be viewed by scanning the QR code shown below. 
+\tocless\section{Response of the NHS API (abbreviated)}
+A full response can be viewed by scanning the QR code shown below. 
 \begin{lstlisting}[caption={Abbreviated Response of NHS API}]
 	{
 		"@context":"http://schema.org",
@@ -372,9 +372,7 @@ The QR code redirects to a GitHub repository created for this bachelor thesis. I
 \end{center}
 \pagebreak
 \tocless\section{Response of the ApiMedic API}
-Responses to requests to the ApiMedic API always look similar. The response for the request to retrieve all diseases (abbreviated) and a response regarding an explicit disease are shown below.
-\newline \\
-\textit{All diseases:} 
+\textit{All diseases (abbreviated):} 
 
 \begin{lstlisting}[basicstyle=\tiny, caption={Abbreviated Reponse of all Diseases ApiMedic API}]
 [
@@ -865,16 +863,9 @@ static List<Diagnose> decode(String pDiagnoses) =>
 
 
 \clearpage
-\normalsize
 \addcontentsline{toc}{chapter}{Literature}
-\addcontentsline{toc}{chapter}{\listfigurename}
-\addcontentsline{toc}{chapter}{\listtablename}
 
-\begingroup
-\pagestyle{plain}
-\listoffigures
-\listoftables
-\endgroup
+
 
 
 

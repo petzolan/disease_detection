@@ -7,6 +7,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Body Regions Response Data}}{20}{}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Body Locations Response Data}}{20}{}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Body Location Symptoms Response Data}}{21}{}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Final Body Part Collection Structure for Database}}{21}{}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Symptoms Response Data}}{21}{}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Proposed Symptoms Response Data}}{22}{}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Final Symptom Collection Structure for Database}}{22}{}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces All Diseases Response Data}}{22}{}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Disease Response Data}}{22}{}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces Final Disease Collection Structure for Database}}{23}{}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces Final Advice Collection Structure for Database}}{23}{}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces Final Doctor Collection Structure for Database}}{23}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -14,16 +26,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces Optional Requirements}}{45}{}%
-\contentsline {table}{\numberline {C.2}{\ignorespaces Functional Requirements}}{45}{}%
-\contentsline {table}{\numberline {C.3}{\ignorespaces Non-Functional Requirements}}{45}{}%
+\contentsline {table}{\numberline {C.1}{\ignorespaces Optional Requirements}}{46}{}%
+\contentsline {table}{\numberline {C.2}{\ignorespaces Functional Requirements}}{46}{}%
+\contentsline {table}{\numberline {C.3}{\ignorespaces Non-Functional Requirements}}{46}{}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Use case get diagnosis}}{46}{}%
-\contentsline {table}{\numberline {D.2}{\ignorespaces Use case review received diagnoses}}{46}{}%
-\contentsline {table}{\numberline {D.3}{\ignorespaces Use case get tups and tricks for sympstoms and diseases}}{47}{}%
-\contentsline {table}{\numberline {D.4}{\ignorespaces Use case login}}{47}{}%
-\contentsline {table}{\numberline {D.5}{\ignorespaces Use case add data}}{48}{}%
-\contentsline {table}{\numberline {D.6}{\ignorespaces Use case edit data}}{48}{}%
+\contentsline {table}{\numberline {D.1}{\ignorespaces Use case get diagnosis}}{47}{}%
+\contentsline {table}{\numberline {D.2}{\ignorespaces Use case review received diagnoses}}{47}{}%
+\contentsline {table}{\numberline {D.3}{\ignorespaces Use case get tups and tricks for sympstoms and diseases}}{48}{}%
+\contentsline {table}{\numberline {D.4}{\ignorespaces Use case login}}{48}{}%
+\contentsline {table}{\numberline {D.5}{\ignorespaces Use case add data}}{49}{}%
+\contentsline {table}{\numberline {D.6}{\ignorespaces Use case edit data}}{49}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

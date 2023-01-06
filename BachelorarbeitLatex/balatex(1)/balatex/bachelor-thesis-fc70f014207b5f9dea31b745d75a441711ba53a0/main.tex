@@ -72,16 +72,6 @@
 \hyphenation{Crash-zo-ne}                    
 \addbibresource{quellen.bib} %Citavi Reference Datei
 
-% Kopf- und Fußzeile
-\usepackage[
-headsepline,	% Kopfzeilen-Sepparationslinie
-automark,		% Lebende Kolumnentitel
-]
-{scrlayer-scrpage}
-\pagestyle{scrheadings}		
-
-\ohead*{\headmark}
-
 \usepackage{abstract}
 \usepackage{adjustbox}
 \usepackage{tabularx}
@@ -150,9 +140,20 @@ Technische Hochschule Ingolstadt
   \include{kapitel/00_abstract}
   
   \tableofcontents
+  \clearpage
+  \small
+  \addcontentsline{toc}{chapter}{\listfigurename}
+  \addcontentsline{toc}{chapter}{\listtablename}
+  
+  \begingroup
+  \pagestyle{plain}
+  \listoffigures
+  \listoftables
+  \endgroup
+
   \chapter*{Acronyms}
   \addcontentsline{toc}{chapter}{Acronyms}
-  
+    \normalsize
   \begin{acronym}
   	\acro{BAEK}{German Medical Association (Bundesärztekammer)}
   	\acro{AI}{Artifical Intelligence}
@@ -193,6 +194,7 @@ Technische Hochschule Ingolstadt
   
   \include{kapitel/70_fazit}
   \begin{sloppypar}
+  	\small
   \printbibliography %Citavi 5
 \end{sloppypar}
 \end{document}

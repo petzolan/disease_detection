@@ -10,14 +10,14 @@ The NHS, or National Health Service, is the publicly funded healthcare system of
 \newline \\
 The API offers medical information about various diseases, their symptoms, and available treatments. A user account that is provided with a subscription key must be created in order to receive data from this API. The next step is to make a call with the hypertext transfer protocol (HTTP) to \textbf{https://api.nhs.uk/conditions}. An example of a possible request in the programming language Python looks like this:
 \begin{lstlisting}[language=Python, caption={Example Python Request for the Health A to Z API}]
-	urlDiseases = "https://api.nhs.uk/conditions/acne"
-	header = {
+	URL = "https://api.nhs.uk/conditions/acne"
+	HEADER = {
 		"subscription-key": "YOUR_SUBSCRIPTION_KEY"
 	}
-	responseDiseases = requests.request("GET", urlDiseases, headers=header)
-	responseData = responseDiseases.json()
+	response_disease = requests.request("GET", URL, headers=HEADER)
+	response_data = response_disease.json()
 \end{lstlisting}
-If the request was successful and the response contains the data in the JavaScript object notation (JSON) format. Appendix C.1 shows an abbreviated sample response from the API. A positive aspect of this API is that all data is described in great detail, and a large amount of knowledge can be obtained in a single query. However, it must also be mentioned that the extent of the server response just mentioned entails the difficulty of storing the data accordingly in a separate database. For example, symptoms are supplied for a disease, but only in string format as a complete sentence. This means that a symptom is described in different ways in several diseases. In order to automatically scrape this data, one would have to recognize all variations in the description of a symptom. This is almost impossible with the amount of data that the Health A to Z API brings. Another limitation is that a maximum of 6 requests can be made to the interface per minute, which proves to be a severe problem in terms of runtime.
+If the request was successful and the response contains the data in the JavaScript object notation (JSON) format. Appendix C.1 shows an abbreviated sample response from the API. A positive aspect of this API is that all data is described in great detail and a large amount of knowledge can be obtained in a single query. However, it must also be mentioned that the extent of the server response just mentioned entails the difficulty of storing the data accordingly in a separate database. For example, symptoms are supplied for a disease, but only in string format as a complete sentence. This means that a symptom is described in different ways in several diseases. In order to automatically scrape this data, one would have to recognize all variations in the description of a symptom. This is almost impossible with the amount of data that the Health A to Z API brings. Another limitation is that a maximum of 6 requests can be made to the interface per minute, which proves to be a a big problem regarding the duration of data retention.
 
 \subsection{ApiMedic Symptom Checker API}
 The ApiMedic API is the second interface to be considered. ApiMedic is powered by priaid \cite{.apimedic}, a company that combines medicine, IT, and business administration. Thanks to their highly specialized team composition, they offer expertise in all areas mentioned. API calls can be done with two different accounts:
@@ -29,22 +29,22 @@ The ApiMedic API is the second interface to be considered. ApiMedic is powered b
 \end{itemize}
 Although the data that can be received from this API is less detailed than that of the NHS API, using the data to create a data structure is more straightforward. It is possible to acquire diseases, bodily components, and symptoms as well as proposed symptoms and symptoms based on each body part. The following code example shows a request made with the live account to retrieve all diseases, the response of the API can be found in appendix C.2.
 \begin{lstlisting}[language=Python, caption={Example Python Request for the ApiMedic API (all issues)}]
-	stringURLIssues = "https://healthservice.priaid.ch/issues?token=YOUR_TOKEN"
-	responseIssues = requests.request("GET", stringURLIssues)
-	dataIssues = responseIssues.json()
+	URL_ISSUES = "https://healthservice.priaid.ch/issues?token=YOUR_TOKEN"
+	response_issues = requests.request("GET", URL_ISSUES)
+	data_issues = response_issues.json()
 \end{lstlisting}
 \noindent
-It is now possible to execute an API request that returns detailed information about each disease using the provided IDs. Appendix C.3 shows a sample response from the ApiMedic API.
+It is now possible to execute an API request that returns detailed information about each disease using the provided IDs. 
 \begin{lstlisting}[language=Python, caption={Example Python Request for the ApiMedic API (single issue)}]
-	stringURLIssue = "https://healthservice.priaid.ch/issues/105/info?token=YOUR_TOKEN"
-	responseIssue = requests.request("GET", stringURLIssue)
-	dataIssue = responseIssue.json()
+	URL_ISSUE = "https://healthservice.priaid.ch/issues/105/info?token=YOUR_TOKEN"
+	reponse_issue = requests.request("GET", URL_ISSUE)
+	data_issue = reponse_issue.json()
 \end{lstlisting}
 \noindent 
-The value of the "PossibleSymptoms"-key returns an enumeration of all the disease symptoms. These symptoms are listed using the values of the "Name"-key for the respective symptom when querying all symptoms. This makes it easier to scrape the data accordingly and store it in a database.
+Appendix C.3 shows a sample response from the ApiMedic API. The value of the "PossibleSymptoms"-key returns an enumeration of all the disease symptoms. These symptoms are listed using the values of the "Name"-key for the respective symptom when querying all symptoms. This makes it easier to scrape the data accordingly and store it in a database.
 
 \subsection{API Solution}
-The question that now arises is which of the two interfaces to choose. Both APIs have advantages and disadvantages. While the NHS API provides very detailed results, it is challenging to use the data for the purposes intended in this work. NHS also provides data on the causes of various symptoms and conditions, which can be an essential factor in making a diagnosis in the form of disease detection. ApiMedic delivers the data in an optimal format but far less detailed than NHS. One available option is to use the symptom data provided by ApiMedic as scrape material for the symptom list in the NHS. However, after an attempt to do so, only a minimal amount of symptoms has been recognized. This is because the same symptom is named differently in both APIs. Generating more appropriate scrape material would require a full inspection of all NHS API data to ensure getting a decent amount of data. This is not possible within the scope of this work but should be considered for future system optimizations. In the context of the bachelor thesis, the ApiMedic API is preferred from the point of view of a clean database structure.
+The question that now arises is which of the two APIs to choose. Both APIs have advantages and disadvantages. While the NHS API provides very detailed results, it is challenging to use the data for the purposes intended in this work. NHS also provides data on the causes of various symptoms and conditions, which can be an essential factor in making a diagnosis in the form of disease detection. ApiMedic delivers the data in an optimal format but far less detailed than NHS. One available option is to use the symptom data provided by ApiMedic as scrape material for the symptom list in the NHS. However, after an attempt to do so, only a minimal amount of symptoms has been recognized. This is because the same symptom is named differently in both APIs. Generating more appropriate scrape material would require a full inspection of all NHS API data to ensure getting a decent amount of data. This is not possible within the scope of this work but should be considered for future system optimizations. In the context of the bachelor thesis, the ApiMedic API is preferred from the point of view of a clean database structure.
 
 \section{Data Structure}
 The data structure of the database is based on the decision that the ApiMedic API will be the leading supplier of the data. The basic data structure can already be guessed from the domain model, which is shown in Figure 4.4. Firestore supports the following datatypes: String, Number, Boolean, Map, Array, Null, Timestamp, Geopoint, and Reference. With a closer look at the API's JSON responses, the data structures can be formed.
@@ -54,25 +54,29 @@ ApiMedic does not provide any actual documentation. Instead, they allow interest
 
 \subsubsection{Body Part}
 \begin{itemize}
-	\item \textbf{Get all Body Regions:  /body/locations?token=\{your\_token\}}
+	\item \textbf{Get all Body Regions: /body/locations?token=\{your\_token\}}
 	\newline
 	If the request is successful (status code 200), all body regions stored in the API form the output.
-	\begin{center}
-		\begin{tabular}{ | c| c| c | } 
-			\hline
-			Name of Field& Content & Datatype \\ 
-			\hline
-			ID & ID of the body region & Integer \\ 
-			\hline
-			Name & Name of the body region & String \\ 
-			\hline
-		\end{tabular}
-	\end{center}
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{ | c| c| c | } 
+				\hline
+				Name of Field& Content & Datatype \\ 
+				\hline
+				ID & ID of the body region & Integer \\ 
+				\hline
+				Name & Name of the body region & String \\ 
+				\hline
+			\end{tabular}
+				\caption{Body Regions Response Data}
+		\end{table}
+
 	With the help of the ID of the body regions, the individual body parts of a region can be determined.
-	\item \textbf{Get all Body Parts:  /body/locations/\{body\_region\_id\}?token=\{your\_token\}}
+	\item \textbf{Get all Body Parts: /body/locations/\{body\_region\_id\}?token=\{your\_token\}}
 	\newline
-	If the request is successful (status code 200), all body locations stored in the API form the output.
-	\begin{center}
+	If the request is successful (status code 200), all symptoms of a body location stored in the API form the output.
+	\begin{table}[H]
+		\centering
 		\begin{tabular}{ | c| c| c | } 
 			\hline
 			Name of Field& Content & Datatype \\ 
@@ -82,12 +86,15 @@ ApiMedic does not provide any actual documentation. Instead, they allow interest
 			Name & Name of the body location & String \\ 
 			\hline
 		\end{tabular}
-	\end{center}
-	\item \textbf{Get all Body Parts:  /body/locations/\{body\_region\_id\}/\{gender\_id\}?token=\{your\_token\}}
+	 \caption{Body Locations Response Data}
+	\end{table}	
+
+	\item \textbf{Get all Body Symptoms (with gender IDs): /body/locations/\{body\_region\_id\}/\{gender\_id\}\\?token=\{your\_token\}}
 	\newline
 	If the request is successful, all body locations stored in the API form the output. The IDs of the genders are values ranging from 0 to 3. 
-	\begin{center}
 		\scriptsize
+		\begin{table}[H]
+			\centering
 		\begin{tabular}{ | c| c| c | } 
 			\hline
 			Name of Field& Content & Datatype \\ 
@@ -96,23 +103,24 @@ ApiMedic does not provide any actual documentation. Instead, they allow interest
 			\hline
 			Name & Name of the symptom & String \\ 
 			\hline
-			HasRedFlag & Indicates whether the symptom has been classified as critical & Boolean \\ 
+			HasRedFlag & Critical Flag & Boolean \\ 
 			\hline
-			HealthSymptomLocationIDs & IDs of the body locations that are affected by this symptom & Array[Integer] \\ 
+			HealthSymptomLocationIDs & IDs of  body locations affected by this symptom & Array[Integer] \\ 
 			\hline
 			ProfName & Professional name of the symtom & String \\
 			\hline 			
 			Synonyms & Synonyms of the symptom & Array[String] \\
 			\hline
 		\end{tabular}
+			 \caption{Body Location Symptoms Response Data}
+		\end{table}
 		\normalsize
-	\end{center}
-	
 \end{itemize}
 Instead of storing all body areas, all explicit body parts and their possible symptoms will be stored in Firestore. Based on the information obtained from successful HTTP requests, the Firestore structure can be defined as shown below.
 \newline
 \textbf{Collection: body\_parts}
-\begin{center}
+\begin{table}[H]
+	\centering
 	\begin{tabular}{ | c| c| c | } 
 		\hline
 		Name of Document-field& Content & Datatype \\ 
@@ -122,15 +130,18 @@ Instead of storing all body areas, all explicit body parts and their possible sy
 		symptoms & List of all symptom ids of the body part  & Array[String] \\ 
 		\hline
 	\end{tabular}
-\end{center}
-The ids of the documents are formed from the name of the respective object. Here, spaces are replaced by a "\_" and the name string is stripped of leading and trailing spaces using the Python function .strip(). The id generation method should never be used for real-world applications. However, it simplifies the legibility in the context of this bachelor thesis. Firestore saves all the data in the form of documents, which can be created using .doc(\{document\_id\}).set(\{...\}). When performing this operation, the document is automatically assigned the specified ID, making it unnecessary to store the id in the document itself.
+			 \caption{Final Body Part Collection Structure for Database}
+\end{table}
+\noindent
+The IDs of the documents are formed from the name of the respective object. Here, spaces are replaced by a "\_" and the name string is stripped of leading and trailing spaces using the Python function .strip(). The id generation method should never be used for real-world applications. However, it simplifies the legibility in the context of this bachelor thesis. Firestore saves all the data in the form of documents, which can be created using .doc(\{document\_id\}).set(\{...\}). When performing this operation, the document is automatically assigned the specified ID, making it unnecessary to store the id in the document itself.
 
 \subsubsection{Ressource Symptom}
 \begin{itemize}
 	\item \textbf{Get all Symptoms :  /symptoms?token=\{your\_token\}}
 	\newline		
 	If the request is successful, all symptoms stored in the API form the output.
-	\begin{center}
+	\begin{table}[H]
+		\centering
 		\begin{tabular}{ | c| c| c | } 
 			\hline
 			Name of Field& Content & Datatype \\ 
@@ -140,12 +151,14 @@ The ids of the documents are formed from the name of the respective object. Here
 			Name & Name of the symptom & String \\ 
 			\hline
 		\end{tabular}
-	\end{center}
+	\caption{Symptoms Response Data}
+	\end{table}
 	
 	\item \textbf{Get all proposed Symptoms:  /symptoms/proposed?symptoms=[\{symptom\_ids\}]\newline\&gender=\{gender\_name\}\&year\_of\_birth=\{birthyear\_YYYY\}?token=\{your\_token\}}
 	\newline
 	Unlike the query regarding all symptoms of a body part, the values of the genders are not to be given as an ID but in the form of full names, i. e. "male" and "female".
-	\begin{center}
+	\begin{table}[H]
+		\centering
 		\begin{tabular}{ | c| c| c | } 
 			\hline
 			Name of Field& Content & Datatype \\ 
@@ -155,28 +168,34 @@ The ids of the documents are formed from the name of the respective object. Here
 			Name & Name of the proposed symptom & String \\ 
 			\hline
 		\end{tabular}
-	\end{center}
+	\caption{Proposed Symptoms Response Data}
+	\end{table}
 \end{itemize}
-Since all ids of the symptoms for each body part are already stored in each body part document, there is no need to add the body part ids to the symptom anymore. Because of that, all that is needed to be stored is the name of the symptom and the ids of the proposed symptoms.
+\noindent
+Since all IDs of the symptoms for each body part are already stored in each body part document, there is no need to add the body part ids to the symptom anymore. Because of that, all that is needed to be stored is the name of the symptom and the ids of the proposed symptoms.
 \newline
 \textbf{Collection: symptoms}
-\begin{center}
+\begin{table}[H]
+	\centering
 	\begin{tabular}{ | c| c| c | } 
 		\hline
 		Name of Document-field& Content & Datatype \\ 
 		\hline
 		name & Name of the body part & String \\ 
 		\hline
-		proposed\_symptoms & List of all proposed symptoms ids of the symptom  & Array[String] \\ 
+		proposed\_symptoms & List of all proposed symptoms IDs of the symptom  & Array[String] \\ 
 		\hline
 	\end{tabular}
-\end{center}
+	 \caption{Final Symptom Collection Structure for Database}
+\end{table}
+
 \subsubsection{Ressource Disease}
 \begin{itemize}
 	\item \textbf{Get all issues (diseases):  /issues?token=\{your\_token\}}
 	\newline
 	If the request is successful (status code 200), all diseases stored in the API form the output.
-	\begin{center}
+	\begin{table}[H]
+		\centering
 		\begin{tabular}{ | c| c| c | } 
 			\hline
 			Name of Field& Content & Datatype \\ 
@@ -186,12 +205,14 @@ Since all ids of the symptoms for each body part are already stored in each body
 			Name & Name of the body region & String \\ 
 			\hline
 		\end{tabular}
-	\end{center}
+		\caption{All Diseases Response Data}
+	\end{table}
 	With the help of the ID of the body regions, the individual disease can be determined.
 	\item \textbf{Get a single issue:  /issues/\{issue\_id\}?token=\{your\_token\}}
 	\newline
 	If the request is successful (status code 200), the requested issue forms the output.
-	\begin{center}
+	\begin{table}[H]
+		\centering
 		\begin{tabular}{ | c| c| c | } 
 			\hline
 			Name of Field& Content & Datatype \\ 
@@ -213,12 +234,14 @@ Since all ids of the symptoms for each body part are already stored in each body
 			Treatment & Treatment steps for the disease & String \\
 			\hline 
 		\end{tabular}
-	\end{center}
+	 \caption{Disease Response Data}
+	\end{table}
 \end{itemize}
-The resources provided by the issues are stored in the Firestore database under the diseases collection. For the purposes of the work, only the name, description, symptoms, and treatment recommendation are extracted and stored.
-\newline
+For the purposes of the work, only the name, description, symptoms, and treatment recommendation are extracted and stored.
+\newline \\
 \textbf{Collection: diseases}
-\begin{center}
+\begin{table}[H]
+	\centering
 	\begin{tabular}{ | c| c| c | } 
 		\hline
 		Name of Document-field& Content & Datatype \\ 
@@ -230,11 +253,14 @@ The resources provided by the issues are stored in the Firestore database under 
 		treatment & Treatment recommendation of the disease & String \\ 
 		\hline
 	\end{tabular}
-\end{center}
+			 \caption{Final Disease Collection Structure for Database}
+\end{table}
 \subsubsection{Advice}
-The advice generated by doctors is not part of the ApiMedic API data resources. They are created directly by users (doctors) of the application and require a title, description, associated symptoms, and diseases. Taken together, this results in the document structure shown in Table x.x.
+The advice generated by doctors is not part of the ApiMedic API data resources. They are created directly by users (doctors) of the application and require a title, description, associated symptoms, and diseases.
+ \newline
 \textbf{Collection: advices}
-\begin{center}
+\begin{table}[H]
+	\centering
 	\begin{tabular}{ | c| c| c | } 
 		\hline
 		Name of Document-field& Content & Datatype \\ 
@@ -248,11 +274,14 @@ The advice generated by doctors is not part of the ApiMedic API data resources. 
 		diseases & List of associated disease ids & Array[String]\\ 
 		\hline
 	\end{tabular}
-\end{center}
+\caption{Final Advice Collection Structure for Database}
+\end{table}
 \subsubsection{Doctor}
 Doctors have the opportunity to register to get access to the data entries. To do this, they will be asked to enter an email and a password. Firestore allows all of this to happen without involving a dedicated collection of users. Nevertheless, it makes sense to do this since user data could be expanded later. An example is that records added by a doctor could also be referenced in his account. This requires a collection that stores the user data of the respective doctor in separate documents. Firestore automatically generates the user ID as a hash value during registration.
+ \newline
 \textbf{Collection: doctors}
-\begin{center}
+\begin{table}[H]
+	\centering
 	\begin{tabular}{ | c| c| c | } 
 		\hline
 		Name of Document-field& Content & Datatype \\  
@@ -260,9 +289,10 @@ Doctors have the opportunity to register to get access to the data entries. To d
 		email & E-Mail-Adress of the doctor & String \\
 		\hline
 	\end{tabular}
-\end{center}
+	\caption{Final Doctor Collection Structure for Database}
+\end{table}
 \subsubsection{User, User Specified Symptom, Diagnose, SymptomIntensity and NovelityFactor}
 The user-defined symptoms are not stored in the database but are only generated temporarily and locally in the system during the diagnosis. The reason for not saving the user-specific symptoms is that a user does not have to log in to the application. Therefore, no user document is created in the database through which the symptoms can be traced back to the user. Only the individual attributes of the object are stored in the diagnosis in order to be able to understand the diagnosis when it is called up again. The classes of users and diagnoses, as well as the enumerations symptoms, intensity, and novelty factor, will not be stored in the database. However, they will be, too, modeled internally in the system. There, the diagnoses are to be stored locally on the smartphone, ensuring that no user's personal data is stored in the database.
 
-\section{Inserting the Data into the database}
+\section{Inserting the Data into the Database}
 Adding the records to the database requires a few steps, which have been summarized with the help of Jupyter Notebook. The notebook can be downloaded by following the link of the QR code in Appendix E. After the successful data generation. The database can now be integrated into the application. For this, the scheme provided by the Flutter developers is followed.

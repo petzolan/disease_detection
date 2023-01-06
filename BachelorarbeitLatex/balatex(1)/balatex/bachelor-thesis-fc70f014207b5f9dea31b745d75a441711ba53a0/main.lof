@@ -8,6 +8,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Widget Tree of Listing 2.1}}{6}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Widget Tree of Listing 2.1}}{9}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Power/Interest Grid for Stakeholder-Analysis }}{11}{}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces System Context Diagram }}{12}{}%
@@ -15,45 +16,45 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Domain Model}}{17}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Survey Question}}{24}{}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Survey Question}}{25}{}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Survey Question}}{25}{}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Survey Question}}{26}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Client-Server Request Flow}}{29}{}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Client-Server Request Flow}}{30}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces SUS Template}}{35}{}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces SUS Answers}}{36}{}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Survey 1, Questions 1 - 4}}{41}{}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Survey 1, Question 5}}{42}{}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Survey 1, Questions 6 - 8}}{43}{}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces SUS Template}}{36}{}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces SUS Answers}}{37}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces QR-Code NHS API Response, GitHub}}{49}{}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces QR-Code JupyterNotebook, GitHub}}{51}{}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces Survey 2, Questions 1 - 4}}{52}{}%
-\contentsline {figure}{\numberline {G.2}{\ignorespaces Survey 2, Question 5 - 8}}{53}{}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {H.1}{\ignorespaces Mock-up Home Screen}}{54}{}%
-\contentsline {figure}{\numberline {H.2}{\ignorespaces Mock-up Diagnostic Process Screen}}{54}{}%
-\contentsline {figure}{\numberline {H.3}{\ignorespaces Mock-up Diagnose Screen}}{55}{}%
-\contentsline {figure}{\numberline {H.4}{\ignorespaces Mock-up Diagnose Overview Screen}}{55}{}%
-\contentsline {figure}{\numberline {H.5}{\ignorespaces Mock-up Advice Screen}}{56}{}%
-\contentsline {figure}{\numberline {H.6}{\ignorespaces Mock-up Login Screen}}{56}{}%
-\contentsline {figure}{\numberline {H.7}{\ignorespaces Mock-up Doctor Panel}}{57}{}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Survey 1, Questions 1 - 4}}{42}{}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Survey 1, Question 5}}{43}{}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Survey 1, Questions 6 - 8}}{44}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {K.1}{\ignorespaces System CPU Information}}{63}{}%
-\contentsline {figure}{\numberline {K.2}{\ignorespaces Emulator Details}}{63}{}%
-\contentsline {figure}{\numberline {K.3}{\ignorespaces Processor Time Compilation 1}}{64}{}%
-\contentsline {figure}{\numberline {K.4}{\ignorespaces Processor Time Compilation 2}}{65}{}%
-\contentsline {figure}{\numberline {K.5}{\ignorespaces Processor Time Compilation 3}}{66}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces QR-Code NHS API Response, GitHub}}{50}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {F.1}{\ignorespaces QR-Code JupyterNotebook, GitHub}}{52}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {G.1}{\ignorespaces Survey 2, Questions 1 - 4}}{53}{}%
+\contentsline {figure}{\numberline {G.2}{\ignorespaces Survey 2, Question 5 - 8}}{54}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {H.1}{\ignorespaces Mock-up Home Screen}}{55}{}%
+\contentsline {figure}{\numberline {H.2}{\ignorespaces Mock-up Diagnostic Process Screen}}{55}{}%
+\contentsline {figure}{\numberline {H.3}{\ignorespaces Mock-up Diagnose Screen}}{56}{}%
+\contentsline {figure}{\numberline {H.4}{\ignorespaces Mock-up Diagnose Overview Screen}}{56}{}%
+\contentsline {figure}{\numberline {H.5}{\ignorespaces Mock-up Advice Screen}}{57}{}%
+\contentsline {figure}{\numberline {H.6}{\ignorespaces Mock-up Login Screen}}{57}{}%
+\contentsline {figure}{\numberline {H.7}{\ignorespaces Mock-up Doctor Panel}}{58}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {M.1}{\ignorespaces Functional Requirements}}{68}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {K.1}{\ignorespaces System CPU Information}}{64}{}%
+\contentsline {figure}{\numberline {K.2}{\ignorespaces Emulator Details}}{64}{}%
+\contentsline {figure}{\numberline {K.3}{\ignorespaces Processor Time Compilation 1}}{65}{}%
+\contentsline {figure}{\numberline {K.4}{\ignorespaces Processor Time Compilation 2}}{66}{}%
+\contentsline {figure}{\numberline {K.5}{\ignorespaces Processor Time Compilation 3}}{67}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {M.1}{\ignorespaces Functional Requirements}}{69}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
